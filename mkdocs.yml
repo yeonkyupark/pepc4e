@@ -32,6 +32,9 @@ theme:
         icon: material/brightness-4
         name: 라이트 모드로 전환
 
+hooks:
+  - hooks/cjk_strong.py
+
 plugins:
   - search:
       lang:
