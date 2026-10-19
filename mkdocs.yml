@@ -1,5 +1,5 @@
 # 이 파일을 수정하세요. mkdocs.yml은 scripts/generate_scaffold.py가 이 파일 + nav로 생성합니다.
-site_name: 공장관리기술사 기출 중심 교재
+site_name: 생산운영과 공장관리
 site_description: 출제기준(2027~2030) 주요항목·세부항목별 기출문제 정리와 학습 교재
 docs_dir: docs
 site_url: https://yeonkyupark.github.io/pepc4e/
