@@ -2,9 +2,9 @@
 site_name: 공장관리기술사 기출 중심 교재
 site_description: 출제기준(2027~2030) 주요항목·세부항목별 기출문제 정리와 학습 교재
 docs_dir: docs
-# GitHub 저장소를 만든 뒤 아래 값을 채우세요.
-# site_url: https://<github-id>.github.io/factory-pe-textbook/
-# repo_url: https://github.com/<github-id>/factory-pe-textbook
+site_url: https://yeonkyupark.github.io/pepc4e/
+repo_url: https://github.com/yeonkyupark/pepc4e
+repo_name: yeonkyupark/pepc4e
 
 theme:
   name: material
