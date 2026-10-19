@@ -1,0 +1,59 @@
+# 이 파일을 수정하세요. mkdocs.yml은 scripts/generate_scaffold.py가 이 파일 + nav로 생성합니다.
+site_name: 공장관리기술사 기출 중심 교재
+site_description: 출제기준(2027~2030) 주요항목·세부항목별 기출문제 정리와 학습 교재
+docs_dir: docs
+# GitHub 저장소를 만든 뒤 아래 값을 채우세요.
+# site_url: https://<github-id>.github.io/factory-pe-textbook/
+# repo_url: https://github.com/<github-id>/factory-pe-textbook
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+
+plugins:
+  - search:
+      lang:
+        - en
+      separator: '[\s\-\.]+'
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
