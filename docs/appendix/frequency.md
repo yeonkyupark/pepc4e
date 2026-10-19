@@ -54,9 +54,9 @@
 | 7 | [1.4.1 조직구조와 조직 설계](../01-production-strategy/04-workforce-job-design.md) | 13 |
 | 8 | [3.1.1 총괄생산계획(APP)](../03-process-control/01-production-planning.md) | 13 |
 | 9 | [3.5.3 설비 로스와 설비종합효율(OEE)](../03-process-control/05-maintenance.md) | 13 |
-| 10 | [1.1.7 성과측정: BSC·KPI·CSF](../01-production-strategy/01-competitive-strategy.md) | 12 |
-| 11 | [5.4.3 통계적 공정관리(관리도·공정능력)](../05-work-measurement/04-quality-management.md) | 12 |
-| 12 | [5.4.5 6시그마(DMAIC·DMADV·DFSS)](../05-work-measurement/04-quality-management.md) | 12 |
+| 10 | [5.4.3 통계적 공정관리(관리도·공정능력)](../05-work-measurement/04-quality-management.md) | 13 |
+| 11 | [5.4.5 6시그마(DMAIC·DMADV·DFSS)](../05-work-measurement/04-quality-management.md) | 13 |
+| 12 | [1.1.7 성과측정: BSC·KPI·CSF](../01-production-strategy/01-competitive-strategy.md) | 12 |
 | 13 | [1.2.3 공장입지 선정](../01-production-strategy/02-production-system-layout.md) | 11 |
 | 14 | [1.2.6 셀 생산·GT·U라인](../01-production-strategy/02-production-system-layout.md) | 11 |
 | 15 | [3.5.2 TPM과 자주보전](../03-process-control/05-maintenance.md) | 11 |

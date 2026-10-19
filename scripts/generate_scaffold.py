@@ -194,7 +194,7 @@ STANDARD = [
             ("품질경영·TQM·ISO 9000", r"TQM|ISO|품질경영|Crosby|Garvin|프로세스 접근|ZD|Hidden", 9),
             ("품질비용(COQ)", r"[Cc]ost|코스트|비용|COPQ", 7),
             ("통계적 공정관리(관리도·공정능력)", r"관리도|공정능력|SPC|F검증|Ftest|부적합수|AQL|QC 7|품질관리 7|신 QC|특성요인도", 8),
-            ("측정시스템분석(MSA·Gage R&R)", r"R ?& ?R|측정|재현성|MSA", 4),
+            ("측정시스템분석(MSA·Gage R&R)", r"R ?& ?R|측정시스템|측정오차|재현성|MSA", 4),
             ("6시그마(DMAIC·DMADV·DFSS)", r"시그마|σ|DMAIC|DMADV|DFSS|Rolled|누적수율|CTQ", 6),
             ("다구찌 품질공학과 강건설계", r"Taguchi|다구찌|강건|Robust|공차설계|허용차|손실함수", 5),
             ("카노 모델", r"Kano|카노", 1),
