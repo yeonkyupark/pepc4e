@@ -118,3 +118,4 @@ nav:
   - "부록":
       - "출제 빈도 분석": appendix/frequency.md
       - "회차별 기출 색인": appendix/rounds.md
+      - "확인 필요 항목": appendix/review.md

@@ -408,7 +408,8 @@ def build():
          '!!! tip "이 교재 사용법"',
          "    1. 각 세부항목 페이지 맨 위 **출제 경향** 표에서 자주 나오는 주제를 먼저 확인합니다.",
          "    2. **목차**의 주제별로 학습 내용을 정리하고, 아래 **관련 기출**을 펼쳐 답안을 연습합니다.",
-         "    3. 회차별로 복습하려면 [회차별 기출 색인](appendix/rounds.md)을, 우선순위를 보려면 [출제 빈도 분석](appendix/frequency.md)을 봅니다.", "",
+         "    3. 회차별로 복습하려면 [회차별 기출 색인](appendix/rounds.md)을, 우선순위를 보려면 [출제 빈도 분석](appendix/frequency.md)을 봅니다.",
+         "    4. 가정을 두고 풀었거나 정의 확인이 필요한 부분은 [확인 필요 항목](appendix/review.md)에 모아 두었습니다.", "",
          "## 출제기준과 기출 분포", "", "| 주요항목 | 세부항목 | 기출 수 |", "|---|---|:-:|"]
     for m, mname, mdir, n, m_rows in home_rows:
         for k, (num, sname, f, sn, _, _) in enumerate(m_rows):
@@ -445,7 +446,8 @@ def build():
     write(DOCS / "appendix" / "rounds.md", "\n".join(r))
 
     nav = [{"홈": "index.md"}] + nav + [{"부록": [{"출제 빈도 분석": "appendix/frequency.md"},
-                                                {"회차별 기출 색인": "appendix/rounds.md"}]}]
+                                                {"회차별 기출 색인": "appendix/rounds.md"},
+                                                {"확인 필요 항목": "appendix/review.md"}]}]
     write_mkdocs_yml(nav)
     print(f"generated: {total} questions, {len(freq_rows)} sections" + (f", kept {skipped} existing pages" if skipped else ""))
 
