@@ -75,6 +75,7 @@
 | [6.1.2 손익분기점](../06-cost-engineering-economy/01-feasibility.md#t61-2) | 100회 | ⚠️ | 총변동원가(100,000원)와 단위 자료(6원 × 20,000개 = 120,000원)가 맞지 않아 단위 자료 기준으로 풀이 |
 | [6.2.2 원가계산](../06-cost-engineering-economy/02-cost-management.md#t62-2) | 65회 | 📖 | 준평균법의 그룹 분할을 생산량 순으로 함(월 순서로 나누면 고정원가가 음수) |
 | [6.4.4 의사결정](../06-cost-engineering-economy/04-operations-research.md#t64-4) | 106회 | 📖 | Hurwicz α = 0.4를 낙관계수(최대값의 가중치)로 해석 |
+| [6.4.4 의사결정](../06-cost-engineering-economy/04-operations-research.md#t64-4) | 115회 | ⚠️ | 분석 의뢰 시 시장성 호조 확률(0.7 × 0.8 + 0.3 × 0.1 = 0.59)이 사전확률 0.5와 맞지 않아 표본정보의 가치(13.2억)가 완전정보의 가치(EVPI 10억)보다 크게 나옴 — 문제 자료의 불일치 |
 | [6.4.5 PERT/CPM](../06-cost-engineering-economy/04-operations-research.md#t64-5) | 103회 | ⚠️ | **미풀이** — 활동의 선행 관계(네트워크)가 자료에 없음 |
 | [6.4.5 PERT/CPM](../06-cost-engineering-economy/04-operations-research.md#t64-5) | 130회 | 🔢 | "단축시간"을 단축 후 소요시간으로 해석(14일, 2,600만 원), 단축 가능 일수로 보면 2,500만 원 |
 
@@ -87,3 +88,7 @@
 | [7.4.3 TOC](../07-support-technology/04-production-innovation.md#t74-3) | 103·124회 | 📖 | OPT 4개 모듈 명칭, 공급·공간·능력 버퍼의 정의 |
 | [7.5.1 ESG·통상규제](../07-support-technology/05-trends.md#t75-1) | 130·139회 | 🔎 | IRA 세액공제의 최근 변경, CBAM 등 규제 일정은 최신 정보 확인 |
 | [7.5.2 미래 공장](../07-support-technology/05-trends.md#t75-2) | 139회 | 🔎 | 등대공장 국내 선정 사례, SDF·피지컬 AI 같은 신생 개념의 정의 |
+
+## 본문의 "확인 필요" 표시
+
+위 표 외에도 본문 곳곳에 **"(교재 확인 필요)"**, **"(최신 자료 확인 필요)"**로 표시한 문장이 있다. 주로 학자·연도·법령 시행 시기·국제 규제 일정처럼 교재나 시점에 따라 달라지는 사실이다. 사이트 검색창에 "확인 필요"를 입력하면 모두 찾을 수 있다.
