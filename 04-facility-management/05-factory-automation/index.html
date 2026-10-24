@@ -1,0 +1,2986 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="출제기준(2027~2030) 주요항목·세부항목별 기출문제 정리와 학습 교재">
+      
+      
+      
+        <link rel="canonical" href="https://yeonkyupark.github.io/pepc4e/04-facility-management/05-factory-automation/">
+      
+      
+        <link rel="prev" href="../04-facilities-utilities/">
+      
+      
+        <link rel="next" href="../../05-work-measurement/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>4.5 공장자동화 기술 - 생산운영과 공장관리</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#45" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="생산운영과 공장관리" class="md-header__button md-logo" aria-label="생산운영과 공장관리" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            생산운영과 공장관리
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4.5 공장자동화 기술
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yeonkyupark/pepc4e" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeonkyupark/pepc4e
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01-production-strategy/" class="md-tabs__link">
+          
+  
+    
+  
+  1. 생산전략
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../02-operations-logistics/" class="md-tabs__link">
+          
+  
+    
+  
+  2. 생산운영 및 물류관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03-process-control/" class="md-tabs__link">
+          
+  
+    
+  
+  3. 공정관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  4. 설비관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05-work-measurement/" class="md-tabs__link">
+          
+  
+    
+  
+  5. 작업관리와 성과측정
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../06-cost-engineering-economy/" class="md-tabs__link">
+          
+  
+    
+  
+  6. 원가관리 및 경제성공학
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../07-support-technology/" class="md-tabs__link">
+          
+  
+    
+  
+  7. 생산지원기술 및 기타
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../appendix/answer-guide/" class="md-tabs__link">
+          
+  
+    
+  
+  부록
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="생산운영과 공장관리" class="md-nav__button md-logo" aria-label="생산운영과 공장관리" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    생산운영과 공장관리
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yeonkyupark/pepc4e" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeonkyupark/pepc4e
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    홈
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01-production-strategy/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    1. 생산전략
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. 생산전략
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/01-competitive-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 경쟁우위 생산전략
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/02-production-system-layout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 생산구조와 방식(Layout)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/03-purchasing-outsourcing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 구매와 외주전략
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/04-workforce-job-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4 인력과 직무설계
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/05-business-environment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5 사업환경분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../02-operations-logistics/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2. 생산운영 및 물류관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. 생산운영 및 물류관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/01-forecasting-scheduling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 수요예측과 일정계획
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/02-progress-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 프로세스 진도관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/03-scm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 공급망 관리(SCM)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/04-materials-inventory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4 물류관리(자재 및 재고관리)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/05-mes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5 제조실행시스템(MES)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../03-process-control/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    3. 공정관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. 공정관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/01-production-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 생산계획수립
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/02-process-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 공정설계
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/03-work-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 작업계획수립
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/04-standard-work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4 표준작업관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/05-maintenance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.5 설비보전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/06-process-improvement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.6 공정개선
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    4. 설비관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4. 설비관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-equipment-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1 설비계획 및 관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-material-handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 자재취급 및 운반관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-environment-safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3 환경관리 및 안전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-facilities-utilities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.4 시설 및 유틸리티관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.5 공장자동화 기술
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4.5 공장자동화 기술
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      출제 경향
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      목차
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t45-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.1 공장자동화의 개념과 유형
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5.1 공장자동화의 개념과 유형">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#109" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화의 개념: 기계화와 자동화 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화의 유형 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usa-109" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화의 기본 원리: USA 원리 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화 도입 시 고려 요소 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      바람직한 전개 단계: 자동화 이행 전략 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화의 이점·불리점과 고용 유지 방안 (63회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t45-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.2 유연생산시스템(FMS)·DNC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5.2 유연생산시스템(FMS)·DNC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fms-6776121" class="md-nav__link">
+    <span class="md-ellipsis">
+      유연생산시스템(FMS) (67·76·121회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dncdistributeddirect-numerical-control-106" class="md-nav__link">
+    <span class="md-ellipsis">
+      DNC(Distributed/Direct Numerical Control) (106회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t45-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.3 가상제조·SCADA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5.3 가상제조·SCADA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vms-virtual-manufacturing-system-65" class="md-nav__link">
+    <span class="md-ellipsis">
+      가상제조시스템(VMS, Virtual Manufacturing System) (65회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scada-136" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCADA (136회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      답안 작성 예시
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../05-work-measurement/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    5. 작업관리와 성과측정
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. 작업관리와 성과측정
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/01-method-time-study/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.1 작업방법 및 시간 연구
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/02-process-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.2 프로세스 분석과 개선
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/03-productivity-safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.3 생산성 및 안전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/04-quality-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.4 품질관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../06-cost-engineering-economy/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    6. 원가관리 및 경제성공학
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            6. 원가관리 및 경제성공학
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/01-feasibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.1 사업성분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/02-cost-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.2 원가관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/03-value-engineering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.3 가치공학
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/04-operations-research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.4 경영과학(OR)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../07-support-technology/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7. 생산지원기술 및 기타
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            7. 생산지원기술 및 기타
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/01-it-smart-factory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 정보화활용기술(스마트팩토리 및 AI 등)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/02-product-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 제품개발기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/03-service-operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 서비스운영관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/04-production-innovation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.4 생산혁신기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/05-trends/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 공장관리 신기술 및 경향에 관한 사항
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    부록
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            부록
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/answer-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    답안 작성 가이드
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/frequency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    출제 빈도 분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/rounds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    회차별 기출 색인
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    확인 필요 항목
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      출제 경향
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      목차
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t45-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.1 공장자동화의 개념과 유형
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5.1 공장자동화의 개념과 유형">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#109" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화의 개념: 기계화와 자동화 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화의 유형 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usa-109" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화의 기본 원리: USA 원리 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화 도입 시 고려 요소 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      바람직한 전개 단계: 자동화 이행 전략 (109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      자동화의 이점·불리점과 고용 유지 방안 (63회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t45-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.2 유연생산시스템(FMS)·DNC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5.2 유연생산시스템(FMS)·DNC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fms-6776121" class="md-nav__link">
+    <span class="md-ellipsis">
+      유연생산시스템(FMS) (67·76·121회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dncdistributeddirect-numerical-control-106" class="md-nav__link">
+    <span class="md-ellipsis">
+      DNC(Distributed/Direct Numerical Control) (106회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t45-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5.3 가상제조·SCADA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5.3 가상제조·SCADA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vms-virtual-manufacturing-system-65" class="md-nav__link">
+    <span class="md-ellipsis">
+      가상제조시스템(VMS, Virtual Manufacturing System) (65회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scada-136" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCADA (136회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      답안 작성 예시
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="45">4.5 공장자동화 기술<a class="headerlink" href="#45" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">출제기준</p>
+<p><strong>4. 설비관리</strong> › <strong>5. 공장자동화 기술</strong></p>
+</div>
+<h2 id="_1">출제 경향<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>총 <strong>8문항</strong> 출제 (1교시 단답형 6 · 2~4교시 논술형 2) · 최근 10개 회차(109~139회) 3문항 · 최근 출제 제136회</p>
+<table>
+<thead>
+<tr>
+<th>주제</th>
+<th style="text-align: center;">출제 수</th>
+<th>출제 회차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.5.1 공장자동화의 개념과 유형</td>
+<td style="text-align: center;">2</td>
+<td>63회, 109회</td>
+</tr>
+<tr>
+<td>4.5.2 유연생산시스템(FMS)·DNC</td>
+<td style="text-align: center;">4</td>
+<td>67회, 76회, 106회, 121회</td>
+</tr>
+<tr>
+<td>4.5.3 가상제조·SCADA</td>
+<td style="text-align: center;">2</td>
+<td>65회, 136회</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">목차<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#t45-1">공장자동화의 개념과 유형</a></li>
+<li><a href="#t45-2">유연생산시스템(FMS)·DNC</a></li>
+<li><a href="#t45-3">가상제조·SCADA</a></li>
+</ol>
+<h2 id="t45-1">4.5.1 공장자동화의 개념과 유형<a class="headerlink" href="#t45-1" title="Permanent link">&para;</a></h2>
+<p><strong>공장자동화(FA, Factory Automation)</strong>는 센서·제어기·구동기와 정보 기술로 생산 공정의 가공·조립·운반·검사·관리를 사람의 개입을 최소화해 자동으로 수행하는 것이다. "Automation"이라는 용어는 1940년대 후반 미국 포드사의 D. S. Harder가 공정 간 자동 운반 장치를 가리켜 처음 사용한 것으로 알려져 있다. 공장자동화는 단위 기계(NC) → 셀(FMC) → 시스템(FMS) → 공장 통합(CIM) → 스마트공장으로 발전해 왔다(<a href="../../07-support-technology/01-it-smart-factory/#t71-2">7.1.2 스마트공장</a>).</p>
+<h3 id="109">자동화의 개념: 기계화와 자동화 (109회)<a class="headerlink" href="#109" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>기계화(Mechanization)</th>
+<th>자동화(Automation)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>의미</td>
+<td>사람의 <strong>힘(동력)</strong>을 기계로 대체</td>
+<td>사람의 <strong>감지·판단·제어</strong>까지 기계가 수행</td>
+</tr>
+<tr>
+<td>사람의 역할</td>
+<td>기계를 조작하고 판단</td>
+<td>감시·예외 처리</td>
+</tr>
+<tr>
+<td>제어</td>
+<td>개루프(사람이 판단)</td>
+<td>폐루프(센서 → 제어기 → 구동기의 피드백)</td>
+</tr>
+<tr>
+<td>예</td>
+<td>전동 공구, 지게차</td>
+<td>NC 공작기계, 산업용 로봇, 자동 라인</td>
+</tr>
+</tbody>
+</table>
+<p><strong>자동화의 3요소</strong>: 센서(감지) → 제어기(판단, PLC·컴퓨터) → 구동기(실행, 모터·실린더) + 피드백</p>
+<h3 id="109_1">자동화의 유형 (109회)<a class="headerlink" href="#109_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>유형</th>
+<th>특징</th>
+<th>적합한 생산</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>고정 자동화</strong>(Fixed)</td>
+<td>작업 순서가 설비 구조로 고정, 전용설비</td>
+<td>소품종 대량</td>
+<td>트랜스퍼 라인, 자동 조립기</td>
+</tr>
+<tr>
+<td><strong>프로그래머블 자동화</strong>(Programmable)</td>
+<td>프로그램을 바꿔 다른 제품 생산, 품종 전환 시 준비 시간 발생</td>
+<td>중품종 배치 생산</td>
+<td>NC 공작기계, 산업용 로봇</td>
+</tr>
+<tr>
+<td><strong>유연 자동화</strong>(Flexible)</td>
+<td>품종 전환 손실 없이 여러 제품을 혼합 생산</td>
+<td>다품종 중량</td>
+<td>FMS</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>quadrantChart
+    title 생산량-품종 다양성에 따른 자동화 유형
+    x-axis 품종 다양성 낮음 --&gt; 품종 다양성 높음
+    y-axis 생산량 적음 --&gt; 생산량 많음
+    quadrant-1 유연 자동화 영역
+    quadrant-2 고정 자동화
+    quadrant-3 수동 범용
+    quadrant-4 프로그래머블 자동화
+    트랜스퍼 라인: [0.15, 0.88]
+    FMS: [0.55, 0.55]
+    NC 로봇 배치 생산: [0.8, 0.25]</code></pre>
+<table>
+<thead>
+<tr>
+<th>Groover의 자동화 계층(수준)</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 장치 수준</td>
+<td>센서·구동기 등 개별 제어 요소</td>
+</tr>
+<tr>
+<td>② 기계 수준</td>
+<td>단일 기계의 자동 운전(CNC, 로봇)</td>
+</tr>
+<tr>
+<td>③ 셀·시스템 수준</td>
+<td>여러 기계와 운반 장치의 통합(FMC·FMS, 라인)</td>
+</tr>
+<tr>
+<td>④ 공장 수준</td>
+<td>생산계획·통제, 품질·자재 관리(MES)</td>
+</tr>
+<tr>
+<td>⑤ 기업 수준</td>
+<td>수주·설계·재무·공급망까지 통합(ERP)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="usa-109">자동화의 기본 원리: USA 원리 (109회)<a class="headerlink" href="#usa-109" title="Permanent link">&para;</a></h3>
+<p>M. Groover가 제시한 자동화 추진의 원리다.</p>
+<ol>
+<li><strong>Understand(이해)</strong>: 현재 공정의 입력·출력·기능을 충분히 분석</li>
+<li><strong>Simplify(단순화)</strong>: 불필요한 작업을 없애고 공정을 단순화(ECRS)</li>
+<li><strong>Automate(자동화)</strong>: 단순화된 공정을 자동화</li>
+</ol>
+<p>→ 낭비가 있는 공정을 그대로 자동화하면 낭비까지 자동화된다. <strong>"개선 후 자동화"</strong>가 원칙이다.</p>
+<h3 id="109_2">자동화 도입 시 고려 요소 (109회)<a class="headerlink" href="#109_2" title="Permanent link">&para;</a></h3>
+<p>경제성(투자비·회수기간·운영비), 생산량과 제품수명주기, 제품·공정의 표준화와 안정성, 요구 유연성, 품질 향상 효과, 기술 성숙도와 신뢰성, 보전 능력, 인력 영향(재교육·재배치), 안전, 기존 시스템과의 통합</p>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>검토 항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>경제성</td>
+<td>투자비, 회수기간·NPV(<a href="../../06-cost-engineering-economy/01-feasibility/#t61-1">6.1.1</a>), 노무비 절감, 운영·보전비</td>
+</tr>
+<tr>
+<td>제품·시장</td>
+<td>생산량, 제품수명주기, 품종 변화 빈도</td>
+</tr>
+<tr>
+<td>공정·기술</td>
+<td>공정 안정성·표준화 정도, 기술 성숙도, 기존 시스템(MES·ERP) 연계</td>
+</tr>
+<tr>
+<td>조직·인력</td>
+<td>보전·프로그래밍 역량, 고용 영향, 노사 협의</td>
+</tr>
+<tr>
+<td>안전·환경</td>
+<td>위험 작업 해소, 로봇 안전 기준, 에너지 사용</td>
+</tr>
+</tbody>
+</table>
+<p><strong>자동화를 추진하는 이유</strong>: 노동 생산성 향상, 인건비 상승·인력난(고령화) 대응, 위험 작업 해소, 품질 균일화, 리드타임 단축, 수작업으로 불가능한 정밀 작업 수행</p>
+<h3 id="109_3">바람직한 전개 단계: 자동화 이행 전략 (109회)<a class="headerlink" href="#109_3" title="Permanent link">&para;</a></h3>
+<p>많은 자본이 드는 자동화는 수요 증가에 맞춰 단계적으로 추진한다(Groover의 자동화 이행 전략).</p>
+<pre class="mermaid"><code>flowchart LR
+    P1["1단계: 수동 생산&lt;br/&gt;작업자 중심 셀&lt;br/&gt;(신제품 도입·수요 불확실)"] --&gt; P2["2단계: 단독 자동화&lt;br/&gt;단일 스테이션 자동 셀&lt;br/&gt;(수요 증가)"] --&gt; P3["3단계: 자동 통합 생산&lt;br/&gt;다중 스테이션 + 자동 운반&lt;br/&gt;(대량 수요 안정)"]</code></pre>
+<ul>
+<li>초기에는 투자 위험을 줄이고, 수요가 확인되면 자동화 범위를 넓힌다.</li>
+<li>각 단계에서 공정 개선과 표준화를 먼저 하고 자동화로 넘어간다.</li>
+</ul>
+<h3 id="63">자동화의 이점·불리점과 고용 유지 방안 (63회)<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>이점</th>
+<th>불리점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>생산성 향상, 원가 절감</td>
+<td>큰 초기 투자와 투자 위험</td>
+</tr>
+<tr>
+<td>품질 균일화·향상</td>
+<td>고정 자동화는 제품 변경에 비유연</td>
+</tr>
+<tr>
+<td>위험·유해(3D) 작업에서 작업자 보호</td>
+<td>고장 시 라인 전체 정지</td>
+</tr>
+<tr>
+<td>리드타임 단축, 24시간 가동</td>
+<td>고숙련 보전·프로그래밍 인력 필요</td>
+</tr>
+<tr>
+<td>생산 데이터의 자동 수집</td>
+<td>단순 작업 인력의 고용 감소</td>
+</tr>
+</tbody>
+</table>
+<p><strong>기존 기능인력의 고용 유지 방안</strong></p>
+<ol>
+<li><strong>재교육과 전환 배치</strong>: 설비 운전·보전, 프로그래밍, 품질 관리 등 고부가가치 직무로 이동</li>
+<li><strong>다기능화</strong>: 여러 공정·설비를 다루는 인력으로 육성</li>
+<li><strong>협동 로봇 도입</strong>: 사람과 로봇이 함께 일하는 방식으로 작업 부담만 줄임</li>
+<li><strong>단계적 도입과 노사 협의</strong>: 자연 감소 인원 범위에서 자동화, 고용 안정 협약</li>
+<li><strong>생산 확대·신사업 배치</strong>: 원가 경쟁력으로 늘어난 물량과 신규 사업에 인력 재배치</li>
+</ol>
+<p><strong>최근 관점</strong>: 인력난·고령화로 자동화는 "고용 감소"보다 <strong>인력 부족 대응</strong> 수단이 되었다. 사람과 기계의 역할 분담을 재설계하는 <strong>인간 중심 자동화</strong>(Industry 5.0), 협동로봇과 작업자 증강(AR 작업 지원·웨어러블 로봇), 직무 전환을 위한 리스킬링이 핵심 과제다(<a href="../../07-support-technology/05-trends/#t75-2">7.5.2</a>).</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>109회형은 소문항(개념·유형·원리·고려 요소·전개 단계)을 <strong>번호 그대로 소제목</strong>으로 쓴다. 유형은 생산량-다양성 그래프 위에 세 영역을 표시하면 좋다.</li>
+<li><strong>USA 원리("개선 후 자동화")</strong>와 <strong>단계적 이행 전략</strong>은 자동화 문제의 결론으로 쓰기 좋다.</li>
+<li>결론 예(63회): "자동화는 인력난 시대의 생존 수단이므로 고용 대립이 아닌 직무 전환의 문제로 보고, 리스킬링·다기능화와 협동로봇 기반의 인간 중심 자동화를 노사 협의로 단계 추진해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 2문항 (63회, 109회)</summary>
+<ul>
+<li><strong>제63회(2001) 2교시 6번</strong> · 25점<br />
+  공장 자동화의 진전은 많은 편의성 증대와 더불어 고용 감소의 문제점을 야기하고 있다. 자동화의 이점과 불리점을 제시하고, 기존 기능인력의 고용을 유지할 수 있는 방안을 논술하시오.</li>
+<li>
+<p><strong>제109회(2016) 3교시 3번</strong> · 25점<br />
+  공장 자동화에 대한 아래 사항을 설명하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>공장 자동화에 대한 아래 사항을 설명하시오.<br />
+(1) 자동화의 개념(기계화, 자동화 구분 설명)<br />
+(2) 자동화의 유형<br />
+(3) 자동화(automation)의 기본원리<br />
+(4) 자동화 도입 시 고려해야 될 요소<br />
+(5) 많은 자본비용이 수반되는데 따른 바람직한 전개 단계  </p>
+</details>
+</li>
+</ul>
+</details>
+<h2 id="t45-2">4.5.2 유연생산시스템(FMS)·DNC<a class="headerlink" href="#t45-2" title="Permanent link">&para;</a></h2>
+<h3 id="fms-6776121">유연생산시스템(FMS) (67·76·121회)<a class="headerlink" href="#fms-6776121" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: 여러 대의 <strong>NC 공작기계(머시닝센터)</strong>, <strong>자동 자재 운반·저장 장치</strong>, 이를 통합 관리하는 <strong>중앙 컴퓨터</strong>로 구성되어, 다양한 부품을 품종 전환 손실 없이 자동으로 가공하는 생산시스템이다. 다품종 중량 생산에 적합하다.</p>
+<pre class="mermaid"><code>flowchart TB
+    HC["중앙 컴퓨터&lt;br/&gt;(일정·NC 프로그램·공구·운반 제어)"]
+    HC --- M1["가공 스테이션&lt;br/&gt;머시닝센터 1"]
+    HC --- M2["가공 스테이션&lt;br/&gt;머시닝센터 2"]
+    HC --- MH["자재 운반&lt;br/&gt;AGV·컨베이어·로봇"]
+    HC --- AS["자동창고(AS/RS)&lt;br/&gt;팔레트·공구 저장"]
+    HC --- LS["적재·하역 스테이션"]</code></pre>
+<p><strong>구성 요소</strong>: ① 가공 스테이션(NC·머시닝센터, 검사기) ② 자재 운반·저장 장치(AGV, 컨베이어, 로봇, 자동창고) ③ 공구 관리 시스템(자동 공구 교환·공구 수명 관리) ④ 중앙 컴퓨터 제어 시스템 ⑤ 작업자(적재·하역, 감시)</p>
+<p><strong>유형</strong>: 단일 기계 유연생산셀(FMC) → 여러 기계의 FMS → 유연 트랜스퍼 라인</p>
+<p><strong>배치 형태(운반 시스템 기준)</strong>: 직선형(In-line), 루프형(Loop), 사다리형(Ladder), 개방형(Open field), 로봇 중심 셀(Robot-centered cell)</p>
+<table>
+<thead>
+<tr>
+<th>비교</th>
+<th>전용 트랜스퍼 라인</th>
+<th>FMS</th>
+<th>개별(Job shop) 생산</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>생산량</td>
+<td>대량</td>
+<td>중량</td>
+<td>소량</td>
+</tr>
+<tr>
+<td>품종</td>
+<td>1~소수</td>
+<td>중간(부품군)</td>
+<td>매우 다양</td>
+</tr>
+<tr>
+<td>유연성</td>
+<td>낮음</td>
+<td>중간~높음</td>
+<td>매우 높음</td>
+</tr>
+<tr>
+<td>설비</td>
+<td>전용기</td>
+<td>NC·머시닝센터 + 자동 운반</td>
+<td>범용기</td>
+</tr>
+<tr>
+<td>단위당 원가</td>
+<td>낮음</td>
+<td>중간</td>
+<td>높음</td>
+</tr>
+</tbody>
+</table>
+<p><strong>유연성의 종류</strong>: 기계 유연성(여러 작업 수행), 공정 유연성, 제품(전환) 유연성, 경로 유연성(고장 시 다른 기계로), 수량 유연성, 확장 유연성</p>
+<table>
+<thead>
+<tr>
+<th>기대효과</th>
+<th>문제점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>다품종을 자동으로 생산(전환 손실 최소)</td>
+<td>매우 큰 초기 투자</td>
+</tr>
+<tr>
+<td>설비 가동률 향상, 무인·야간 운전</td>
+<td>시스템 설계·운영의 복잡성</td>
+</tr>
+<tr>
+<td>리드타임·재공재고 감소</td>
+<td>고급 기술 인력 필요</td>
+</tr>
+<tr>
+<td>품질 균일화, 인건비 절감</td>
+<td>적용 부품 범위의 제약</td>
+</tr>
+</tbody>
+</table>
+<p>FMS와 셀 생산·GT의 관계는 <a href="../../01-production-strategy/02-production-system-layout/#t12-6">1.2.6</a>을 참고한다.</p>
+<h3 id="dncdistributeddirect-numerical-control-106">DNC(Distributed/Direct Numerical Control) (106회)<a class="headerlink" href="#dncdistributeddirect-numerical-control-106" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: 여러 대의 NC·CNC 공작기계를 <strong>중앙 컴퓨터와 네트워크로 연결</strong>해, NC 프로그램을 내려보내고 각 기계의 가동 상태를 수집·관리하는 시스템이다.</p>
+<ul>
+<li><strong>발전</strong>: 초기의 Direct NC(중앙 컴퓨터가 종이테이프 대신 프로그램을 직접 공급) → Distributed NC(각 기계는 CNC로 자체 제어하고, 중앙 컴퓨터는 프로그램 관리와 데이터 수집 담당)</li>
+<li><strong>기능</strong>: NC 프로그램의 저장·전송·버전 관리, 가동·정지·생산 실적 데이터 수집, 작업 지시 연계</li>
+<li><strong>효과</strong>: 프로그램 관리의 일원화, 준비 시간 단축, 가동률 모니터링, FMS·CIM·MES의 기반</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>비교</th>
+<th>NC</th>
+<th>CNC</th>
+<th>DNC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제어</td>
+<td>하드와이어 회로, 종이테이프 입력</td>
+<td>기계마다 내장 컴퓨터(프로그램 저장·편집)</td>
+<td>여러 기계를 중앙 컴퓨터와 네트워크로 연결</td>
+</tr>
+<tr>
+<td>범위</td>
+<td>단일 기계</td>
+<td>단일 기계</td>
+<td>다수 기계(공장 수준)</td>
+</tr>
+<tr>
+<td>프로그램 관리</td>
+<td>테이프 보관</td>
+<td>기계별</td>
+<td>중앙 일원화</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>flowchart TB
+    H["DNC 서버&lt;br/&gt;(NC 프로그램 DB·실적 수집)"] &lt;--&gt; L["공장 네트워크&lt;br/&gt;(이더넷·MTConnect·OPC UA)"]
+    L &lt;--&gt; C1["CNC 1"]
+    L &lt;--&gt; C2["CNC 2"]
+    L &lt;--&gt; C3["CNC 3"]
+    H &lt;--&gt; M["CAD/CAM·MES"]</code></pre>
+<p>최근에는 DNC가 MES의 설비 연동 기능(기계 가동 모니터링, 프로그램 버전 관리)에 흡수되는 추세이며, 공작기계 표준 통신 프로토콜로 MTConnect·OPC UA가 쓰인다.</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>FMS는 <strong>정의 → 구성도 → 구성 요소 → 유연성 종류 → 효과·문제점</strong> 순으로 쓴다. 구성도를 반드시 그린다.</li>
+<li>DNC는 <strong>Direct → Distributed로의 발전</strong>과 FMS·MES와의 관계를 함께 쓴다.</li>
+<li>10점 FMS 답안은 트랜스퍼 라인·Job shop과의 비교 표 한 개로 위치를 보여 주면 차별화된다.</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 4문항 (67회, 76회, 106회, 121회)</summary>
+<ul>
+<li><strong>제67회(2002) 1교시 2번</strong> · 10점<br />
+  유연생산시스템(FMS)이란</li>
+<li><strong>제76회(2005) 1교시 12번</strong> · 10점<br />
+  유연생산시스템(FMS).</li>
+<li><strong>제106회(2015) 1교시 9번</strong> · 10점<br />
+  DNC(Distributed Numerical Control)</li>
+<li><strong>제121회(2020) 1교시 8번</strong> · 10점<br />
+  FMS(Flexible Manufacturing System)</li>
+</ul>
+</details>
+<h2 id="t45-3">4.5.3 가상제조·SCADA<a class="headerlink" href="#t45-3" title="Permanent link">&para;</a></h2>
+<h3 id="vms-virtual-manufacturing-system-65">가상제조시스템(VMS, Virtual Manufacturing System) (65회)<a class="headerlink" href="#vms-virtual-manufacturing-system-65" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: 제품 설계부터 생산 공정·공장 운영까지를 <strong>컴퓨터 모델과 시뮬레이션으로 가상 공간에서 미리 구현·검증</strong>하는 시스템이다.</p>
+<table>
+<thead>
+<tr>
+<th>구성</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가상 설계</td>
+<td>CAD·CAE로 제품 형상과 성능을 해석</td>
+</tr>
+<tr>
+<td>가상 공정</td>
+<td>가공·조립 공정을 시뮬레이션해 간섭·가공성 검증</td>
+</tr>
+<tr>
+<td>가상 공장</td>
+<td>레이아웃·물류·생산 흐름을 시뮬레이션해 병목·능력 검증</td>
+</tr>
+</tbody>
+</table>
+<p><strong>효과</strong>: 시제품 제작과 시행착오 감소, 개발 기간·비용 단축, 생산 전 문제점 발견, 신속한 공정·공장 설계 변경
+<strong>발전</strong>: 실제 공장과 실시간 데이터로 연결된 <strong>디지털 트윈(Digital Twin)</strong>으로 발전하고 있다.</p>
+<table>
+<thead>
+<tr>
+<th>가상제조의 관점별 분류</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>설계 중심</td>
+<td>제품 설계의 제조 가능성·조립성을 가상으로 검증(DFM·DFA)</td>
+</tr>
+<tr>
+<td>생산(공정) 중심</td>
+<td>공정 계획·일정·자원 배분 대안을 시뮬레이션</td>
+</tr>
+<tr>
+<td>제어 중심</td>
+<td>실제 제어 프로그램(PLC)을 가상 설비에 연결해 사전 검증(가상 시운전)</td>
+</tr>
+</tbody>
+</table>
+<p>(분류 명칭은 문헌에 따라 다름 — 교재 확인 필요)</p>
+<table>
+<thead>
+<tr>
+<th>비교</th>
+<th>가상제조(시뮬레이션)</th>
+<th>디지털 트윈</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>데이터</td>
+<td>설계·가정 데이터(오프라인)</td>
+<td>실제 설비의 실시간 데이터(온라인)</td>
+</tr>
+<tr>
+<td>시점</td>
+<td>주로 생산 전(계획·설계)</td>
+<td>운영 중 전 수명주기</td>
+</tr>
+<tr>
+<td>연결</td>
+<td>단방향(모델 → 의사결정)</td>
+<td>양방향(현실 ↔ 가상, 최적 조건 피드백)</td>
+</tr>
+</tbody>
+</table>
+<p>가상현실·증강현실 기술은 <a href="../../07-support-technology/01-it-smart-factory/#t71-5">7.1.5</a>를 참고한다.</p>
+<h3 id="scada-136">SCADA (136회)<a class="headerlink" href="#scada-136" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: <strong>SCADA(Supervisory Control And Data Acquisition, 원격 감시제어 및 데이터 수집)</strong>는 넓게 분산된 설비·공정의 상태를 실시간으로 <strong>감시하고, 원격 제어하며, 데이터를 수집</strong>하는 시스템이다. ISA-95 계층에서 Level 2(감시·제어)에 해당한다.</p>
+<pre class="mermaid"><code>flowchart LR
+    F["현장 센서·구동기"] --&gt; R["RTU·PLC&lt;br/&gt;(현장 제어)"]
+    R &lt;--&gt;|통신망| S["SCADA 서버&lt;br/&gt;(마스터 스테이션)"]
+    S --&gt; H["HMI&lt;br/&gt;(운전자 화면)"]
+    S --&gt; D["이력 DB·&lt;br/&gt;MES 연계"]</code></pre>
+<table>
+<thead>
+<tr>
+<th>구성</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현장 장치</td>
+<td>센서(측정)·구동기(밸브·모터)</td>
+</tr>
+<tr>
+<td>RTU·PLC</td>
+<td>현장 데이터 수집과 국부 제어</td>
+</tr>
+<tr>
+<td>통신망</td>
+<td>현장과 중앙을 연결(유·무선)</td>
+</tr>
+<tr>
+<td>SCADA 서버</td>
+<td>데이터 수집·처리, 제어 명령</td>
+</tr>
+<tr>
+<td>HMI</td>
+<td>상태 표시, 경보, 운전자 조작 화면</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>기능</strong>: 실시간 감시, 원격 제어, 경보·이벤트 관리, 이력 저장·추세 분석, 보고서</li>
+<li><strong>적용</strong>: 전력·수도·가스 같은 기반 시설, 화학·정유 공정, 공장 유틸리티</li>
+<li><strong>유의점</strong>: 외부 네트워크와 연결되면서 <strong>사이버 보안</strong>이 중요한 과제가 되었다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ISA-95 계층</th>
+<th>기능</th>
+<th>시스템</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Level 4</td>
+<td>경영·계획(수주·자재·재무)</td>
+<td>ERP</td>
+</tr>
+<tr>
+<td style="text-align: center;">Level 3</td>
+<td>생산 운영 관리(작업 지시·실적·품질)</td>
+<td>MES·MOM(<a href="../../02-operations-logistics/05-mes/#t25-1">2.5.1</a>)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Level 2</td>
+<td>감시·제어</td>
+<td><strong>SCADA</strong>·DCS·HMI</td>
+</tr>
+<tr>
+<td style="text-align: center;">Level 1</td>
+<td>현장 제어</td>
+<td>PLC·RTU</td>
+</tr>
+<tr>
+<td style="text-align: center;">Level 0</td>
+<td>물리 공정</td>
+<td>센서·구동기</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>비교</th>
+<th>SCADA</th>
+<th>DCS(분산제어시스템)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>중심</td>
+<td>데이터 수집·<strong>감시</strong> 중심</td>
+<td>공정 <strong>제어</strong> 중심</td>
+</tr>
+<tr>
+<td>적용 범위</td>
+<td>넓게 분산된 지역(송배전·상하수도·파이프라인)</td>
+<td>한 공장 안의 연속 공정(화학·정유·발전)</td>
+</tr>
+<tr>
+<td>통신</td>
+<td>원거리·저속 통신망도 수용</td>
+<td>고속·고신뢰 공장 내부망</td>
+</tr>
+<tr>
+<td>제어 주기</td>
+<td>상대적으로 느린 감시 제어</td>
+<td>빠른 연속 폐루프 제어</td>
+</tr>
+</tbody>
+</table>
+<p><strong>보안 대책</strong>: 제어망과 업무망 분리(망 분리·DMZ), 접근 통제, 패치·자산 관리, 이상 트래픽 감시. 산업제어시스템 보안 표준으로 IEC 62443이 있다. 최근 SCADA는 클라우드·IIoT 플랫폼과 결합해 원격 모니터링·예지보전으로 기능이 확장되고 있다.</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>SCADA는 <strong>약어 풀이 → 구성도 → 기능 → 적용 분야</strong>를 쓰고, MES(Level 3)·PLC(Level 1)와의 계층 관계를 한 줄로 밝힌다.</li>
+<li>VMS는 디지털 트윈과의 관계를 결론에 넣으면 최신성을 보여 줄 수 있다.</li>
+<li>SCADA vs DCS 비교와 사이버 보안(IEC 62443·망 분리)을 한 줄씩 덧붙이면 10점 답안에서 차별화된다.</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 2문항 (65회, 136회)</summary>
+<ul>
+<li><strong>제65회(2001) 1교시 8번</strong> · 10점<br />
+  가상제조시스템(VMS)</li>
+<li><strong>제136회(2025) 1교시 3번</strong> · 10점<br />
+  SCADA(Supervisory Control And Data Acquisition)에 대하여 설명하시오.</li>
+</ul>
+</details>
+<h2 id="_3">답안 작성 예시<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">25점 예시: 제109회 3교시 3번 — 공장 자동화의 개념·유형·기본원리·고려 요소·전개 단계</p>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>공장자동화는 감지·판단·제어까지 기계가 수행해 사람의 개입을 최소화하는 생산 방식이다(용어는 1940년대 후반 포드사에서 유래).</li>
+<li>인력난·고령화, 품질 균일화, 스마트공장 전환이 추진 배경이다.</li>
+</ul>
+<p><strong>2. 본론</strong> (소문항 번호를 소제목으로 그대로 사용)</p>
+<ul>
+<li>(1) 개념: [표] 기계화 vs 자동화(의미·사람의 역할·개루프/폐루프), 자동화 3요소(센서·제어기·구동기 + 피드백)</li>
+<li>(2) 유형: [표] 고정·프로그래머블·유연 자동화, [그림] 생산량-품종 다양성 도표 위 세 영역</li>
+<li>(3) 기본원리: Groover의 USA 원리(Understand → Simplify → Automate) — "개선 후 자동화"</li>
+<li>(4) 고려 요소: [표] 경제성·제품·공정·인력·안전 관점별 검토 항목</li>
+<li>(5) 전개 단계: [그림] 수동 생산 → 단독 자동화 → 자동 통합 생산(Groover의 이행 전략), 단계마다 개선·표준화 선행</li>
+</ul>
+<p><strong>3. 결론(기술사 의견)</strong></p>
+<ul>
+<li>자본 집약적인 자동화는 수요 확인에 맞춰 단계 추진하고, 자동화 계층(기계 → 셀 → 공장 → 기업)에 따라 MES·ERP와 통합해야 효과가 난다.</li>
+<li>협동로봇·AI 비전 등 인간 중심 자동화와 작업자 리스킬링을 함께 계획하는 것이 차별화 포인트다.</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">10점 예시: 제136회 1교시 3번 — SCADA</p>
+<ul>
+<li><strong>개요</strong>: Supervisory Control And Data Acquisition, 분산 설비의 원격 감시·제어·데이터 수집 시스템(ISA-95 Level 2)</li>
+<li><strong>구성</strong>: [그림] 현장 장치 → RTU·PLC → 통신망 → SCADA 서버 → HMI·이력 DB</li>
+<li><strong>기능</strong>: 실시간 감시, 원격 제어, 경보·이벤트, 이력·추세 분석</li>
+<li><strong>비교</strong>: [표] SCADA vs DCS 2~3행(감시 중심·광역 vs 제어 중심·공장 내)</li>
+<li><strong>의견</strong>: 공장 유틸리티·FEMS 감시에 활용되며, IT 연결 확대로 IEC 62443 기반 보안과 MES 연계가 핵심 과제다.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href="../04-facilities-utilities/" class="md-footer__link md-footer__link--prev" aria-label="이전: 4.4 시설 및 유틸리티관리">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                4.4 시설 및 유틸리티관리
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../05-work-measurement/" class="md-footer__link md-footer__link--next" aria-label="다음: 5. 작업관리와 성과측정">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                5. 작업관리와 성과측정
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

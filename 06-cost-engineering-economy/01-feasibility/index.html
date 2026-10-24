@@ -1,0 +1,3983 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="출제기준(2027~2030) 주요항목·세부항목별 기출문제 정리와 학습 교재">
+      
+      
+      
+        <link rel="canonical" href="https://yeonkyupark.github.io/pepc4e/06-cost-engineering-economy/01-feasibility/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02-cost-management/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>6.1 사업성분석 - 생산운영과 공장관리</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#61" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="생산운영과 공장관리" class="md-header__button md-logo" aria-label="생산운영과 공장관리" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            생산운영과 공장관리
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6.1 사업성분석
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yeonkyupark/pepc4e" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeonkyupark/pepc4e
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01-production-strategy/" class="md-tabs__link">
+          
+  
+    
+  
+  1. 생산전략
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../02-operations-logistics/" class="md-tabs__link">
+          
+  
+    
+  
+  2. 생산운영 및 물류관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03-process-control/" class="md-tabs__link">
+          
+  
+    
+  
+  3. 공정관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04-facility-management/" class="md-tabs__link">
+          
+  
+    
+  
+  4. 설비관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05-work-measurement/" class="md-tabs__link">
+          
+  
+    
+  
+  5. 작업관리와 성과측정
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  6. 원가관리 및 경제성공학
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../07-support-technology/" class="md-tabs__link">
+          
+  
+    
+  
+  7. 생산지원기술 및 기타
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../appendix/answer-guide/" class="md-tabs__link">
+          
+  
+    
+  
+  부록
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="생산운영과 공장관리" class="md-nav__button md-logo" aria-label="생산운영과 공장관리" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    생산운영과 공장관리
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yeonkyupark/pepc4e" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeonkyupark/pepc4e
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    홈
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01-production-strategy/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    1. 생산전략
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. 생산전략
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/01-competitive-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 경쟁우위 생산전략
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/02-production-system-layout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 생산구조와 방식(Layout)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/03-purchasing-outsourcing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 구매와 외주전략
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/04-workforce-job-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4 인력과 직무설계
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/05-business-environment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5 사업환경분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../02-operations-logistics/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2. 생산운영 및 물류관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. 생산운영 및 물류관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/01-forecasting-scheduling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 수요예측과 일정계획
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/02-progress-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 프로세스 진도관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/03-scm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 공급망 관리(SCM)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/04-materials-inventory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4 물류관리(자재 및 재고관리)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-operations-logistics/05-mes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5 제조실행시스템(MES)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../03-process-control/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    3. 공정관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. 공정관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/01-production-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 생산계획수립
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/02-process-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 공정설계
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/03-work-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 작업계획수립
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/04-standard-work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4 표준작업관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/05-maintenance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.5 설비보전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/06-process-improvement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.6 공정개선
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../04-facility-management/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    4. 설비관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4. 설비관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/01-equipment-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1 설비계획 및 관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/02-material-handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 자재취급 및 운반관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/03-environment-safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3 환경관리 및 안전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/04-facilities-utilities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.4 시설 및 유틸리티관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/05-factory-automation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.5 공장자동화 기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../05-work-measurement/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    5. 작업관리와 성과측정
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. 작업관리와 성과측정
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/01-method-time-study/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.1 작업방법 및 시간 연구
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/02-process-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.2 프로세스 분석과 개선
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/03-productivity-safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.3 생산성 및 안전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/04-quality-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.4 품질관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    6. 원가관리 및 경제성공학
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            6. 원가관리 및 경제성공학
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    6.1 사업성분석
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    6.1 사업성분석
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      출제 경향
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      목차
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.1 투자 경제성 평가(NPV·IRR·회수기간)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.1 투자 경제성 평가(NPV·IRR·회수기간)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7697112121136" class="md-nav__link">
+    <span class="md-ellipsis">
+      설비투자 경제성 평가 방법 (76·97·112·121·136회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 88회 (내용연수 3년)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 103회 (할인율 10%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-2000-10-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 112회 (투자비 2,000원, 요구수익률 10%, 목표 회수기간 2년)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 121회 (할인율 20%, 잔존가치 없음)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#127-20-200" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 127회 (할인율 20%, 잔존가치 각 200만 원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#139" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 139회 (자금의 시간가치)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-139" class="md-nav__link">
+    <span class="md-ellipsis">
+      복리 이자계수 6가지 (139회 등 계산 문제의 기본)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      계산 문제의 일반 풀이 절차
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npv-irr" class="md-nav__link">
+    <span class="md-ellipsis">
+      NPV법과 IRR법의 비교
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.2 손익분기점(BEP) 분석
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.2 손익분기점(BEP) 분석">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bep-76109133139" class="md-nav__link">
+    <span class="md-ellipsis">
+      손익분기점(BEP)의 개념 (76·109·133·139회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep-bep-7994133" class="md-nav__link">
+    <span class="md-ellipsis">
+      BEP를 활용한 원가 전략 — BEP 낮추기 (79·94·133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      한계이익률법 (85회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-p-7-v-2-f-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 63회 (p = 7만 원, v = 2만 원, F = 8억 원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#91-p-9-v-5-1-6-f-22000-14000-36000" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 91회 (p = 9원, v = 5 + 1 = 6원, F = 22,000 + 14,000 = 36,000원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-p-15-v-5-1-6-f-120000-20000-140000" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 100회 (p = 15원, v = 5 + 1 = 6원, F = 120,000 + 20,000 = 140,000원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#127-bep-60" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 127회 (다품종 BEP, 고정비 60만 원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#139-p-1000-v-600-f-4000000" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 139회 (p = 1,000원, v = 600원, F = 4,000,000원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep" class="md-nav__link">
+    <span class="md-ellipsis">
+      BEP 분석의 가정과 한계
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      영업레버리지와 안전도
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.3 감가상각
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.3 감가상각">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      감가상각의 의의 (133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-73" class="md-nav__link">
+    <span class="md-ellipsis">
+      감가상각 계산에 필요한 4가지 정보 (73회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88109133" class="md-nav__link">
+    <span class="md-ellipsis">
+      감가상각 방법 (88·109·133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      감가의 원인과 경제성 분석에서의 의미
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.4 경제성 분석의 비용 개념(매몰·기회비용)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.4 경제성 분석의 비용 개념(매몰·기회비용)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#65130136" class="md-nav__link">
+    <span class="md-ellipsis">
+      경제성 분석의 비용 개념 (65·130·136회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.5 사업 타당성 분석
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.5 사업 타당성 분석">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#127" class="md-nav__link">
+    <span class="md-ellipsis">
+      사업 타당성 분석 (127회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      답안 작성 예시
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-cost-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.2 원가관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-value-engineering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.3 가치공학
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-operations-research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.4 경영과학(OR)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../07-support-technology/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7. 생산지원기술 및 기타
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            7. 생산지원기술 및 기타
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/01-it-smart-factory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 정보화활용기술(스마트팩토리 및 AI 등)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/02-product-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 제품개발기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/03-service-operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 서비스운영관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/04-production-innovation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.4 생산혁신기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/05-trends/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 공장관리 신기술 및 경향에 관한 사항
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    부록
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            부록
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/answer-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    답안 작성 가이드
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/frequency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    출제 빈도 분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/rounds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    회차별 기출 색인
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    확인 필요 항목
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      출제 경향
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      목차
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.1 투자 경제성 평가(NPV·IRR·회수기간)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.1 투자 경제성 평가(NPV·IRR·회수기간)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7697112121136" class="md-nav__link">
+    <span class="md-ellipsis">
+      설비투자 경제성 평가 방법 (76·97·112·121·136회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 88회 (내용연수 3년)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 103회 (할인율 10%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-2000-10-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 112회 (투자비 2,000원, 요구수익률 10%, 목표 회수기간 2년)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 121회 (할인율 20%, 잔존가치 없음)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#127-20-200" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 127회 (할인율 20%, 잔존가치 각 200만 원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#139" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 139회 (자금의 시간가치)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-139" class="md-nav__link">
+    <span class="md-ellipsis">
+      복리 이자계수 6가지 (139회 등 계산 문제의 기본)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      계산 문제의 일반 풀이 절차
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npv-irr" class="md-nav__link">
+    <span class="md-ellipsis">
+      NPV법과 IRR법의 비교
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.2 손익분기점(BEP) 분석
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.2 손익분기점(BEP) 분석">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bep-76109133139" class="md-nav__link">
+    <span class="md-ellipsis">
+      손익분기점(BEP)의 개념 (76·109·133·139회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep-bep-7994133" class="md-nav__link">
+    <span class="md-ellipsis">
+      BEP를 활용한 원가 전략 — BEP 낮추기 (79·94·133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      한계이익률법 (85회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-p-7-v-2-f-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 63회 (p = 7만 원, v = 2만 원, F = 8억 원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#91-p-9-v-5-1-6-f-22000-14000-36000" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 91회 (p = 9원, v = 5 + 1 = 6원, F = 22,000 + 14,000 = 36,000원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-p-15-v-5-1-6-f-120000-20000-140000" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 100회 (p = 15원, v = 5 + 1 = 6원, F = 120,000 + 20,000 = 140,000원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#127-bep-60" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 127회 (다품종 BEP, 고정비 60만 원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#139-p-1000-v-600-f-4000000" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 139회 (p = 1,000원, v = 600원, F = 4,000,000원)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bep" class="md-nav__link">
+    <span class="md-ellipsis">
+      BEP 분석의 가정과 한계
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      영업레버리지와 안전도
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.3 감가상각
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.3 감가상각">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      감가상각의 의의 (133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-73" class="md-nav__link">
+    <span class="md-ellipsis">
+      감가상각 계산에 필요한 4가지 정보 (73회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88109133" class="md-nav__link">
+    <span class="md-ellipsis">
+      감가상각 방법 (88·109·133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      감가의 원인과 경제성 분석에서의 의미
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.4 경제성 분석의 비용 개념(매몰·기회비용)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.4 경제성 분석의 비용 개념(매몰·기회비용)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#65130136" class="md-nav__link">
+    <span class="md-ellipsis">
+      경제성 분석의 비용 개념 (65·130·136회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t61-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.5 사업 타당성 분석
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1.5 사업 타당성 분석">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#127" class="md-nav__link">
+    <span class="md-ellipsis">
+      사업 타당성 분석 (127회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      답안 작성 예시
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="61">6.1 사업성분석<a class="headerlink" href="#61" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">출제기준</p>
+<p><strong>6. 원가관리 및 경제성공학</strong> › <strong>1. 사업성분석</strong></p>
+</div>
+<h2 id="_1">출제 경향<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>총 <strong>32문항</strong> 출제 (1교시 단답형 8 · 2~4교시 논술형 24) · 최근 10개 회차(109~139회) 16문항 · 최근 출제 제139회</p>
+<table>
+<thead>
+<tr>
+<th>주제</th>
+<th style="text-align: center;">출제 수</th>
+<th>출제 회차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.1.1 투자 경제성 평가(NPV·IRR·회수기간)</td>
+<td style="text-align: center;">10</td>
+<td>71회, 76회, 85회, 88회, 97회, 112회, 121회, 124회, 136회, 139회</td>
+</tr>
+<tr>
+<td>6.1.2 손익분기점(BEP) 분석</td>
+<td style="text-align: center;">11</td>
+<td>63회, 76회, 79회, 85회, 91회, 94회, 100회, 109회, 127회, 133회, 139회</td>
+</tr>
+<tr>
+<td>6.1.3 감가상각</td>
+<td style="text-align: center;">7</td>
+<td>73회, 88회, 103회, 109회, 121회, 127회, 133회</td>
+</tr>
+<tr>
+<td>6.1.4 경제성 분석의 비용 개념(매몰·기회비용)</td>
+<td style="text-align: center;">3</td>
+<td>65회, 130회, 136회</td>
+</tr>
+<tr>
+<td>6.1.5 사업 타당성 분석</td>
+<td style="text-align: center;">1</td>
+<td>127회</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">목차<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#t61-1">투자 경제성 평가(NPV·IRR·회수기간)</a></li>
+<li><a href="#t61-2">손익분기점(BEP) 분석</a></li>
+<li><a href="#t61-3">감가상각</a></li>
+<li><a href="#t61-4">경제성 분석의 비용 개념(매몰·기회비용)</a></li>
+<li><a href="#t61-5">사업 타당성 분석</a></li>
+</ol>
+<h2 id="t61-1">6.1.1 투자 경제성 평가(NPV·IRR·회수기간)<a class="headerlink" href="#t61-1" title="Permanent link">&para;</a></h2>
+<p><strong>개요</strong>: 설비투자는 큰 자금이 장기간 묶이고 되돌리기 어려운 전략적 의사결정이므로, 투자 전에 <strong>현금흐름과 화폐의 시간가치</strong>를 반영해 대안의 경제성을 정량적으로 비교해야 한다. 경제성공학(Engineering Economy)은 이를 위한 등가(Equivalence) 개념과 평가 기법을 제공한다.</p>
+<h3 id="7697112121136">설비투자 경제성 평가 방법 (76·97·112·121·136회)<a class="headerlink" href="#7697112121136" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>방법</th>
+<th>산식</th>
+<th>판단 기준</th>
+<th>장단점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>비할인법</strong></td>
+<td><strong>자본회수기간법</strong></td>
+<td>투자액 ÷ 연간 현금유입(일정하지 않으면 누적으로 계산)</td>
+<td>목표 회수기간 이내, 짧을수록 유리</td>
+<td>간편, 위험 판단에 유용 / 화폐의 시간가치·회수 후 현금흐름 무시</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>회계적 이익률법(ARR, 투자이익률법)</strong></td>
+<td>평균 연이익 ÷ 투자액(또는 평균 투자액)</td>
+<td>목표 이익률 이상</td>
+<td>회계 자료로 쉽게 계산 / 시간가치 무시</td>
+</tr>
+<tr>
+<td><strong>할인법(DCF)</strong></td>
+<td><strong>순현재가치법(NPV)</strong></td>
+<td><span class="arithmatex">\( \sum \dfrac{CF_t}{(1+k)^t} - I_0 \)</span></td>
+<td>NPV &gt; 0 채택, 클수록 유리</td>
+<td>시간가치·전 기간 반영, 가치 가산성 / 할인율 결정 필요</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>내부수익률법(IRR)</strong></td>
+<td>NPV = 0이 되는 할인율</td>
+<td>IRR &gt; MARR 채택</td>
+<td>수익률로 직관적 / 복수 IRR, 상호배타안 비교 시 오류 가능</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>수익성지수(PI)</strong></td>
+<td>현금유입의 현재가치 ÷ 투자액</td>
+<td>PI &gt; 1 채택</td>
+<td>자본 제약 시 순위 결정</td>
+</tr>
+<tr>
+<td></td>
+<td>연가법(EAC)</td>
+<td>NPV × 자본회수계수 <span class="arithmatex">\( (A/P, k, n) \)</span></td>
+<td>연간 등가 비교</td>
+<td>내용연수가 다른 대안 비교에 유용</td>
+</tr>
+</tbody>
+</table>
+<p><strong>MARR(최저 필수 수익률) (124회)</strong>: 투자안이 채택되기 위해 최소한 벌어야 하는 수익률이다. 자본비용(가중평균 자본비용)에 위험 프리미엄과 기회비용을 더해 기업이 정책적으로 정한다. <strong>이자율</strong>은 자금을 빌리거나 빌려줄 때의 대가로 시장에서 정해지는 반면, MARR은 기업의 투자 판단 기준이므로 보통 이자율보다 높게 정한다.</p>
+<p><strong>자본회수기간법 (85회)</strong>: 투자액을 투자에서 생기는 현금흐름으로 회수하는 데 걸리는 기간으로 평가한다. 위험(불확실성)이 크거나 자금 회수가 중요한 경우 보조 지표로 쓴다.</p>
+<p><strong>LCC(수명주기 비용) (71회)</strong>: 설비·제품의 취득부터 폐기까지 드는 모든 비용의 합계다.</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>예상 비용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>초기 조달비</td>
+<td>연구·설계비, 구입가, 운송·설치·시운전비, 초기 교육비</td>
+</tr>
+<tr>
+<td>제조·운반비</td>
+<td>운전 인건비, 에너지·소모품비, 운반·물류비</td>
+</tr>
+<tr>
+<td>보전비</td>
+<td>예방·사후 보전비, 예비품, 정기 정비·개조비</td>
+</tr>
+<tr>
+<td>생산 손실비</td>
+<td>고장·정지로 인한 생산 기회 손실, 불량 손실</td>
+</tr>
+<tr>
+<td>(폐기비)</td>
+<td>철거·처분비 − 잔존가치</td>
+</tr>
+</tbody>
+</table>
+<h3 id="88-3">풀이: 88회 (내용연수 3년)<a class="headerlink" href="#88-3" title="Permanent link">&para;</a></h3>
+<p>현금흐름: −10,000, 4,000, 4,000, 5,000(3년 말 잔존가치 1,000 포함으로 해석)</p>
+<div class="arithmatex">\[
+-10{,}000 + \frac{4{,}000}{1+r} + \frac{4{,}000}{(1+r)^2} + \frac{5{,}000}{(1+r)^3} = 0 \;\Rightarrow\; r \approx 13.8\% \rightarrow \mathbf{14\%}
+\]</div>
+<p>MARR 15%에서 <span class="arithmatex">\( NPV = -210 \)</span>만 원 → IRR(14%) &lt; MARR(15%)이므로 <strong>경제성 없음</strong>.
+(잔존가치 1,000만 원을 5,000만 원과 별도로 더하면 IRR ≈ 17.5%로 경제성이 있다 — 현금흐름의 해석을 답안에 밝힌다.)</p>
+<h3 id="103-10">풀이: 103회 (할인율 10%)<a class="headerlink" href="#103-10" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>방법</th>
+<th>A 설비</th>
+<th>B 설비</th>
+<th>판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자본회수기간</td>
+<td>11,000 ÷ 5,000 = 2.2년</td>
+<td>5,000 ÷ 3,500 = 1.43년</td>
+<td><strong>B</strong></td>
+</tr>
+<tr>
+<td>투자이익률</td>
+<td>3,000 ÷ 11,000 = 27.3%</td>
+<td>1,500 ÷ 5,000 = 30.0%</td>
+<td><strong>B</strong></td>
+</tr>
+<tr>
+<td>NPV</td>
+<td>5,000 × 3.7908 − 11,000 = <strong>7,954</strong></td>
+<td>3,500 × 3.1699 − 5,000 = <strong>6,095</strong></td>
+<td><strong>A</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ 전통적 방법으로는 B가, 시간가치를 반영한 NPV로는 A가 유리하다. 내용연수가 다르므로 연가로 바꿔도 A(약 2,098만 원/년) &gt; B(약 1,923만 원/년)이다. 기업가치 극대화 관점에서는 <strong>NPV 기준으로 A</strong>를 선택한다.</p>
+<h3 id="112-2000-10-2">풀이: 112회 (투자비 2,000원, 요구수익률 10%, 목표 회수기간 2년)<a class="headerlink" href="#112-2000-10-2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>투자안</th>
+<th>NPV</th>
+<th>회수기간</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>455 + 415 + 1,500 − 2,000 = <strong>370</strong></td>
+<td>2 + 1,000 ÷ 2,000 = 2.5년</td>
+<td>회수기간 미달</td>
+</tr>
+<tr>
+<td>B</td>
+<td>455 + 1,494 − 2,000 = <strong>−51</strong></td>
+<td>1 + 1,500 ÷ 1,800 = 1.83년</td>
+<td>NPV 음수</td>
+</tr>
+<tr>
+<td>C</td>
+<td>1,638 + 415 − 2,000 = <strong>53</strong></td>
+<td>1 + 200 ÷ 500 = 1.4년</td>
+<td>두 기준 모두 충족</td>
+</tr>
+</tbody>
+</table>
+<p>→ NPV만 보면 A가 가장 크지만 목표 회수기간(2년)을 넘는다. <strong>두 기준을 모두 만족하는 C</strong>를 선택한다.</p>
+<h3 id="121-20">풀이: 121회 (할인율 20%, 잔존가치 없음)<a class="headerlink" href="#121-20" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>방법</th>
+<th>A 기계</th>
+<th>B 기계</th>
+<th>판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자본회수기간</td>
+<td>2,400 ÷ 950 = 2.53년</td>
+<td>2,200 ÷ 1,050 = 2.10년</td>
+<td><strong>B</strong></td>
+</tr>
+<tr>
+<td>투자이익률</td>
+<td>550 ÷ 2,400 = 22.9%</td>
+<td>600 ÷ 2,200 = 27.3%</td>
+<td><strong>B</strong></td>
+</tr>
+<tr>
+<td>NPV</td>
+<td>950 × 2.9906 − 2,400 = <strong>441</strong></td>
+<td>1,050 × 2.5887 − 2,200 = <strong>518</strong></td>
+<td><strong>B</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ 세 방법 모두 <strong>B 기계</strong>가 유리하다.</p>
+<h3 id="127-20-200">풀이: 127회 (할인율 20%, 잔존가치 각 200만 원)<a class="headerlink" href="#127-20-200" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>방법</th>
+<th>A 기계</th>
+<th>B 기계</th>
+<th>판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자본회수기간</td>
+<td>2,470 ÷ 950 = 2.6년</td>
+<td>2,310 ÷ 1,050 = 2.2년</td>
+<td><strong>B</strong></td>
+</tr>
+<tr>
+<td>투자이익률</td>
+<td>600 ÷ 2,470 = 24.3%</td>
+<td>650 ÷ 2,310 = 28.1%</td>
+<td><strong>B</strong></td>
+</tr>
+<tr>
+<td>NPV</td>
+<td>950 × 2.9906 + 200 × 0.4019 − 2,470 = <strong>451</strong></td>
+<td>1,050 × 2.5887 + 200 × 0.4823 − 2,310 = <strong>505</strong></td>
+<td><strong>B</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ 종합 판정: 세 방법 모두에서 <strong>B 기계</strong>가 우수하므로 B를 선택한다.</p>
+<h3 id="139">풀이: 139회 (자금의 시간가치)<a class="headerlink" href="#139" title="Permanent link">&para;</a></h3>
+<p>10% 이자율로 10년간 매년 초 적립한 뒤 10년 말부터 15년간 매년 200만 원씩 받으려면</p>
+<ul>
+<li>10년 말에 필요한 금액 = 200 × (P/A, 10%, 15) = 200 × 7.6061 = <strong>1,521만 원</strong></li>
+<li>매년 초 적립액 <span class="arithmatex">\( A \)</span>: <span class="arithmatex">\( A \times (F/A, 10\%, 10) \times 1.1 = 1{,}521 \)</span> → <span class="arithmatex">\( A = 1{,}521 \div (15.9374 \times 1.1) \approx \mathbf{86.8\text{만 원}} \)</span></li>
+</ul>
+<p>(적립을 매년 말에 한다고 보면 <span class="arithmatex">\( 1{,}521 \div 15.9374 \approx 95.4 \)</span>만 원 — 문제의 시점 조건을 확인한다.)</p>
+<h3 id="6-139">복리 이자계수 6가지 (139회 등 계산 문제의 기본)<a class="headerlink" href="#6-139" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>계수</th>
+<th>기호</th>
+<th>산식</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>일시불 종가계수</td>
+<td><span class="arithmatex">\( (F/P, i, n) \)</span></td>
+<td><span class="arithmatex">\( (1+i)^n \)</span></td>
+<td>현재 금액 → n년 후 금액</td>
+</tr>
+<tr>
+<td>일시불 현가계수</td>
+<td><span class="arithmatex">\( (P/F, i, n) \)</span></td>
+<td><span class="arithmatex">\( (1+i)^{-n} \)</span></td>
+<td>n년 후 금액(잔존가치 등) → 현재가치</td>
+</tr>
+<tr>
+<td>연금 종가계수</td>
+<td><span class="arithmatex">\( (F/A, i, n) \)</span></td>
+<td><span class="arithmatex">\( \dfrac{(1+i)^n - 1}{i} \)</span></td>
+<td>매년 말 적립 → n년 후 원리금</td>
+</tr>
+<tr>
+<td>감채기금계수</td>
+<td><span class="arithmatex">\( (A/F, i, n) \)</span></td>
+<td><span class="arithmatex">\( \dfrac{i}{(1+i)^n - 1} \)</span></td>
+<td>n년 후 목표액 → 매년 적립액</td>
+</tr>
+<tr>
+<td>연금 현가계수</td>
+<td><span class="arithmatex">\( (P/A, i, n) \)</span></td>
+<td><span class="arithmatex">\( \dfrac{1 - (1+i)^{-n}}{i} \)</span></td>
+<td>매년 같은 현금흐름 → 현재가치</td>
+</tr>
+<tr>
+<td>자본회수계수</td>
+<td><span class="arithmatex">\( (A/P, i, n) \)</span></td>
+<td><span class="arithmatex">\( \dfrac{i(1+i)^n}{(1+i)^n - 1} \)</span></td>
+<td>투자액 → 매년 회수해야 할 금액(연가)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>표의 연금은 <strong>매년 말</strong> 기준이다. <strong>매년 초</strong>(선불) 현금흐름은 계수에 <span class="arithmatex">\( (1+i) \)</span>를 곱한다(139회).</li>
+<li>서로 역수 관계: <span class="arithmatex">\( (P/F) = 1/(F/P) \)</span>, <span class="arithmatex">\( (A/F) = 1/(F/A) \)</span>, <span class="arithmatex">\( (A/P) = 1/(P/A) \)</span>, 그리고 <span class="arithmatex">\( (A/P) = (A/F) + i \)</span>.</li>
+</ul>
+<h3 id="_3">계산 문제의 일반 풀이 절차<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>현금흐름도</strong> 작성: 0시점 투자(−), 연도 말 순현금유입(+), 마지막 해 잔존가치(+)를 표시한다.</li>
+<li><strong>현금흐름 정의 확인</strong>: 회수기간·NPV는 <strong>현금흐름</strong>(이익 + 감가상각비), 투자이익률(ARR)은 <strong>회계 이익</strong>(평균 연이익)을 쓴다.</li>
+<li>방법별 계산: 회수기간(누적 현금흐름) → ARR → NPV(이자계수) → 필요하면 IRR·PI·연가</li>
+<li><strong>판정</strong>: 회수기간 ≤ 목표, ARR ≥ 목표, NPV &gt; 0, IRR &gt; MARR, PI &gt; 1</li>
+<li>결과가 엇갈리면 <strong>NPV 우선</strong> 원칙과 그 이유를 쓰고, 수명이 다르면 연가(EAC)로 보정한다.</li>
+</ol>
+<p><strong>IRR의 보간법(시행착오법)</strong>: NPV가 (+)인 할인율 <span class="arithmatex">\( i_1 \)</span>과 (−)인 할인율 <span class="arithmatex">\( i_2 \)</span>를 찾아 직선 보간한다.</p>
+<div class="arithmatex">\[
+IRR \approx i_1 + (i_2 - i_1) \times \frac{NPV_1}{NPV_1 - NPV_2}
+\]</div>
+<p>예(88회): NPV(13%) = +137.7, NPV(15%) = −209.6 → IRR ≈ 13 + 2 × 137.7 ÷ 347.3 ≈ <strong>13.8%</strong></p>
+<h3 id="npv-irr">NPV법과 IRR법의 비교<a class="headerlink" href="#npv-irr" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>NPV법</th>
+<th>IRR법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>재투자 수익률 가정</td>
+<td>자본비용(할인율)으로 재투자 — 현실적</td>
+<td>IRR로 재투자 — 과대평가 가능</td>
+</tr>
+<tr>
+<td>가치 가산성</td>
+<td>성립(NPV(A+B) = NPV(A) + NPV(B))</td>
+<td>성립하지 않음</td>
+</tr>
+<tr>
+<td>복수 해</td>
+<td>없음</td>
+<td>현금흐름 부호가 여러 번 바뀌면 IRR이 여러 개</td>
+</tr>
+<tr>
+<td>상호배타적 대안</td>
+<td>항상 올바른 순위</td>
+<td>투자 규모·현금흐름 시점이 다르면 순위가 뒤바뀔 수 있음</td>
+</tr>
+<tr>
+<td>결론</td>
+<td><strong>이론적으로 우수 — 기업가치 극대화와 일치</strong></td>
+<td>직관적이어서 실무 보조 지표로 사용</td>
+</tr>
+</tbody>
+</table>
+<p><strong>실무 적용과 최근 동향</strong></p>
+<ul>
+<li>설비투자 심의 시 회수기간(위험)·NPV(가치)·IRR(수익률)을 <strong>함께 제시</strong>하고, 판매량·단가·투자비에 대한 <strong>민감도 분석</strong>과 시나리오 분석으로 불확실성을 보완한다.</li>
+<li>구입가만이 아니라 <strong>LCC(수명주기 비용)</strong>로 비교해야 저가 설비의 높은 보전·에너지 비용을 걸러 낼 수 있다(<a href="../../03-process-control/05-maintenance/#t35-6">3.5.6 보전 경제성</a>, <a href="../../04-facility-management/01-equipment-planning/#t41-1">4.1.1 설비 교체분석</a>).</li>
+<li>스마트공장·자동화 투자는 품질·유연성·안전 같은 <strong>무형 효과</strong>가 커서 NPV만으로 과소평가되기 쉽다 → 정성 평가(AHP 등, <a href="../04-operations-research/#t64-4">6.4.4</a>)와 실물옵션(단계적 투자) 관점을 함께 쓴다.</li>
+<li>탄소 배출권 가격·에너지 절감 효과를 현금흐름에 반영하는 <strong>ESG 투자 평가</strong>가 늘고 있다(<a href="../../07-support-technology/05-trends/#t75-1">7.5.1</a>).</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>평가 방법은 <strong>비할인법 / 할인법</strong>으로 나눈 표(산식·판단 기준·장단점)를 기본으로 한다.</li>
+<li>계산 문제는 <strong>현금흐름도 → 방법별 결과를 한 표에 모으고</strong>, 방법마다 결론이 다르면 NPV를 우선하는 이유(시간가치·가치 가산성·재투자 가정)를 쓴다.</li>
+<li>현가계수 <span class="arithmatex">\( (P/A, k, n) = \dfrac{1 - (1+k)^{-n}}{k} \)</span>는 문제에서 주어지지 않으면 직접 계산한다. 매년 <strong>초</strong> 현금흐름이면 <span class="arithmatex">\( (1+i) \)</span>를 곱하는 것을 잊지 않는다.</li>
+<li>결론 예: "단일 지표가 아니라 회수기간(위험)·NPV(가치)를 함께 보고, LCC와 민감도 분석으로 보완해 투자를 결정해야 한다. 스마트공장 투자처럼 무형 효과가 큰 경우 정성 평가를 병행한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 10문항 (71회, 76회, 85회, 88회, 97회, 112회, 121회, 124회, 136회, 139회)</summary>
+<ul>
+<li>
+<p><strong>제71회(2003) 3교시 3번</strong> · 25점<br />
+  제품의 LCC(Life Cycle Cost)에 대하여 다음 단계별로 예상 비용을 열거해보시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>제품의 LCC(Life Cycle Cost)에 대하여 다음 단계별로 예상 비용을 열거해보시오.<br />
+(1) 초기조달비 (2) 제조운반비 (3) 보전비 (4) 생산손실비  </p>
+</details>
+</li>
+<li>
+<p><strong>제76회(2005) 4교시 1번</strong> · 25점<br />
+  설비투자의 경제성 평가개요 및 종류를 설명하시오.</p>
+</li>
+<li><strong>제85회(2008) 1교시 13번</strong> · 10점<br />
+  자본회수 기간법에 대하여 설명하시오.</li>
+<li>
+<p><strong>제88회(2009) 2교시 4번</strong> · 25점<br />
+  내용연수가 3년인 생산설비 A의 초기 투자금액과 연도 말 현금흐름은 다음과 같다.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>내용연수가 3년인 생산설비 A의 초기 투자금액과 연도 말 현금흐름은 다음과 같다.<br />
+(단, 3년도 말 잔존가치는 1000 만원으로 가정)<br />
+[표] 년도 말 | 0 | 1 | 2 | 3<br />
+현금흐름(단위 :만원) | -10,000 | 4,000 | 4,000 | 5,000<br />
+1) 생산설비 A의 수익률(%)을 산출하시오.(단, 소수점 첫째자리에서 반올림 처리)<br />
+2) 최저필수수익률(MARR : Minimum Attractive Rate of Return)이 15% 일 때, 생산설비 A의 경제성 유무를 판단하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제97회(2012) 4교시 4번</strong> · 25점<br />
+  투자안의 경제성을 분석하는 모델을 전통적인 비할인모델과 현금흐름 할인법으로 구분하여 다음 각 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>투자안의 경제성을 분석하는 모델을 전통적인 비할인모델과 현금흐름 할인법으로 구분하여 다음 각 물음에 답하시오.<br />
+1) 각각의 기법의 종류를 나열하시오.<br />
+2) 산식을 포함하여 경제성 분석방법을 설명하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제112회(2017) 3교시 3번</strong> · 25점<br />
+  시설투자의 평가방법과 관련한 다음 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>시설투자의 평가방법과 관련한 다음 물음에 답하시오.<br />
+(1) 순현재가치법, 내부수익률법, 회계수익률법, 자본회수기간법에 대하여 각각 설명하시오.<br />
+(2) 3가지 투자안의 현금흐름이 다음 표와 같을 때, 투자안을 순현재가치법과 자본회수기간법으로 비교하고 하나의 대안을 선택하시오. (단, 목표투자회수기간은 2년 이내, 요구수익률 = 10%, 투자비용 = 2,000원)<br />
+[표] 투자안 | 1년 | 2년 | 3년<br />
+A | 500원 | 500원 | 2,000원<br />
+B | 500원 | 1,800원 | 0<br />
+C | 1,800원 | 500원 | 0<br />
+비고: (1.1)^-1=0.91, (1.1)^-2=0.83, (1.1)^-3=0.75  </p>
+</details>
+</li>
+<li>
+<p><strong>제121회(2020) 1교시 10번</strong> · 10점<br />
+  설비 투자의 경제성 평가 방법 5가지</p>
+</li>
+<li><strong>제124회(2021) 3교시 5번</strong> · 25점<br />
+  MARR(Minimum Attractive Rate of Return)의 정의를 설명하고, 이자율(Interest Rate)과의 차이점을 설명하시오.</li>
+<li><strong>제136회(2025) 3교시 4번</strong> · 25점<br />
+  설비투자의 경제성 평가 방법 중 5가지를 설명하시오.</li>
+<li>
+<p><strong>제139회(2026) 3교시 6번</strong> · 25점<br />
+  K-자동차 부품 공장의 L-부장은 직접 창업을 하는 것이 꿈이다. L-부장은 앞으로 매년 1월 초에 적금을 10년 동안 적립하기로 하였다. L-부장은 10년 후에 창업할 예정이고, 적립된 예치금을 매년 200만원씩 사업 안정 자금으로 15년 동안 수령할 예정이다. 다음 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>K-자동차 부품 공장의 L-부장은 직접 창업을 하는 것이 꿈이다. L-부장은 앞으로 매년 1월 초에 적금을 10년 동안 적립하기로 하였다. L-부장은 10년 후에 창업할 예정이고, 적립된 예치금을 매년 200만원씩 사업 안정 자금으로 15년 동안 수령할 예정이다. 다음 물음에 답하시오.<br />
+(단, 년 이자율 10% 기준)<br />
+1) 10년 동안 모아져서, 계속 예치하여야 할 금액을 구하시오.<br />
+2) 10년 동안 매년 적립하여야 하는 금액을 구하시오.<br />
+[표] 이자율 10%의 이산복리표<br />
+년 | 일시불 미래가치 (F/P) | 연금 미래가치 (F/A) | 감채기금 (A/F) | 연금 현재가치 (P/A) | 자본회수 (A/P)<br />
+기호 | Find F Given P | Find F Given A | Find A Given F | Find P Given A | Find A Given P<br />
+8 | 2.1436 | 11.4359 | 0.0874 | 5.3349 | 0.1874<br />
+9 | 2.3579 | 13.5795 | 0.0736 | 5.759 | 0.1736<br />
+10 | 2.5937 | 15.9374 | 0.0627 | 6.1446 | 0.1627<br />
+11 | 2.8531 | 18.5312 | 0.054 | 6.4951 | 0.154<br />
+12 | 3.1384 | 21.3843 | 0.0468 | 6.8137 | 0.1468<br />
+13 | 3.4523 | 24.5227 | 0.0408 | 7.1034 | 0.1408<br />
+14 | 3.7975 | 27.975 | 0.0357 | 7.3667 | 0.1357<br />
+15 | 4.1772 | 31.7725 | 0.0315 | 7.6061 | 0.1315  </p>
+</details>
+</li>
+</ul>
+</details>
+<h2 id="t61-2">6.1.2 손익분기점(BEP) 분석<a class="headerlink" href="#t61-2" title="Permanent link">&para;</a></h2>
+<h3 id="bep-76109133139">손익분기점(BEP)의 개념 (76·109·133·139회)<a class="headerlink" href="#bep-76109133139" title="Permanent link">&para;</a></h3>
+<p><strong>손익분기점</strong>은 총수익과 총비용이 같아 <strong>이익이 0이 되는 판매량(매출액)</strong>이다.</p>
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>정의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>고정비(F)</td>
+<td>생산량과 관계없이 일정한 비용(감가상각비, 임차료, 관리직 인건비)</td>
+</tr>
+<tr>
+<td>변동비(V)</td>
+<td>생산량에 비례하는 비용(재료비, 외주 가공비)</td>
+</tr>
+<tr>
+<td><strong>한계이익(공헌이익)</strong></td>
+<td>매출액 − 변동비 — 고정비를 회수하고 이익을 만드는 몫</td>
+</tr>
+<tr>
+<td>한계이익률</td>
+<td>한계이익 ÷ 매출액 <span class="arithmatex">\( = 1 - \dfrac{v}{p} \)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[
+\text{수량 BEP: } Q_{BEP} = \frac{F}{p - v}, \qquad \text{매출액 BEP: } S_{BEP} = \frac{F}{1 - \dfrac{V}{S}}, \qquad \text{목표이익 판매량} = \frac{F + \text{목표이익}}{p - v}
+\]</div>
+<div class="arithmatex">\[
+\text{안전한계} = S - S_{BEP}, \qquad \text{안전한계율} = \frac{S - S_{BEP}}{S}, \qquad \text{손익분기점률} = \frac{S_{BEP}}{S}
+\]</div>
+<pre class="mermaid"><code>xychart-beta
+    title "손익분기 도표 (예: p=1,000, v=600, F=4,000,000 → Q=10,000)"
+    x-axis "판매량(천 개)" ["0", "4", "8", "10", "12", "16", "20"]
+    y-axis "금액(백만 원)" 0 --&gt; 20
+    line [0, 4, 8, 10, 12, 16, 20]
+    line [4, 6.4, 8.8, 10, 11.2, 13.6, 16]
+    line [4, 4, 4, 4, 4, 4, 4]</code></pre>
+<p>(가파른 선: 매출액, 완만한 선: 총비용, 수평선: 고정비 — 두 선이 만나는 10,000개가 BEP)</p>
+<p><strong>의의</strong>: 신규 투자의 채산성 판단, 목표이익 달성 판매량 결정, 가격·원가 정책 수립, 경영 안전도 진단</p>
+<p><strong>민감도 분석 (76회)</strong>: 판매가격·변동비·고정비·판매량 같은 <strong>변수가 변할 때 BEP와 이익이 얼마나 변하는지</strong> 분석해, 이익에 가장 큰 영향을 주는 변수를 찾고 위험에 대비한다.</p>
+<h3 id="bep-bep-7994133">BEP를 활용한 원가 전략 — BEP 낮추기 (79·94·133회)<a class="headerlink" href="#bep-bep-7994133" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>방안</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>고정비 절감</strong></td>
+<td>고정비를 줄이거나 변동비화</td>
+<td>유휴 설비 처분, 외주 활용, 간접 인원 효율화, 임차 대신 공유</td>
+</tr>
+<tr>
+<td><strong>변동비 절감</strong></td>
+<td>단위당 변동비 감소 → 한계이익률 상승</td>
+<td>VE·설계 개선, 수율 향상, 구매 단가 인하, 에너지 절감</td>
+</tr>
+<tr>
+<td><strong>판매가격·제품 구성 개선</strong></td>
+<td>단위당 한계이익 확대</td>
+<td>고부가 제품 비중 확대, 가격 정책, 한계이익률이 낮은 제품 정리</td>
+</tr>
+</tbody>
+</table>
+<h3 id="85">한계이익률법 (85회)<a class="headerlink" href="#85" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>방법</th>
+<th>용도</th>
+<th>계산</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>평균법</strong></td>
+<td>회사 전체의 BEP를 구할 때 — 제품 구성이 일정하다고 가정</td>
+<td>전체 한계이익률 = (20 − 11.9) ÷ 20 = <strong>40.5%</strong> → BEP = 10 ÷ 0.405 = <strong>24.7억 원</strong></td>
+</tr>
+<tr>
+<td><strong>기준법</strong></td>
+<td>대표 품목의 한계이익률로 BEP를 구할 때 — 제품 구성 변화의 목표 설정</td>
+<td>C의 한계이익률 = 4.5 ÷ 10 = <strong>45%</strong> → BEP = 10 ÷ 0.45 = <strong>22.2억 원</strong></td>
+</tr>
+</tbody>
+</table>
+<p>제품별 한계이익률: A 30%, B 40%, C 45%, D 35%</p>
+<p><strong>진단과 경영 방향</strong>: 현재 매출 20억 원은 평균법 BEP(24.7억 원)에 4.7억 원 모자라 적자(한계이익 8.1억 − 고정비 10억 = −1.9억 원)다. 대표 품목 C 수준의 한계이익률로 제품 구성을 바꾸면 BEP가 22.2억 원으로 낮아진다. → ① 한계이익률이 높은 <strong>C·B 제품의 비중 확대</strong> ② A·D 제품의 원가 개선 또는 축소 ③ 고정비 절감 ④ 매출 증대</p>
+<h3 id="63-p-7-v-2-f-8">풀이: 63회 (p = 7만 원, v = 2만 원, F = 8억 원)<a class="headerlink" href="#63-p-7-v-2-f-8" title="Permanent link">&para;</a></h3>
+<ol>
+<li>수량 BEP = 8억 ÷ (7 − 2)만 = <strong>16,000단위</strong></li>
+<li>매출액 BEP = 16,000 × 7만 = <strong>11.2억 원</strong>(비용 = 수익 = 11.2억 원)</li>
+<li>4만 단위의 이익 = 40,000 × 5만 − 8억 = <strong>12억 원</strong></li>
+</ol>
+<h3 id="91-p-9-v-5-1-6-f-22000-14000-36000">풀이: 91회 (p = 9원, v = 5 + 1 = 6원, F = 22,000 + 14,000 = 36,000원)<a class="headerlink" href="#91-p-9-v-5-1-6-f-22000-14000-36000" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>계산</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1) 영업이익</td>
+<td>180,000 − 120,000 − 36,000</td>
+<td><strong>24,000원</strong></td>
+</tr>
+<tr>
+<td>(2) BEP</td>
+<td>수량 36,000 ÷ 3 / 매출액 12,000 × 9</td>
+<td><strong>12,000개 / 108,000원</strong></td>
+</tr>
+<tr>
+<td>(3) 목표이익 30,000원 판매량</td>
+<td>(36,000 + 30,000) ÷ 3</td>
+<td><strong>22,000개</strong></td>
+</tr>
+<tr>
+<td>(4) 목표이익 20,000원 매출액</td>
+<td>(36,000 + 20,000) ÷ (3 ÷ 9)</td>
+<td><strong>168,000원</strong></td>
+</tr>
+<tr>
+<td>(5) 이익이 매출액의 20%인 판매량</td>
+<td>3Q − 36,000 = 0.2 × 9Q → 1.2Q = 36,000</td>
+<td><strong>30,000개</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="100-p-15-v-5-1-6-f-120000-20000-140000">풀이: 100회 (p = 15원, v = 5 + 1 = 6원, F = 120,000 + 20,000 = 140,000원)<a class="headerlink" href="#100-p-15-v-5-1-6-f-120000-20000-140000" title="Permanent link">&para;</a></h3>
+<p>이 문제는 매출액 300,000원(20,000개) × 단위당 변동비 6원 = 120,000원으로, 제시된 총변동원가(100,000원)와 맞지 않는다. <strong>단위당 자료 기준</strong>으로 풀면:</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>계산</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1) 영업이익</td>
+<td>300,000 − 120,000 − 140,000</td>
+<td><strong>40,000원</strong></td>
+</tr>
+<tr>
+<td>(2) BEP</td>
+<td>140,000 ÷ 9 = 15,556개, × 15</td>
+<td><strong>15,556개 / 233,333원</strong></td>
+</tr>
+<tr>
+<td>(3) 안전한계·안전한계율</td>
+<td>300,000 − 233,333 / ÷ 300,000</td>
+<td><strong>66,667원 / 22.2%</strong></td>
+</tr>
+<tr>
+<td>(4) 목표이익 50,000원 판매량</td>
+<td>(140,000 + 50,000) ÷ 9</td>
+<td><strong>21,111개</strong></td>
+</tr>
+<tr>
+<td>(5) 매출 30,000원 증가 시 이익 증가</td>
+<td>30,000 × 한계이익률 0.6</td>
+<td><strong>18,000원</strong></td>
+</tr>
+</tbody>
+</table>
+<p>(총변동원가 100,000원을 그대로 쓰면 영업이익 60,000원, 한계이익률 66.7%로 바뀐다 — 답안에 사용한 기준을 밝힌다.)</p>
+<h3 id="127-bep-60">풀이: 127회 (다품종 BEP, 고정비 60만 원)<a class="headerlink" href="#127-bep-60" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>제품</th>
+<th style="text-align: center;">공헌이익률</th>
+<th style="text-align: center;">매출 구성비</th>
+<th style="text-align: center;">가중</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td style="text-align: center;">100 ÷ 400 = <strong>25%</strong></td>
+<td style="text-align: center;">20%</td>
+<td style="text-align: center;">5.0%</td>
+</tr>
+<tr>
+<td>B</td>
+<td style="text-align: center;">225 ÷ 1,000 = <strong>22.5%</strong></td>
+<td style="text-align: center;">40%</td>
+<td style="text-align: center;">9.0%</td>
+</tr>
+<tr>
+<td>C</td>
+<td style="text-align: center;">800 ÷ 2,000 = <strong>40%</strong></td>
+<td style="text-align: center;">40%</td>
+<td style="text-align: center;">16.0%</td>
+</tr>
+<tr>
+<td>합계</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>30.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>BEP 총매출액 = 600,000 ÷ 0.30 = <strong>2,000,000원</strong></li>
+<li>제품별 매출액: A <strong>400,000원</strong>, B <strong>800,000원</strong>, C <strong>800,000원</strong></li>
+<li>제품별 판매량: A 400,000 ÷ 400 = <strong>1,000개</strong>, B 800,000 ÷ 1,000 = <strong>800개</strong>, C 800,000 ÷ 2,000 = <strong>400개</strong></li>
+</ul>
+<h3 id="139-p-1000-v-600-f-4000000">풀이: 139회 (p = 1,000원, v = 600원, F = 4,000,000원)<a class="headerlink" href="#139-p-1000-v-600-f-4000000" title="Permanent link">&para;</a></h3>
+<ul>
+<li>수량 기준 BEP = 4,000,000 ÷ (1,000 − 600) = <strong>10,000개</strong></li>
+<li>매출액 기준 BEP = 4,000,000 ÷ (1 − 600 ÷ 1,000) = 4,000,000 ÷ 0.4 = <strong>10,000,000원</strong></li>
+<li><strong>적자를 면하는 기준</strong>: 월 10,000개(매출 1,000만 원)를 넘게 팔아야 한다.</li>
+</ul>
+<h3 id="bep">BEP 분석의 가정과 한계<a class="headerlink" href="#bep" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>가정</th>
+<th>한계(현실과의 차이)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>판매가격·단위당 변동비가 조업도와 무관하게 일정(선형)</td>
+<td>대량 구매 할인, 판매 할인, 잔업 할증으로 실제는 비선형</td>
+</tr>
+<tr>
+<td>모든 원가를 고정비와 변동비로 정확히 나눌 수 있음</td>
+<td>준변동비·준고정비(계단형 고정비)가 존재 — 준평균법 등으로 분해(<a href="../02-cost-management/#t62-2">6.2.2</a>)</td>
+</tr>
+<tr>
+<td>생산량 = 판매량(재고 변동 없음)</td>
+<td>재고가 늘면 전부원가 계산 이익과 차이 발생</td>
+</tr>
+<tr>
+<td>다품종이면 매출 구성비가 일정</td>
+<td>제품 믹스가 바뀌면 BEP도 변함(127회)</td>
+</tr>
+<tr>
+<td>관련 범위(생산 능력) 안에서만 성립</td>
+<td>능력 증설 시 고정비가 계단식으로 증가</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">영업레버리지와 안전도<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+DOL(\text{영업레버리지도}) = \frac{\text{한계이익}}{\text{영업이익}} = \frac{1}{\text{안전한계율}}
+\]</div>
+<ul>
+<li>고정비 비중이 큰 기업(장치산업·자동화 공장)일수록 DOL이 커서 매출 변동에 이익이 크게 흔들린다.</li>
+<li>예(91회 자료): 한계이익 60,000원 ÷ 영업이익 24,000원 = <strong>2.5</strong> → 매출이 10% 늘면 영업이익은 25% 늘고, 안전한계율 = (180,000 − 108,000) ÷ 180,000 = 40% = 1 ÷ 2.5</li>
+</ul>
+<p><strong>최근 동향</strong>: 자동화·스마트공장은 노무비(변동비 성격)를 감가상각비(고정비)로 바꿔 <strong>BEP와 DOL을 높인다</strong> → 수요 변동이 큰 제품은 외주·공유 설비·구독형(SaaS) 시스템으로 고정비를 변동비화해 위험을 줄인다(<a href="../../01-production-strategy/03-purchasing-outsourcing/#t13-3">1.3.3 자가생산·외주 결정</a>).</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>BEP는 <strong>용어 정의 → 공식(수량·매출액) → 손익분기 도표 → 의의 → 가정과 한계</strong>를 기본으로 하고, 계산 문제는 표로 정리한다.</li>
+<li>BEP를 낮추는 전략은 <strong>고정비·변동비·가격(제품 구성)</strong>의 세 관점으로 쓴다.</li>
+<li>문제의 자료가 서로 맞지 않으면(100회) 어떤 기준으로 풀었는지 밝힌다.</li>
+<li>결론 예: "BEP를 낮추면 안전한계율이 높아져 불황 저항력이 커진다. 고정비의 변동비화와 한계이익률이 높은 제품 중심의 믹스 개선을 병행하고, 월별 BEP를 KPI로 관리해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 11문항 (63회, 76회, 79회, 85회, 91회, 94회, 100회, 109회, 127회, 133회, 139회)</summary>
+<ul>
+<li>
+<p><strong>제63회(2001) 2교시 5번</strong> · 25점<br />
+  다음과 같은 자료에 의해 1) 생산량 손익분기점 2) 비용․수익 손익분기점</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>다음과 같은 자료에 의해 1) 생산량 손익분기점 2) 비용․수익 손익분기점<br />
+3) 4만단위에서의 이익을 결정하시오.<br />
+가격=7만원/단위, 변동비 = 2만원/단위, 고정비 = 8억원  </p>
+</details>
+</li>
+<li>
+<p><strong>제76회(2005) 4교시 6번</strong> · 25점<br />
+  사업의 손익분기점 분석에 대하여 다음사항을 기술하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>사업의 손익분기점 분석에 대하여 다음사항을 기술하시오.<br />
+1) 고정비, 변동비, 한계이익<br />
+2) 손익분기점의 산출방식과 의의<br />
+3) 민감도분석을 위한 변수와 의의  </p>
+</details>
+</li>
+<li>
+<p><strong>제79회(2006) 3교시 3번</strong> · 25점<br />
+  BEP(손익분기점)을 활용한 원가전략에 대해 기술하시오.</p>
+</li>
+<li>
+<p><strong>제85회(2008) 3교시 3번</strong> · 25점<br />
+  최고주식회사의 각 제품 매출액과 변동비는 아래 표와 같으며, 고정비는 10억원이고 이 회사의 대표품목은 C이다. 현재 회사는 적자 상태여서 경영효율화를 위한 진단의 일환으로 손익분기점 분석 중 한계이익률법을 활용하여 현재의 문제점이 무엇인지 진단하고 대책을 수립하고자 한다. 한계이익률법은 특히 그 용도에 따라 평균법, 기준법, 절충법, 개별법의 4가지로 개발되어 적용되고 있다. 그 중 평균한계이익률(평균법)과 기준한계이익률(기준법)의 용도를 설명하고, 각각의 방법으로 손익분기점을 계산하고 결과를 고려하여 향후 경영 방향을 간략히 설명하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>최고주식회사의 각 제품 매출액과 변동비는 아래 표와 같으며, 고정비는 10억원이고 이 회사의 대표품목은 C이다. 현재 회사는 적자 상태여서 경영효율화를 위한 진단의 일환으로 손익분기점 분석 중 한계이익률법을 활용하여 현재의 문제점이 무엇인지 진단하고 대책을 수립하고자 한다. 한계이익률법은 특히 그 용도에 따라 평균법, 기준법, 절충법, 개별법의 4가지로 개발되어 적용되고 있다. 그 중 평균한계이익률(평균법)과 기준한계이익률(기준법)의 용도를 설명하고, 각각의 방법으로 손익분기점을 계산하고 결과를 고려하여 향후 경영 방향을 간략히 설명하시오.<br />
+[표] 제품구분 | 매출액 | 변동비<br />
+A | 3억원 | 2.1억원<br />
+B | 5억원 | 3억원<br />
+C | 10억원 | 5.5억원<br />
+D | 2억원 | 1.3억원<br />
+합계 | 20억원 | 11.9억원  </p>
+</details>
+</li>
+<li>
+<p><strong>제91회(2010) 3교시 1번</strong> · 25점<br />
+  아이스크림을 생산, 판매하는 서해(주)의 8월 중 영업과 관련된 [데이터]를 참고하여 다음 각 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>아이스크림을 생산, 판매하는 서해(주)의 8월 중 영업과 관련된 [데이터]를 참고하여 다음 각 물음에 답하시오.<br />
+[데이터]<br />
+ㆍ매출액 : 180,000원 ㆍ고정제조원가 : 22,000원<br />
+ㆍ고정판매관리비 : 14,000원 ㆍ총변동원가 : 120,000원<br />
+ㆍ단위당 판매가격 : 9원 ㆍ단위당 변동제조원가 : 5원<br />
+ㆍ단위당 변동판매비 : 1원<br />
+(1) 영업이익을 구하시오.<br />
+(2) 손익분기점의 수량과 매출액을 구하시오.<br />
+(3) 목표영업이익 30,000원인 경우의 판매량을 구하시오.<br />
+(4) 목표영업이익 20,000원인 경우의 매출액을 구하시오.<br />
+(5) 목표영업이익이 매출액의 20%인 경우의 판매량을 구하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제94회(2011) 2교시 5번</strong> · 25점<br />
+  손익분기점을 활용한 원가전략 중에서 손익분기점을 낮추는 방안을 3가지 관점에서 예를 들어 설명하시오.</p>
+</li>
+<li>
+<p><strong>제100회(2013) 4교시 6번</strong> · 25점<br />
+  어떤 회사의 5월중 영업과 관련된 자료가 표와 같을 때 다음 각 물음에 답하시오. (단, 풀이과정을 포함하여 설명하시오.)</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>어떤 회사의 5월중 영업과 관련된 자료가 표와 같을 때 다음 각 물음에 답하시오. (단, 풀이과정을 포함하여 설명하시오.)<br />
+· 매출액 : 300,000원 · 고정제조원가 : 120,000원<br />
+· 고정판매관리비 : 20,000원 · 총변동원가 : 100,000원<br />
+· 단위당 판매가격 : 15원 · 단위당 변동제조원가 : 5원<br />
+· 단위당 변동판매비 : 1원<br />
+(1) 영업이익을 구하시오.<br />
+(2) 손익분기점의 판매수량과 매출액을 구하시오.<br />
+(3) 안전한계와 안전한계율을 구하시오.<br />
+(4) 목표영업이익이 50,000원인 경우의 판매량을 구하시오.<br />
+(5) 매출액이 30,000원 증가할 경우 순이익증가액을 구하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제109회(2016) 1교시 11번</strong> · 10점<br />
+  신규투자 시 손익분기점을 수량(Q)중심으로 도출하고, 그 의미에 대하여 설명하시오.</p>
+</li>
+<li>
+<p><strong>제127회(2022) 2교시 3번</strong> · 25점<br />
+  가공 부품업체는 A, B, C의 세 가지 제품을 제조 판매하고 있고, 이 회사의 총고정비용은 60만원이다. 총매출액에서 차지하는 각 제품의 매출액 구성 비율이 변하지 않는다고 가정할 때 제품별 비용은 다음 표와 같다. 다음 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>가공 부품업체는 A, B, C의 세 가지 제품을 제조 판매하고 있고, 이 회사의 총고정비용은 60만원이다. 총매출액에서 차지하는 각 제품의 매출액 구성 비율이 변하지 않는다고 가정할 때 제품별 비용은 다음 표와 같다. 다음 물음에 답하시오.<br />
+[표] 제품 | 판매단가(원) | 단위당 변동비(원) | 매출액 구성비율(%)<br />
+A | 400 | 300 | 20<br />
+B | 1000 | 775 | 40<br />
+C | 2000 | 1200 | 40<br />
+1) 각 제품의 공헌이익률을 구하시오.<br />
+2) 손익분기점에서의 총매출액을 구하시오.<br />
+3) 각 제품의 매출액을 구하시오.<br />
+4) 각 제품의 판매량을 구하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제133회(2024) 3교시 5번</strong> · 25점<br />
+  손익분기점 분석을 통한 원가절감 전략에 대하여 다음을 설명하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>손익분기점 분석을 통한 원가절감 전략에 대하여 다음을 설명하시오.<br />
+1) 손익분기점 분석의 의의와 손익분기점 산정식<br />
+2) 변동비와 고정비 절감 방안  </p>
+</details>
+</li>
+<li>
+<p><strong>제139회(2026) 3교시 5번</strong> · 25점<br />
+  손익분기점과 관련하여 다음의 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>손익분기점과 관련하여 다음의 물음에 답하시오.<br />
+1) 수량 기준 BEP 계산방법을 사례를 포함하여 설명하시오.<br />
+2) 매출액 기준 BEP 계산방법을 사례를 포함하여 설명하시오.<br />
+3) 아래의 조건을 기준으로 위 두 가지 계산방법을 이용하여 BEP를 구하고, 적자를 면하는 기준을 쓰시오.<br />
+- 제품 1개 단가: 1,000원<br />
+- 제품 1개당 재료비(변동비): 600원<br />
+- 월 임대료, 인건비, 고정비: 4,000,000원  </p>
+</details>
+</li>
+</ul>
+</details>
+<h2 id="t61-3">6.1.3 감가상각<a class="headerlink" href="#t61-3" title="Permanent link">&para;</a></h2>
+<h3 id="133">감가상각의 의의 (133회)<a class="headerlink" href="#133" title="Permanent link">&para;</a></h3>
+<p><strong>감가상각</strong>은 설비·건물 같은 유형자산의 취득원가를 그 자산을 사용하는 기간(내용연수)에 걸쳐 <strong>비용으로 배분</strong>하는 회계 절차다.</p>
+<ul>
+<li>수익과 비용의 올바른 대응(정확한 원가·손익 계산)</li>
+<li>자산의 가치 감소(물리적 마모·기능적 진부화)를 장부에 반영</li>
+<li>감가상각비는 현금 지출이 없는 비용이므로 <strong>투자 자금의 내부 유보(회수)</strong> 효과</li>
+</ul>
+<h3 id="4-73">감가상각 계산에 필요한 4가지 정보 (73회)<a class="headerlink" href="#4-73" title="Permanent link">&para;</a></h3>
+<p>① <strong>취득원가</strong> ② <strong>내용연수</strong> ③ <strong>잔존가치</strong> ④ <strong>상각 방법</strong></p>
+<h3 id="88109133">감가상각 방법 (88·109·133회)<a class="headerlink" href="#88109133" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>방법</th>
+<th>산식</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>정액법</strong></td>
+<td><span class="arithmatex">\( D = \dfrac{P - S}{n} \)</span></td>
+<td>매년 같은 금액 — 간단, 시간에 따라 고르게 가치가 줄어드는 자산</td>
+</tr>
+<tr>
+<td><strong>정률법</strong></td>
+<td><span class="arithmatex">\( D_t = BV_{t-1} \times r, \quad r = 1 - \sqrt[n]{S / P} \)</span></td>
+<td>장부가에 일정 비율 — 초기에 많이, 후기에 적게 상각(가속상각), 진부화가 빠른 설비</td>
+</tr>
+<tr>
+<td>연수합계법</td>
+<td><span class="arithmatex">\( D_t = (P - S) \times \dfrac{n - t + 1}{n(n+1)/2} \)</span></td>
+<td>가속상각의 한 형태</td>
+</tr>
+<tr>
+<td>생산량비례법</td>
+<td><span class="arithmatex">\( D_t = (P - S) \times \dfrac{\text{당기 생산량}}{\text{총 추정 생산량}} \)</span></td>
+<td>사용량에 따라 가치가 줄어드는 자산</td>
+</tr>
+</tbody>
+</table>
+<p>(<span class="arithmatex">\( P \)</span>: 취득원가, <span class="arithmatex">\( S \)</span>: 잔존가치, <span class="arithmatex">\( n \)</span>: 내용연수, <span class="arithmatex">\( BV \)</span>: 기초 장부가액)</p>
+<p><strong>예</strong>: 취득원가 1,000만 원, 잔존가치 100만 원, 내용연수 5년</p>
+<ul>
+<li>정액법: 매년 (1,000 − 100) ÷ 5 = <strong>180만 원</strong></li>
+<li>정률법: <span class="arithmatex">\( r = 1 - (100/1{,}000)^{1/5} = 36.9\% \)</span> → 1년차 369만 원, 2년차 233만 원 …</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">연도</th>
+<th style="text-align: center;">정액법 상각비 / 기말 장부가</th>
+<th style="text-align: center;">정률법 상각비 / 기말 장부가</th>
+<th style="text-align: center;">연수합계법 상각비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">180 / 820</td>
+<td style="text-align: center;">369.0 / 631.0</td>
+<td style="text-align: center;">900 × 5/15 = 300</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">180 / 640</td>
+<td style="text-align: center;">232.9 / 398.1</td>
+<td style="text-align: center;">240</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">180 / 460</td>
+<td style="text-align: center;">146.9 / 251.2</td>
+<td style="text-align: center;">180</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">180 / 280</td>
+<td style="text-align: center;">92.7 / 158.5</td>
+<td style="text-align: center;">120</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">180 / 100</td>
+<td style="text-align: center;">58.5 / 100.0</td>
+<td style="text-align: center;">60</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>xychart-beta
+    title "기말 장부가액 비교 (취득 1,000, 잔존 100, 5년)"
+    x-axis "연도" ["0", "1", "2", "3", "4", "5"]
+    y-axis "장부가액(만 원)" 0 --&gt; 1000
+    line [1000, 820, 640, 460, 280, 100]
+    line [1000, 631, 398, 251, 159, 100]</code></pre>
+<p>(직선: 정액법, 아래로 볼록한 곡선: 정률법 — 정률법은 초기에 장부가가 빨리 줄어든다.)</p>
+<h3 id="_5">감가의 원인과 경제성 분석에서의 의미<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>원인</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>물리적 감가</td>
+<td>사용에 따른 마모·부식·피로, 시간 경과에 따른 노후</td>
+</tr>
+<tr>
+<td>기능적 감가</td>
+<td>기술 진보에 따른 <strong>진부화</strong>, 수요 변화에 따른 <strong>부적응화</strong>(능력 부족·과잉)</td>
+</tr>
+<tr>
+<td>경제적 감가</td>
+<td>시장 가격 하락, 제품 단종 등 외부 요인</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>감가상각의 절세 효과(Tax Shield)</strong>: 감가상각비 × 법인세율만큼 세금이 줄어 현금흐름이 늘어난다. 정률법 같은 <strong>가속상각</strong>은 절세 효과를 앞당겨 투자안의 NPV를 높인다.</li>
+<li>세후 현금흐름 = 세후 이익 + 감가상각비 → 회수기간·NPV 계산 시 감가상각비를 다시 더하는 이유다(<a href="#t61-1">6.1.1</a> 103·121·127회).</li>
+<li>회계상 장부가(감가 후 잔액)와 시장가치는 다르다 → 설비 교체 판단은 장부가가 아니라 <strong>현재 처분가치</strong>로 한다(<a href="#t61-4">6.1.4</a>, <a href="../../04-facility-management/01-equipment-planning/#t41-1">4.1.1</a>).</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li><strong>의의 → 4가지 정보 → 방법별 산식·특징 표 → 간단한 수치 예</strong>로 쓴다. 정액법과 정률법을 비교하는 그래프(직선 vs 체감 곡선)를 그리면 좋다.</li>
+<li>차별화: 감가의 원인(물리적·기능적·경제적)과 <strong>절세 효과·현금흐름과의 관계</strong>를 덧붙인다.</li>
+<li>결론 예: "진부화가 빠른 자동화·IT 설비는 정률법이, 사용 정도가 고른 건물·범용 설비는 정액법이 적합하며, 상각 방법은 원가와 투자 회수 계획에 영향을 주므로 설비 특성에 맞게 선택해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 7문항 (73회, 88회, 103회, 109회, 121회, 127회, 133회)</summary>
+<ul>
+<li><strong>제73회(2004) 1교시 1번</strong> · 10점<br />
+  감가상각계산을 위한 4가지 정보</li>
+<li><strong>제88회(2009) 1교시 11번</strong> · 10점<br />
+  일반적으로 사용하는 2종류의 감가상각방법을 설명하시오.</li>
+<li>
+<p><strong>제103회(2014) 3교시 4번</strong> · 25점<br />
+  홍길동은 A설비와 B설비의 경제성 평가를 활용하여 경제적이라고 판단되는 설비를 선정하려 한다. 다음은 투자안의 자료이다.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>홍길동은 A설비와 B설비의 경제성 평가를 활용하여 경제적이라고 판단되는 설비를 선정하려 한다. 다음은 투자안의 자료이다.<br />
+[표] 투자안 \ 구분 | 투자금 | 경제적 내용년수 | 연간 수입예상액 | 연간 감가상각비 | 평균 연이익<br />
+A설비 | 11,000만원 | 5년 | 5,000만원 | 2,000만원 | 3,000만원<br />
+B설비 | 5,000만원 | 4년 | 3,500만원 | 1,000만원 | 1,500만원<br />
+1) 자본회수기간법(payoff or payback period)을 설명하고, 어느 설비가 효과적인지 평가하시오.<br />
+2) (평균)투자이익율법(average rate of return)을 설명하고, 어느 설비가 효과적인지 평가하시오.<br />
+3) 1), 2) 항의 전통적 경제성 측정 방법과 대별되는 방법은 순현재가치법(NPV: Net Present Value)이다. 순현재가치법(NPV)의 개념을 설명하고 k(자본비용, 할인율)=10%로 할 때, 어느 설비가 효과적인지 평가하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제109회(2016) 2교시 6번</strong> · 25점<br />
+  원가계산의 설비 감가상각 방법 중 정액법과 정율법의 의미에 대하여 설명하시오.</p>
+</li>
+<li>
+<p><strong>제121회(2020) 2교시 4번</strong> · 25점<br />
+  부품 회사에서 신제품 생산에 필요한 포장기계를 구입함에 있어서 A기계와 B기계 중에서 경제적인 것으로 선정하려 한다. 다음 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>부품 회사에서 신제품 생산에 필요한 포장기계를 구입함에 있어서 A기계와 B기계 중에서 경제적인 것으로 선정하려 한다. 다음 물음에 답하시오.<br />
+[표] 투자안\구분 | 투자금액 | 경제적 내용연수 | 연간 수입예상액 | 연간 감가상각비 | 평균 연이익<br />
+A기계 | 2,400만원 | 5년 | 950만원 | 400만원 | 550만원<br />
+B기계 | 2,200만원 | 4년 | 1,050만원 | 500만원 | 600만원<br />
+1) 자본회수기간법으로 계산하고 평가하시오.<br />
+2) 투자이익률법으로 계산하고 평가하시오.<br />
+3) 자본비용(할인률) 20%일 때 순현재가치법으로 계산하고 평가하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제127회(2022) 3교시 5번</strong> · 25점<br />
+  자동차부품회사에서 신제품 생산에 필요한 포장기계를 구입함에 있어서 A기계와 B기계 중에서 경제적인 것으로 선정하려 한다. 잔존가액은 각각 200만원으로 하고 연간수입액은 A기계는 950만원, B기계는 1050만원으로 한다. 다음 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>자동차부품회사에서 신제품 생산에 필요한 포장기계를 구입함에 있어서 A기계와 B기계 중에서 경제적인 것으로 선정하려 한다. 잔존가액은 각각 200만원으로 하고 연간수입액은 A기계는 950만원, B기계는 1050만원으로 한다. 다음 물음에 답하시오.<br />
+[표] 투자안\구분 | 투자금액 | 경제적 내용년수 | 연간수입 예상액 | 연간 감가상각비 | 평균 연이익<br />
+A 기계 | 2470만원 | 5년 | 950만원 | 400만원 | 600만원<br />
+B 기계 | 2310만원 | 4년 | 1050만원 | 500만원 | 650만원<br />
+1) 자본회수기간법으로 경제성 있는 투자안을 구하시오.<br />
+2) 투자이익률법으로 경제성 있는 투자안을 구하시오.<br />
+3) 자본비용(할인율)을 20%일 때 순현재가치법으로 경제성 있는 투자안을 구하시오.<br />
+4) “1), 2), 3)”항의 결과에 따른 A, B기계의 종합 투자안을 판정하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제133회(2024) 1교시 10번</strong> · 10점<br />
+  유형자산에 대한 감가상각의 의의와 감가상각을 하는 3가지 방법</p>
+</li>
+</ul>
+</details>
+<h2 id="t61-4">6.1.4 경제성 분석의 비용 개념(매몰·기회비용)<a class="headerlink" href="#t61-4" title="Permanent link">&para;</a></h2>
+<h3 id="65130136">경제성 분석의 비용 개념 (65·130·136회)<a class="headerlink" href="#65130136" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>개념</th>
+<th>정의</th>
+<th>경제성 분석에서의 처리</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>초기비용</strong>(First Cost)</td>
+<td>투자 시점에 드는 비용 — 구입가, 운송·설치·시운전비</td>
+<td>투자액(0시점 현금유출)에 포함</td>
+<td>신설비 구입·설치비</td>
+</tr>
+<tr>
+<td><strong>매몰비용</strong>(Sunk Cost)</td>
+<td><strong>이미 지출되어 회수할 수 없는</strong> 비용</td>
+<td><strong>의사결정에서 제외</strong>한다 — 어떤 대안을 택해도 변하지 않으므로</td>
+<td>현 설비의 과거 구입가, 이미 쓴 연구비</td>
+</tr>
+<tr>
+<td><strong>기회비용</strong>(Opportunity Cost)</td>
+<td>어떤 대안을 선택함으로써 <strong>포기한 다른 대안의 최대 이익</strong></td>
+<td>의사결정에 <strong>포함</strong>한다</td>
+<td>현 설비를 계속 쓸 때 포기하는 처분가치, 자금의 다른 투자 수익</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>매몰비용의 오류</strong>: "이미 많이 투자했으니 계속해야 한다"는 판단은 매몰비용에 얽매인 비합리적 결정이다. 앞으로 생길 비용과 수익만 비교해야 한다.</li>
+<li><strong>설비 교체 분석에서의 기회비용 (136회)</strong>: 현 설비를 계속 사용하는 대안의 투자액은 장부가가 아니라 <strong>현재 처분하면 받을 수 있는 금액(시장가치)</strong>이다 — 이것을 포기하기 때문이다.</li>
+</ul>
+<p><strong>의사결정 관련 원가의 기본 원칙</strong>: 경제성 분석에는 <strong>대안 간에 차이가 나는 미래의 현금흐름(관련원가·증분원가)</strong>만 넣는다.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th style="text-align: center;">포함 여부</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미래에 발생하고 대안마다 다른 원가(관련원가·차액원가)</td>
+<td style="text-align: center;">포함</td>
+<td>신설비의 운전비·보전비, 에너지비 차이</td>
+</tr>
+<tr>
+<td>기회비용(포기한 최선의 이익)</td>
+<td style="text-align: center;">포함</td>
+<td>현 설비 처분가, 공간·자금의 다른 용도 수익</td>
+</tr>
+<tr>
+<td>매몰비용(과거 지출)</td>
+<td style="text-align: center;">제외</td>
+<td>현 설비의 장부가·과거 개조비</td>
+</tr>
+<tr>
+<td>대안 간에 같은 미래 원가(공통원가)</td>
+<td style="text-align: center;">제외 가능</td>
+<td>어느 대안이든 같은 관리비</td>
+</tr>
+</tbody>
+</table>
+<p><strong>적용 예(설비 교체)</strong>: 몇 년 전 1,000만 원에 산 설비의 장부가가 600만 원, 지금 팔면 300만 원을 받을 수 있다면</p>
+<ul>
+<li>1,000만 원(구입가)과 600만 원(장부가)은 <strong>매몰비용</strong>이라 교체 판단에서 제외한다.</li>
+<li>"계속 사용" 대안의 투자액은 포기하는 처분가 <strong>300만 원(기회비용)</strong>으로 본다.</li>
+<li>"장부가 600만 원을 회수해야 하니 더 써야 한다"는 판단은 <strong>매몰비용의 오류</strong>다. 처분 손실 300만 원은 이미 일어난 손실을 장부에서 확인하는 것일 뿐이다(단, 처분 손실의 세금 효과는 세후 분석에서 반영).</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>세 개념을 <strong>정의 → 의사결정에서의 처리(포함·제외) → 예</strong>로 정리한 비교표 하나로 답할 수 있다.</li>
+<li>차별화: "<strong>미래의 차이 나는 현금흐름만 고려한다</strong>"는 원칙과 설비 교체 예를 함께 쓰고, MAPI·교체분석(<a href="../../04-facility-management/01-equipment-planning/#t41-1">4.1.1</a>)과 연결한다.</li>
+<li>결론 예: "매몰비용은 과감히 무시하고 기회비용은 빠짐없이 반영해야 합리적 투자 결정이 가능하다. 특히 현 설비 계속 사용안의 투자액은 장부가가 아닌 처분가치로 평가해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 3문항 (65회, 130회, 136회)</summary>
+<ul>
+<li><strong>제65회(2001) 3교시 6번</strong> · 25점<br />
+  경제성 분석의 기초자료로서 초기비용(first cost)과, 매몰비용(sunk cost)에 대해 설명하시오.</li>
+<li><strong>제130회(2023) 1교시 13번</strong> · 10점<br />
+  매몰원가(Sunk Cost)에 대하여 설명하시오.</li>
+<li><strong>제136회(2025) 1교시 9번</strong> · 10점<br />
+  설비 경제성 분석 시 발생하는 기회비용(機會費用)을 설명하시오.</li>
+</ul>
+</details>
+<h2 id="t61-5">6.1.5 사업 타당성 분석<a class="headerlink" href="#t61-5" title="Permanent link">&para;</a></h2>
+<h3 id="127">사업 타당성 분석 (127회)<a class="headerlink" href="#127" title="Permanent link">&para;</a></h3>
+<p>신규 사업이 성공할 수 있는지를 투자 전에 여러 측면에서 검토하는 분석이다.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>분석 내용</th>
+<th>분석 항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>시장성</strong></td>
+<td>제품을 팔 수 있는 시장이 있는가</td>
+<td>시장 규모와 성장률, 수요예측, 경쟁 구조(5 Forces), 목표 고객, 가격·유통·마케팅 전략, 판매 계획</td>
+</tr>
+<tr>
+<td><strong>기술성</strong></td>
+<td>제품을 만들 수 있는가</td>
+<td>기술 수준·성숙도, 생산 공정과 설비, 원자재 조달, 입지·시설, 품질 확보, 인허가·환경 규제</td>
+</tr>
+<tr>
+<td><strong>경제성</strong></td>
+<td>돈을 벌 수 있는가</td>
+<td>투자비·운영비 추정, 매출·이익 추정, NPV·IRR·회수기간, 손익분기점, 민감도·위험 분석</td>
+</tr>
+<tr>
+<td><strong>사업 수행 능력</strong></td>
+<td>우리가 해낼 수 있는가</td>
+<td>경영진의 역량과 경험, 자금 조달 능력, 조직·인력, 핵심 역량과의 적합성, 위험 관리 능력</td>
+</tr>
+</tbody>
+</table>
+<p><strong>분석 절차</strong>: 사업 구상 → 예비 타당성 검토(간략 분석) → 본 타당성 분석(4개 측면) → 종합 평가와 사업 여부 결정 → 사업계획 수립</p>
+<pre class="mermaid"><code>flowchart LR
+    A["사업 구상"] --&gt; B["예비 타당성&lt;br/&gt;(Go/No-Go)"]
+    B --&gt; C1["시장성"]
+    B --&gt; C2["기술성"]
+    B --&gt; C3["경제성"]
+    B --&gt; C4["사업 수행 능력"]
+    C1 --&gt; D["종합 평가&lt;br/&gt;민감도·위험 분석"]
+    C2 --&gt; D
+    C3 --&gt; D
+    C4 --&gt; D
+    D --&gt; E["사업계획 수립"]</code></pre>
+<p><strong>개요 작성용 정의</strong>: 사업 타당성 분석(Feasibility Study)은 투자 결정 전에 사업의 <strong>성공 가능성과 위험</strong>을 시장·기술·경제·수행 능력 측면에서 객관적으로 검토해, 잘못된 투자를 예방하고 자금 조달(금융기관·투자자 설득)의 근거를 마련하는 활동이다.</p>
+<p><strong>측면 간 연결과 보완 분석</strong></p>
+<ul>
+<li>시장성(수요예측 → 매출 추정, <a href="../../02-operations-logistics/01-forecasting-scheduling/#t21-1">2.1.1</a>) → 기술성(설비·공정 → 투자비·원가 추정) → 경제성(NPV·IRR·BEP)으로 <strong>결과가 이어지는 구조</strong>다. 앞 단계 추정이 틀리면 경제성 결과도 틀리므로 민감도 분석이 필수다.</li>
+<li>환경 분석(SWOT·5 Forces, <a href="../../01-production-strategy/05-business-environment/#t15-1">1.5.1</a>)과 <strong>위험 분석</strong>(시나리오·몬테카를로 시뮬레이션, <a href="../../01-production-strategy/05-business-environment/#t15-5">1.5.5</a>)으로 보완한다.</li>
+<li>최근에는 탄소 규제·공급망 실사 같은 <strong>ESG 요소</strong>와 공장 입지의 인허가·인력 확보 가능성을 별도 항목으로 검토한다(<a href="../../01-production-strategy/02-production-system-layout/#t12-3">1.2.3 공장입지</a>, <a href="../../07-support-technology/05-trends/#t75-1">7.5.1</a>).</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li><strong>4개 측면 × 분석 항목 표</strong>가 답안의 핵심이며, 경제성 분석의 지표(NPV·IRR·BEP)는 <a href="#t61-1">6.1.1</a>·<a href="#t61-2">6.1.2</a>와 연결한다.</li>
+<li>결론에서 "네 측면이 <strong>모두</strong> 충족되어야 사업을 추진한다"는 종합 판단 원칙을 쓴다.</li>
+<li>결론 예: "네 측면 중 하나라도 미흡하면 사업은 실패할 수 있으므로 종합적으로 판단해야 하며, 낙관적 추정을 막기 위해 민감도·시나리오 분석과 단계적 투자(파일럿 → 본격 투자)를 권한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 1문항 (127회)</summary>
+<ul>
+<li><strong>제127회(2022) 4교시 6번</strong> · 25점<br />
+  신규 사업을 시작함에 있어서 사업 타당성 분석을 시장성, 기술성, 경제성, 사업 수행능력으로 구분하여 설명하고, 타당성 분석 항목을 포함하여 쓰시오.</li>
+</ul>
+</details>
+<h2 id="_6">답안 작성 예시<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">25점 예시: 제136회 3교시 4번 — 설비투자의 경제성 평가 방법 중 5가지 설명</p>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>설비투자는 대규모·장기·비가역적 의사결정 → 화폐의 시간가치를 반영한 정량 평가가 필요하다.</li>
+<li>평가 방법은 <strong>비할인법</strong>(회수기간법·ARR)과 <strong>할인법(DCF)</strong>(NPV·IRR·PI)으로 나뉜다([그림] 현금흐름도: 0시점 투자, 연도 말 유입, 잔존가치).</li>
+</ul>
+<p><strong>2. 본론</strong></p>
+<ul>
+<li>(1) 분류 체계: [표] 비할인법 / 할인법 × 방법·산식·판단 기준·장단점(<a href="#t61-1">6.1.1</a> 첫 표)</li>
+<li>(2) 5가지 방법별 설명: 회수기간법 → ARR → NPV → IRR → PI 순서로 정의·산식·채택 기준·장단점을 1~2줄씩</li>
+<li>(3) 간단한 수치 예: 103회 A·B 설비 비교표처럼 방법마다 결론이 다를 수 있음을 보여 준다.</li>
+<li>(4) [표] NPV법과 IRR법 비교(재투자 가정·가치 가산성·복수 IRR) → NPV 우선의 근거</li>
+<li>(5) 보완 기법: 연가법(수명이 다른 대안), LCC, 민감도 분석, MARR 설정</li>
+</ul>
+<p><strong>3. 결론(기술사 의견)</strong></p>
+<ul>
+<li>단일 지표가 아니라 <strong>회수기간(위험) + NPV(가치)</strong>를 함께 보고, LCC·민감도 분석으로 보완한다.</li>
+<li>스마트공장·ESG 투자는 품질·안전·탄소 감축 같은 무형 효과를 AHP 등 정성 평가로 병행 반영한다.</li>
+<li>차별화 포인트: 이자계수 산식, NPV–IRR 충돌 이유, 실무 투자 심의 절차(예비 검토 → 본 평가 → 사후 감사)를 언급한다.</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">25점 예시: 제127회 3교시 5번 — 포장기계 A·B를 회수기간법·투자이익률법·NPV(20%)로 평가하고 종합 판정</p>
+<p><strong>1. 주어진 조건 정리</strong></p>
+<ul>
+<li>[표] A: 투자 2,470, 5년, 연 수입 950, 평균 연이익 600 / B: 투자 2,310, 4년, 연 수입 1,050, 평균 연이익 650, 잔존가치 각 200(만 원)</li>
+<li>[그림] 기계별 현금흐름도(마지막 해에 잔존가치 200 추가)</li>
+</ul>
+<p><strong>2. 공식</strong></p>
+<ul>
+<li>회수기간 = 투자액 ÷ 연간 현금유입, 투자이익률 = 평균 연이익 ÷ 투자액</li>
+<li><span class="arithmatex">\( NPV = A \times (P/A, 20\%, n) + S \times (P/F, 20\%, n) - I_0 \)</span> — 계수 산식도 함께 적는다.</li>
+</ul>
+<p><strong>3. 계산표</strong></p>
+<ul>
+<li>[표] 방법 × A·B × 판정(<a href="#t61-1">6.1.1</a> 127회 풀이: 2.6년/2.2년, 24.3%/28.1%, NPV 451/505)</li>
+</ul>
+<p><strong>4. 판정</strong></p>
+<ul>
+<li>세 방법 모두 B 우위 → <strong>B 기계 선택</strong></li>
+</ul>
+<p><strong>5. 해석·의견</strong></p>
+<ul>
+<li>내용연수가 다르므로 연가(EAC)로도 확인하면 더 엄밀하다는 점, 회수기간·ARR의 한계(시간가치 무시)를 지적한다.</li>
+<li>차별화 포인트: 현금흐름 = 이익 + 감가상각비 관계를 명시하고, 판매량·할인율에 대한 민감도 검토를 권고한다.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="이전: 6. 원가관리 및 경제성공학">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                6. 원가관리 및 경제성공학
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02-cost-management/" class="md-footer__link md-footer__link--next" aria-label="다음: 6.2 원가관리">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                6.2 원가관리
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

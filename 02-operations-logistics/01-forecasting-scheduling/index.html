@@ -1,0 +1,4842 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="출제기준(2027~2030) 주요항목·세부항목별 기출문제 정리와 학습 교재">
+      
+      
+      
+        <link rel="canonical" href="https://yeonkyupark.github.io/pepc4e/02-operations-logistics/01-forecasting-scheduling/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02-progress-control/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>2.1 수요예측과 일정계획 - 생산운영과 공장관리</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#21" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="생산운영과 공장관리" class="md-header__button md-logo" aria-label="생산운영과 공장관리" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            생산운영과 공장관리
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.1 수요예측과 일정계획
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yeonkyupark/pepc4e" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeonkyupark/pepc4e
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01-production-strategy/" class="md-tabs__link">
+          
+  
+    
+  
+  1. 생산전략
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  2. 생산운영 및 물류관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03-process-control/" class="md-tabs__link">
+          
+  
+    
+  
+  3. 공정관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04-facility-management/" class="md-tabs__link">
+          
+  
+    
+  
+  4. 설비관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05-work-measurement/" class="md-tabs__link">
+          
+  
+    
+  
+  5. 작업관리와 성과측정
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../06-cost-engineering-economy/" class="md-tabs__link">
+          
+  
+    
+  
+  6. 원가관리 및 경제성공학
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../07-support-technology/" class="md-tabs__link">
+          
+  
+    
+  
+  7. 생산지원기술 및 기타
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../appendix/answer-guide/" class="md-tabs__link">
+          
+  
+    
+  
+  부록
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="생산운영과 공장관리" class="md-nav__button md-logo" aria-label="생산운영과 공장관리" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    생산운영과 공장관리
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yeonkyupark/pepc4e" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeonkyupark/pepc4e
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    홈
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01-production-strategy/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    1. 생산전략
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. 생산전략
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/01-competitive-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 경쟁우위 생산전략
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/02-production-system-layout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 생산구조와 방식(Layout)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/03-purchasing-outsourcing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 구매와 외주전략
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/04-workforce-job-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4 인력과 직무설계
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/05-business-environment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5 사업환경분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2. 생산운영 및 물류관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. 생산운영 및 물류관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.1 수요예측과 일정계획
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2.1 수요예측과 일정계획
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      출제 경향
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      목차
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 수요예측의 개요와 정성적 기법
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.1 수요예측의 개요와 정성적 기법">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요예측의 의의
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97106" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요예측 기법의 분류 (97·106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#68" class="md-nav__link">
+    <span class="md-ellipsis">
+      정성적 기법과 장단점 (68회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#70" class="md-nav__link">
+    <span class="md-ellipsis">
+      재고관리·일정계획에 맞는 기법 (70회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#79" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요에 영향을 미치는 요인 (79회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요예측 방법 선정 시 고려사항 (133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요예측의 절차
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      델파이법의 배경과 특징
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      최근 동향
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 시계열 예측(이동평균·지수평활)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.2 시계열 예측(이동평균·지수평활)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-124133139" class="md-nav__link">
+    <span class="md-ellipsis">
+      시계열 변동의 4가지 유형 (124·133·139회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88109" class="md-nav__link">
+    <span class="md-ellipsis">
+      이동평균법 (88·109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      지수평활법 (88회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      최소자승법(추세분석) (88회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97" class="md-nav__link">
+    <span class="md-ellipsis">
+      시계열 분해법 (97회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      시계열 기법 비교
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 예측오차와 추적지표
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.3 예측오차와 추적지표">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      예측오차 측정의 목적 (103회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      오차 측정 지표
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ts-tracking-signal-97103115133" class="md-nav__link">
+    <span class="md-ellipsis">
+      추적지표(TS, Tracking Signal) (97·103·115·133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alpha-05-115" class="md-nav__link">
+    <span class="md-ellipsis">
+      지수평활계수 \( \alpha = 0.5 \)의 의미 (115회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 97회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 103회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-alpha-05-f_1-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 115회 (단순 지수평활, \( \alpha = 0.5,\ F_1 = 300 \))
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#136-3-050302" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 136회 (3개월 가중 이동평균, 가중치 0.5·0.3·0.2)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.4 작업순서 결정과 우선순위 규칙
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.4 작업순서 결정과 우선순위 규칙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      일정계획과 작업순서 결정의 개요
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      일정계획 수립에 필요한 요소 (73회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106" class="md-nav__link">
+    <span class="md-ellipsis">
+      작업순서 결정의 평가 기준 (106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106136" class="md-nav__link">
+    <span class="md-ellipsis">
+      우선순위 규칙의 종류와 특성 (106·136회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spt-70" class="md-nav__link">
+    <span class="md-ellipsis">
+      SPT 규칙의 이유와 결점 (70회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 63회 (현재일 = 0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 88회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 94회 (현재일 = 0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 121회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      현장 적용과 최근 동향
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.5 다수 기계 일정계획(존슨·Petrov)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.5 다수 기계 일정계획(존슨·Petrov)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#johnsons-rule-97103" class="md-nav__link">
+    <span class="md-ellipsis">
+      존슨의 법칙(Johnson's Rule) (97·103회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 97회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-petrov-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      3대 기계로의 확장과 Petrov 방법 (100회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 100회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      다수 기계 흐름공정 일정계획 기법 비교
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.6 일정계획 일반
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.6 일정계획 일반">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      일정계획의 체계와 방침
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      일정계획 관점의 생산 합리화 방안 (63회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67" class="md-nav__link">
+    <span class="md-ellipsis">
+      순서 의존 준비시간 문제 (67회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      답안 작성 예시
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-progress-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 프로세스 진도관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-scm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 공급망 관리(SCM)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-materials-inventory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4 물류관리(자재 및 재고관리)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-mes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5 제조실행시스템(MES)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../03-process-control/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    3. 공정관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. 공정관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/01-production-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 생산계획수립
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/02-process-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 공정설계
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/03-work-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 작업계획수립
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/04-standard-work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4 표준작업관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/05-maintenance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.5 설비보전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/06-process-improvement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.6 공정개선
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../04-facility-management/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    4. 설비관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4. 설비관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/01-equipment-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1 설비계획 및 관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/02-material-handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 자재취급 및 운반관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/03-environment-safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3 환경관리 및 안전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/04-facilities-utilities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.4 시설 및 유틸리티관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/05-factory-automation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.5 공장자동화 기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../05-work-measurement/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    5. 작업관리와 성과측정
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. 작업관리와 성과측정
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/01-method-time-study/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.1 작업방법 및 시간 연구
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/02-process-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.2 프로세스 분석과 개선
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/03-productivity-safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.3 생산성 및 안전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/04-quality-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.4 품질관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../06-cost-engineering-economy/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    6. 원가관리 및 경제성공학
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            6. 원가관리 및 경제성공학
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/01-feasibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.1 사업성분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/02-cost-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.2 원가관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/03-value-engineering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.3 가치공학
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/04-operations-research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.4 경영과학(OR)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../07-support-technology/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7. 생산지원기술 및 기타
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            7. 생산지원기술 및 기타
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/01-it-smart-factory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 정보화활용기술(스마트팩토리 및 AI 등)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/02-product-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 제품개발기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/03-service-operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 서비스운영관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/04-production-innovation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.4 생산혁신기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/05-trends/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 공장관리 신기술 및 경향에 관한 사항
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    부록
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            부록
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/answer-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    답안 작성 가이드
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/frequency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    출제 빈도 분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/rounds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    회차별 기출 색인
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    확인 필요 항목
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      출제 경향
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      목차
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.1 수요예측의 개요와 정성적 기법
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.1 수요예측의 개요와 정성적 기법">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요예측의 의의
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97106" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요예측 기법의 분류 (97·106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#68" class="md-nav__link">
+    <span class="md-ellipsis">
+      정성적 기법과 장단점 (68회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#70" class="md-nav__link">
+    <span class="md-ellipsis">
+      재고관리·일정계획에 맞는 기법 (70회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#79" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요에 영향을 미치는 요인 (79회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요예측 방법 선정 시 고려사항 (133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요예측의 절차
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      델파이법의 배경과 특징
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      최근 동향
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.2 시계열 예측(이동평균·지수평활)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.2 시계열 예측(이동평균·지수평활)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-124133139" class="md-nav__link">
+    <span class="md-ellipsis">
+      시계열 변동의 4가지 유형 (124·133·139회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88109" class="md-nav__link">
+    <span class="md-ellipsis">
+      이동평균법 (88·109회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      지수평활법 (88회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      최소자승법(추세분석) (88회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97" class="md-nav__link">
+    <span class="md-ellipsis">
+      시계열 분해법 (97회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      시계열 기법 비교
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.3 예측오차와 추적지표
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.3 예측오차와 추적지표">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      예측오차 측정의 목적 (103회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      오차 측정 지표
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ts-tracking-signal-97103115133" class="md-nav__link">
+    <span class="md-ellipsis">
+      추적지표(TS, Tracking Signal) (97·103·115·133회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alpha-05-115" class="md-nav__link">
+    <span class="md-ellipsis">
+      지수평활계수 \( \alpha = 0.5 \)의 의미 (115회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 97회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 103회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-alpha-05-f_1-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 115회 (단순 지수평활, \( \alpha = 0.5,\ F_1 = 300 \))
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#136-3-050302" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 136회 (3개월 가중 이동평균, 가중치 0.5·0.3·0.2)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.4 작업순서 결정과 우선순위 규칙
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.4 작업순서 결정과 우선순위 규칙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      일정계획과 작업순서 결정의 개요
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      일정계획 수립에 필요한 요소 (73회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106" class="md-nav__link">
+    <span class="md-ellipsis">
+      작업순서 결정의 평가 기준 (106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106136" class="md-nav__link">
+    <span class="md-ellipsis">
+      우선순위 규칙의 종류와 특성 (106·136회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spt-70" class="md-nav__link">
+    <span class="md-ellipsis">
+      SPT 규칙의 이유와 결점 (70회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 63회 (현재일 = 0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 88회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 94회 (현재일 = 0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 121회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      현장 적용과 최근 동향
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.5 다수 기계 일정계획(존슨·Petrov)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.5 다수 기계 일정계획(존슨·Petrov)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#johnsons-rule-97103" class="md-nav__link">
+    <span class="md-ellipsis">
+      존슨의 법칙(Johnson's Rule) (97·103회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 97회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-petrov-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      3대 기계로의 확장과 Petrov 방법 (100회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100" class="md-nav__link">
+    <span class="md-ellipsis">
+      풀이: 100회
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      다수 기계 흐름공정 일정계획 기법 비교
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t21-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.6 일정계획 일반
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.6 일정계획 일반">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      일정계획의 체계와 방침
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      일정계획 관점의 생산 합리화 방안 (63회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67" class="md-nav__link">
+    <span class="md-ellipsis">
+      순서 의존 준비시간 문제 (67회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      답안 작성 예시
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="21">2.1 수요예측과 일정계획<a class="headerlink" href="#21" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">출제기준</p>
+<p><strong>2. 생산운영 및 물류관리</strong> › <strong>1. 수요예측과 일정계획</strong></p>
+</div>
+<h2 id="_1">출제 경향<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>총 <strong>28문항</strong> 출제 (1교시 단답형 6 · 2~4교시 논술형 22) · 최근 10개 회차(109~139회) 8문항 · 최근 출제 제139회</p>
+<table>
+<thead>
+<tr>
+<th>주제</th>
+<th style="text-align: center;">출제 수</th>
+<th>출제 회차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.1.1 수요예측의 개요와 정성적 기법</td>
+<td style="text-align: center;">3</td>
+<td>68회, 70회, 79회</td>
+</tr>
+<tr>
+<td>2.1.2 시계열 예측(이동평균·지수평활)</td>
+<td style="text-align: center;">7</td>
+<td>85회, 88회, 97회, 106회, 109회, 124회, 139회</td>
+</tr>
+<tr>
+<td>2.1.3 예측오차와 추적지표</td>
+<td style="text-align: center;">5</td>
+<td>97회, 103회, 115회, 133회, 136회</td>
+</tr>
+<tr>
+<td>2.1.4 작업순서 결정과 우선순위 규칙</td>
+<td style="text-align: center;">8</td>
+<td>63회, 70회, 73회, 88회, 94회, 106회, 121회, 136회</td>
+</tr>
+<tr>
+<td>2.1.5 다수 기계 일정계획(존슨·Petrov)</td>
+<td style="text-align: center;">3</td>
+<td>97회, 100회, 103회</td>
+</tr>
+<tr>
+<td>2.1.6 일정계획 일반</td>
+<td style="text-align: center;">2</td>
+<td>63회, 67회</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">목차<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#t21-1">수요예측의 개요와 정성적 기법</a></li>
+<li><a href="#t21-2">시계열 예측(이동평균·지수평활)</a></li>
+<li><a href="#t21-3">예측오차와 추적지표</a></li>
+<li><a href="#t21-4">작업순서 결정과 우선순위 규칙</a></li>
+<li><a href="#t21-5">다수 기계 일정계획(존슨·Petrov)</a></li>
+<li><a href="#t21-6">일정계획 일반</a></li>
+</ol>
+<h2 id="t21-1">2.1.1 수요예측의 개요와 정성적 기법<a class="headerlink" href="#t21-1" title="Permanent link">&para;</a></h2>
+<h3 id="_3">수요예측의 의의<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p><strong>수요예측</strong>은 미래 일정 기간의 제품·서비스 수요량을 추정하는 것으로, 생산계획·재고·생산능력·인력·자금 계획의 <strong>출발점</strong>이다. 예측은 틀리기 마련이므로 예측 오차를 함께 관리해야 한다.</p>
+<p><strong>부문별로 수요예측에 기반한 의사결정 (106회)</strong></p>
+<table>
+<thead>
+<tr>
+<th>부문</th>
+<th>주요 의사결정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>생산</td>
+<td>생산능력 계획, 총괄생산계획, 기준생산계획(MPS), 재고 수준, 일정계획, 구매·조달</td>
+</tr>
+<tr>
+<td>마케팅</td>
+<td>판매 목표, 가격·판촉 계획, 유통·신제품 출시 시기</td>
+</tr>
+<tr>
+<td>재무</td>
+<td>예산 편성, 설비 투자, 자금 조달과 현금흐름 계획</td>
+</tr>
+<tr>
+<td>인사</td>
+<td>인력 채용·배치, 교육훈련, 초과근무·임시직 계획</td>
+</tr>
+</tbody>
+</table>
+<h3 id="97106">수요예측 기법의 분류 (97·106회)<a class="headerlink" href="#97106" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TB
+    F["수요예측 기법"] --&gt; Q["정성적 기법&lt;br/&gt;(판단·의견)"]
+    F --&gt; T["시계열 기법&lt;br/&gt;(과거 수요 패턴)"]
+    F --&gt; R["인과형 기법&lt;br/&gt;(원인 변수)"]
+    Q --&gt; Q1["델파이법, 시장조사법, 전문가 패널,&lt;br/&gt;판매원 의견 종합, 경영자 판단,&lt;br/&gt;수명주기 유추법"]
+    T --&gt; T1["이동평균법, 지수평활법,&lt;br/&gt;추세분석(최소자승법), 시계열 분해법"]
+    R --&gt; R1["회귀분석, 계량경제 모형,&lt;br/&gt;투입-산출 모형, 선행지표법"]</code></pre>
+<h3 id="68">정성적 기법과 장단점 (68회)<a class="headerlink" href="#68" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>기법</th>
+<th>내용</th>
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>델파이법</td>
+<td>전문가들에게 익명 설문을 반복하며 의견을 수렴</td>
+<td>권위·집단 압력 배제, 장기·신기술 예측에 적합</td>
+<td>시간·비용 많음, 전문가 선정에 좌우</td>
+</tr>
+<tr>
+<td>시장조사법</td>
+<td>설문·면접·시험판매로 소비자 의견 조사</td>
+<td>신제품 수요 파악, 비교적 정확</td>
+<td>비용·시간 많음, 응답과 실제 구매의 차이</td>
+</tr>
+<tr>
+<td>전문가(패널) 합의법</td>
+<td>전문가·경영진이 토의로 합의</td>
+<td>빠르고 저렴</td>
+<td>영향력 있는 사람의 의견에 쏠림</td>
+</tr>
+<tr>
+<td>판매원 의견 종합법</td>
+<td>영업사원의 지역별 예측을 합산</td>
+<td>현장 정보 반영, 지역·품목별 예측</td>
+<td>낙관·비관 편향, 목표와 혼동</td>
+</tr>
+<tr>
+<td>수명주기 유추법</td>
+<td>유사 제품의 PLC 패턴을 참고</td>
+<td>과거 자료가 없는 신제품에 사용</td>
+<td>유사 제품 선택이 주관적</td>
+</tr>
+</tbody>
+</table>
+<p><strong>델파이법의 절차 5단계 (97·133·139회)</strong></p>
+<ol>
+<li>예측 주제 결정과 조정자(진행자) 선정</li>
+<li>전문가 패널 선정(서로 익명 유지)</li>
+<li>1차 설문 실시와 응답 회수</li>
+<li>응답 결과(중앙값·사분위 범위·근거)를 요약해 피드백하고 <strong>2차 이후 설문을 반복</strong></li>
+<li>의견이 수렴되면 결과를 종합해 최종 예측치 확정</li>
+</ol>
+<h3 id="70">재고관리·일정계획에 맞는 기법 (70회)<a class="headerlink" href="#70" title="Permanent link">&para;</a></h3>
+<p>재고관리와 일정계획은 <strong>단기간</strong>에 <strong>수많은 품목</strong>을 <strong>자주 반복</strong>해서 예측해야 한다.</p>
+<ul>
+<li><strong>정성적 기법이 부적합한 이유</strong>: 시간과 비용이 많이 들어 수많은 품목을 자주 반복 예측할 수 없고, 주관적이어서 일관성이 낮다. 주로 장기·신제품 예측용이다.</li>
+<li><strong>인과형 기법이 부적합한 이유</strong>: 모형 구축과 설명변수 자료 수집에 비용이 크고, 설명변수 자체를 먼저 예측해야 한다. 주로 중장기·총량 예측에 쓴다.</li>
+<li><strong>적합한 기법</strong>: 계산이 간단하고 자동화가 쉬운 <strong>시계열 기법</strong> — 단순·가중 이동평균, 단순 지수평활, 추세조정 지수평활(Holt), 계절지수법(Winters)</li>
+</ul>
+<h3 id="79">수요에 영향을 미치는 요인 (79회)<a class="headerlink" href="#79" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>요인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>외부(통제 불가)</td>
+<td>경기·경제 상황, 소득 수준, 인구 구조, 경쟁사의 가격·신제품, 대체재·보완재, 계절·기후, 정책·규제, 소비자 기호·트렌드</td>
+</tr>
+<tr>
+<td>내부(통제 가능)</td>
+<td>자사 가격, 광고·판촉, 제품 품질·디자인, 유통망, 신용 조건, 서비스 수준, 제품수명주기 단계</td>
+</tr>
+</tbody>
+</table>
+<h3 id="133">수요예측 방법 선정 시 고려사항 (133회)<a class="headerlink" href="#133" title="Permanent link">&para;</a></h3>
+<p>예측 기간(단기·중기·장기), 과거 자료의 가용성과 양, 수요 패턴(수평·추세·계절), 요구되는 정확도, 예측 비용과 소요 시간, 예측 대상(개별 품목·총량), 사용자의 이해 용이성</p>
+<table>
+<thead>
+<tr>
+<th>예측 기간</th>
+<th>대상 의사결정</th>
+<th>주로 쓰는 기법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>단기(3개월 이내)</td>
+<td>재고 보충, 일정계획, 작업 배정</td>
+<td>이동평균, 지수평활</td>
+</tr>
+<tr>
+<td>중기(3개월~2년)</td>
+<td>총괄생산계획, 인력·예산 계획</td>
+<td>추세분석, 시계열 분해, 회귀분석</td>
+</tr>
+<tr>
+<td>장기(2년 이상)</td>
+<td>설비 투자, 입지, 신제품·신사업</td>
+<td>델파이, 시장조사, 수명주기 유추, 계량경제 모형</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">수요예측의 절차<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>① 예측 목적과 대상 결정 → ② 예측 기간(시계) 설정 → ③ 자료 수집·정제와 수요 패턴 분석 → ④ 기법 선택 → ⑤ 예측 실시 → ⑥ 예측오차 감시(추적지표)와 모형 수정. 예측의 일반 원칙은 "예측은 틀린다, 총량 예측이 개별 예측보다 정확하다, 예측 기간이 짧을수록 정확하다"이다.</p>
+<h3 id="_5">델파이법의 배경과 특징<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>1950년대 미국 RAND 연구소(O. Helmer, N. Dalkey 등)가 개발했다. 대면 토론에서 생기는 권위자 영향·집단 동조를 없애려고 <strong>익명 설문을 반복</strong>한다.</p>
+<table>
+<thead>
+<tr>
+<th>특징</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>익명성</td>
+<td>응답자가 서로를 모름 → 권위·동조 압력 배제</td>
+</tr>
+<tr>
+<td>반복</td>
+<td>2~4회 설문을 되풀이해 의견을 수렴</td>
+</tr>
+<tr>
+<td>통제된 피드백</td>
+<td>진행자가 이전 결과(중앙값·사분위 범위·소수 의견의 근거)를 정리해 제공</td>
+</tr>
+<tr>
+<td>통계적 집계</td>
+<td>최종 결과를 중앙값·분포로 제시</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">최근 동향<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>AI·기계학습 예측</strong>: POS·날씨·판촉·SNS 등 외부 변수를 결합한 수요 감지(Demand Sensing), 다품목 자동 예측 → <a href="../../07-support-technology/01-it-smart-factory/#t71-4">7.1.4</a></li>
+<li><strong>S&amp;OP 연계</strong>: 예측을 판매·생산·구매 계획 합의 회의에 연결 → <a href="../../03-process-control/01-production-planning/#t31-1">3.1.1</a></li>
+<li><strong>협업 예측(CPFR)</strong>: 거래처와 단일 예측을 공유해 채찍효과 감소 → <a href="../03-scm/#t23-2">2.3.2</a></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>분류 문제는 <strong>3분류 트리 그림</strong>으로 시작한다. 정성 / 시계열 / 인과형 각각에 기법을 3개 이상 쓴다.</li>
+<li>델파이법은 <strong>익명성·반복·통제된 피드백·통계적 집계</strong>의 4대 특징과 5단계 절차를 함께 외운다.</li>
+<li>70회형은 "단기·다품목·반복"이라는 재고·일정 예측의 특성을 먼저 쓰고, 그 특성과 맞지 않는 이유를 대비시킨다.</li>
+<li>결론 예: "예측은 반드시 틀리므로 기법 선택보다 <strong>오차 감시(TS)와 계획의 유연성</strong>이 중요하며, AI 기반 수요 감지와 S&amp;OP로 예측-계획을 연결해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 3문항 (68회, 70회, 79회)</summary>
+<ul>
+<li><strong>제68회(2002) 2교시 6번</strong> · 25점<br />
+  수요예측을 위한 질적방법을 열거하고 장단점을 설명해보시오.</li>
+<li><strong>제70회(2003) 2교시 3번</strong> · 25점<br />
+  수요예측에서, 정성적 기법과 인과형 모형은 재고관리와 일정계획에는 그 다지 유용하지 않다고 한다. 왜 그런지를 설명하시오. 그리고 적합한 예측기법을 나열하시오.</li>
+<li><strong>제79회(2006) 2교시 3번</strong> · 25점<br />
+  수요에 영향을 미치는 요인에 대하여 설명하시오.</li>
+</ul>
+</details>
+<h2 id="t21-2">2.1.2 시계열 예측(이동평균·지수평활)<a class="headerlink" href="#t21-2" title="Permanent link">&para;</a></h2>
+<h3 id="4-124133139">시계열 변동의 4가지 유형 (124·133·139회)<a class="headerlink" href="#4-124133139" title="Permanent link">&para;</a></h3>
+<p>시계열 자료 <span class="arithmatex">\( Y \)</span>는 네 가지 변동으로 분해된다. 승법 모형: <span class="arithmatex">\( Y = T \times C \times S \times I \)</span></p>
+<table>
+<thead>
+<tr>
+<th>유형</th>
+<th>의미</th>
+<th>예</th>
+<th>적합한 예측법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>추세변동(T, Trend)</td>
+<td>장기간 꾸준히 증가·감소하는 경향</td>
+<td>인구 증가에 따른 수요 증가</td>
+<td>최소자승 추세선, 추세조정 지수평활(Holt)</td>
+</tr>
+<tr>
+<td>순환변동(C, Cycle)</td>
+<td>1년 이상 주기로 반복되는 경기 변동</td>
+<td>경기 확장·수축</td>
+<td>경기 선행지표, 인과형(회귀) 모형</td>
+</tr>
+<tr>
+<td>계절변동(S, Seasonal)</td>
+<td>1년 안에서 주기적으로 반복</td>
+<td>여름철 에어컨, 명절 수요</td>
+<td>계절지수법, 시계열 분해법, Winters 모형</td>
+</tr>
+<tr>
+<td>불규칙변동(I, Irregular)</td>
+<td>우연·돌발적 변동</td>
+<td>파업, 재해, 일시 이벤트</td>
+<td>예측 불가 → 이동평균·지수평활로 평활(제거)</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>xychart-beta
+    title "추세 + 계절변동이 있는 수요(선)와 추세선(막대)"
+    x-axis ["1분기", "2분기", "3분기", "4분기", "5분기", "6분기", "7분기", "8분기"]
+    y-axis "수요" 0 --&gt; 200
+    bar [100, 108, 116, 124, 132, 140, 148, 156]
+    line [85, 120, 140, 105, 115, 152, 172, 137]</code></pre>
+<p>도식화 문제에서는 네 개의 작은 그래프(직선 상승 / 긴 파동 / 짧은 반복 파동 / 무작위 요동)를 나란히 그린다.</p>
+<h3 id="88109">이동평균법 (88·109회)<a class="headerlink" href="#88109" title="Permanent link">&para;</a></h3>
+<p><strong>단순 이동평균</strong>: 최근 <span class="arithmatex">\( n \)</span>기간 실적의 평균을 다음 기간 예측치로 쓴다.</p>
+<div class="arithmatex">\[
+F_{t+1} = \frac{A_t + A_{t-1} + \cdots + A_{t-n+1}}{n}
+\]</div>
+<p><strong>가중 이동평균</strong>: 최근 자료에 큰 가중치를 준다(가중치 합 = 1).</p>
+<div class="arithmatex">\[
+F_{t+1} = w_1 A_t + w_2 A_{t-1} + \cdots + w_n A_{t-n+1}
+\]</div>
+<ul>
+<li><strong>의미</strong>: <span class="arithmatex">\( n \)</span>이 클수록 불규칙 변동을 잘 걸러내지만(평활 효과↑) 수요 변화에 늦게 반응한다. <span class="arithmatex">\( n \)</span>이 작을수록 반대다.</li>
+<li><strong>용도</strong>: 추세·계절성이 뚜렷하지 않은 <strong>수평(안정) 수요</strong>의 단기 예측</li>
+</ul>
+<h3 id="88">지수평활법 (88회)<a class="headerlink" href="#88" title="Permanent link">&para;</a></h3>
+<p><strong>단순 지수평활</strong>: 직전 예측치에 예측 오차의 일정 비율(<span class="arithmatex">\( \alpha \)</span>)만큼을 보정한다.</p>
+<div class="arithmatex">\[
+F_{t+1} = F_t + \alpha (A_t - F_t) = \alpha A_t + (1 - \alpha) F_t \qquad (0 \le \alpha \le 1)
+\]</div>
+<ul>
+<li>과거 실적 전체에 <strong>지수적으로 감소하는 가중치</strong>를 주는 가중 이동평균과 같다.</li>
+<li><span class="arithmatex">\( \alpha \)</span>가 크면 최근 수요에 민감(변동·추세가 있는 수요), 작으면 평활 효과가 큼(안정 수요)</li>
+<li>자료 저장이 적고 계산이 간단해 <strong>다품목 단기 예측(재고관리)</strong>에 널리 쓴다.</li>
+</ul>
+<p><strong>추세조정 지수평활법(Holt 모형) (85회)</strong>: 단순 지수평활은 추세가 있으면 예측이 계속 뒤처지므로(지연 오차) <strong>수준과 추세를 따로 평활</strong>한다.</p>
+<div class="arithmatex">\[
+\begin{aligned}
+S_t &amp;= \alpha A_t + (1-\alpha)(S_{t-1} + T_{t-1}) &amp;&amp; \text{(평활 수준)}\\
+T_t &amp;= \beta (S_t - S_{t-1}) + (1-\beta) T_{t-1} &amp;&amp; \text{(평활 추세)}\\
+F_{t+1} &amp;= S_t + T_t &amp;&amp; \text{(추세조정 예측치)}
+\end{aligned}
+\]</div>
+<p>계절성까지 반영하려면 Winters 모형(수준·추세·계절 3중 평활)을 쓴다.</p>
+<h3 id="88_1">최소자승법(추세분석) (88회)<a class="headerlink" href="#88_1" title="Permanent link">&para;</a></h3>
+<p>시간 <span class="arithmatex">\( X \)</span>와 수요 <span class="arithmatex">\( Y \)</span>의 관계를 직선 <span class="arithmatex">\( Y = a + bX \)</span>로 놓고 오차 제곱합이 최소가 되도록 <span class="arithmatex">\( a, b \)</span>를 구한다.</p>
+<div class="arithmatex">\[
+b = \frac{n\sum XY - \sum X \sum Y}{n\sum X^2 - (\sum X)^2}, \qquad a = \frac{\sum Y - b\sum X}{n}
+\]</div>
+<p><span class="arithmatex">\( X \)</span>를 <span class="arithmatex">\( \sum X = 0 \)</span>이 되도록 부호화하면 <span class="arithmatex">\( a = \sum Y / n,\ b = \sum XY / \sum X^2 \)</span>로 간단해진다.
+<strong>용도</strong>: 뚜렷한 <strong>추세</strong>가 있는 수요의 중기 예측</p>
+<h3 id="97">시계열 분해법 (97회)<a class="headerlink" href="#97" title="Permanent link">&para;</a></h3>
+<p>시계열을 T·C·S·I로 분리해 각각을 예측한 뒤 다시 결합하는 방법이다.</p>
+<ol>
+<li>이동평균(예: 12개월 중심 이동평균)으로 T×C를 구함</li>
+<li>실적 ÷ 이동평균으로 계절지수(S)를 구함</li>
+<li>실적을 계절지수로 나눠 <strong>계절 조정(탈계절화)</strong></li>
+<li>계절 조정 자료로 추세선을 구해 미래 추세를 예측</li>
+<li>추세 예측치 × 계절지수로 최종 예측(재계절화)</li>
+</ol>
+<h3 id="_7">시계열 기법 비교<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>기법</th>
+<th>적합한 수요 패턴</th>
+<th>장점</th>
+<th>한계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>단순 이동평균</td>
+<td>수평(안정)</td>
+<td>계산 간단</td>
+<td>추세·계절 반영 못함, <span class="arithmatex">\( n \)</span>기간 자료 보관</td>
+</tr>
+<tr>
+<td>가중 이동평균</td>
+<td>수평, 완만한 변화</td>
+<td>최근 자료 강조</td>
+<td>가중치 결정이 주관적</td>
+</tr>
+<tr>
+<td>단순 지수평활</td>
+<td>수평</td>
+<td>자료 저장 최소, 자동화 용이</td>
+<td>추세가 있으면 지연 오차</td>
+</tr>
+<tr>
+<td>Holt(2중 평활)</td>
+<td>추세</td>
+<td>추세 추종</td>
+<td>계절 미반영, 모수 2개</td>
+</tr>
+<tr>
+<td>Winters(3중 평활)</td>
+<td>추세 + 계절</td>
+<td>계절까지 반영</td>
+<td>모수 3개, 초기값 필요</td>
+</tr>
+<tr>
+<td>최소자승 추세선</td>
+<td>선형 추세</td>
+<td>중기 예측, 해석 쉬움</td>
+<td>추세 전환점 반영 어려움</td>
+</tr>
+<tr>
+<td>시계열 분해</td>
+<td>추세 + 계절 + 순환</td>
+<td>변동 요인별 설명 가능</td>
+<td>계산량 많음</td>
+</tr>
+<tr>
+<td>ARIMA(Box–Jenkins)</td>
+<td>자기상관이 있는 시계열</td>
+<td>통계적으로 정교</td>
+<td>자료가 많이 필요, 전문성 요구</td>
+</tr>
+</tbody>
+</table>
+<p>시계열 기법은 "과거 패턴이 미래에도 지속된다"는 가정에 기반하므로, 구조 변화(신제품·경쟁 변화·팬데믹)가 생기면 정성·인과형 기법이나 AI 모형으로 보완한다.</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>시계열 변동 유형은 <strong>4가지 그래프 + 유형별 적합 기법</strong> 표가 핵심이다(124·133·139회 반복).</li>
+<li>공식 문제는 식만 쓰지 말고 <strong>기호 정의, 모수(<span class="arithmatex">\( n, \alpha \)</span>)의 의미, 용도</strong>까지 쓴다.</li>
+<li>단순 지수평활에 추세가 있으면 예측이 늦어진다는 점을 들어 Holt 모형의 필요성을 설명하면 85회형에 대응된다.</li>
+<li>결론 예: "수요 패턴을 먼저 분해·진단한 뒤 패턴에 맞는 기법을 고르고, 추적지표로 정확도를 감시하는 <strong>예측-감시-수정의 폐쇄 루프</strong>를 MES·ERP에 자동화해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 7문항 (85회, 88회, 97회, 106회, 109회, 124회, 139회)</summary>
+<ul>
+<li><strong>제85회(2008) 1교시 8번</strong> · 10점<br />
+  추세조정지수평활법(trend adjusted exponential smoothing)에 대해 설명하시오.</li>
+<li><strong>제88회(2009) 1교시 4번</strong> · 10점<br />
+  수요예측 기법 중에서 1)이동평균법, 2)최소자승법, 3)지수평활법의 산출식과 각 기법의 용도를 설명하시오.</li>
+<li>
+<p><strong>제97회(2012) 2교시 2번</strong> · 25점<br />
+  경영 의사결정에 있어서 미래 계획을 수립하기 위한 수요예측에 대하여 다음 각 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>경영 의사결정에 있어서 미래 계획을 수립하기 위한 수요예측에 대하여 다음 각 물음에 답하시오.<br />
+1) 수요예측 접근방법별로 기법의 종류를 나열하시오.<br />
+2) 수요예측 기법 중 델파이법과 시계열분해법에 대하여 설명하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제106회(2015) 3교시 5번</strong> · 25점<br />
+  수요예측에 대한 다음 각 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>수요예측에 대한 다음 각 물음에 답하시오.<br />
+(1) 공장관리에서 수요예측을 기반으로 하는 생산, 마케팅, 재무, 인사 부문에서 행하는 중요 의사결정들에 대하여 설명하시오.<br />
+(2) 수요 예측기법의 종류에 대하여 설명하시오.<br />
+(3) 시계열 예측기법에 대하여 설명하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제109회(2016) 1교시 9번</strong> · 10점<br />
+  이동평균법을 구하는 공식을 쓰고, 그 의미에 대하여 설명하시오.</p>
+</li>
+<li><strong>제124회(2021) 4교시 4번</strong> · 25점<br />
+  시계열 수요자료로 인식할 수 있는 수요변동 형태와 수요예측 기법을 설명하시오.</li>
+<li>
+<p><strong>제139회(2026) 4교시 1번</strong> · 25점<br />
+  수요예측에 대하여 다음의 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>수요예측에 대하여 다음의 물음에 답하시오.<br />
+1) 시계열변동의 추세변동, 순환변동, 계절변동, 불규칙변동에 대하여 도식화하여 설명하시오.<br />
+2) 정성적 예측법인 델파이법을 정의하고, 사용절차를 5단계로 구분하여 설명하시오.  </p>
+</details>
+</li>
+</ul>
+</details>
+<h2 id="t21-3">2.1.3 예측오차와 추적지표<a class="headerlink" href="#t21-3" title="Permanent link">&para;</a></h2>
+<h3 id="103">예측오차 측정의 목적 (103회)<a class="headerlink" href="#103" title="Permanent link">&para;</a></h3>
+<ol>
+<li>예측 기법의 <strong>정확도를 평가</strong>하고 기법을 비교·선택</li>
+<li>예측의 <strong>편향(bias)</strong>을 찾아 모형을 수정</li>
+<li>모수(<span class="arithmatex">\( n, \alpha \)</span>)를 조정</li>
+<li>오차 크기를 바탕으로 <strong>안전재고</strong> 수준을 결정</li>
+</ol>
+<h3 id="_8">오차 측정 지표<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>공식</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>예측오차</td>
+<td><span class="arithmatex">\( e_t = A_t - F_t \)</span></td>
+<td>(+)는 과소예측, (−)는 과대예측</td>
+</tr>
+<tr>
+<td>누적예측오차(CFE, RSFE)</td>
+<td><span class="arithmatex">\( CFE = \sum e_t \)</span></td>
+<td>오차의 누적 → <strong>편향</strong> 판단(0에 가까울수록 좋음)</td>
+</tr>
+<tr>
+<td>평균절대오차(MAD)</td>
+<td><span class="arithmatex">\( MAD = \dfrac{\sum \lvert e_t \rvert}{n} \)</span></td>
+<td>오차의 평균 크기 → <strong>정확도</strong></td>
+</tr>
+<tr>
+<td>평균제곱오차(MSE)</td>
+<td><span class="arithmatex">\( MSE = \dfrac{\sum e_t^2}{n} \)</span></td>
+<td>큰 오차에 더 큰 벌점</td>
+</tr>
+<tr>
+<td>평균절대백분율오차(MAPE)</td>
+<td><span class="arithmatex">\( MAPE = \dfrac{100}{n}\sum \dfrac{\lvert e_t \rvert}{A_t} \)</span></td>
+<td>규모가 다른 품목 간 비교</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ts-tracking-signal-97103115133">추적지표(TS, Tracking Signal) (97·103·115·133회)<a class="headerlink" href="#ts-tracking-signal-97103115133" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+TS = \frac{CFE}{MAD}
+\]</div>
+<ul>
+<li>예측이 <strong>한쪽으로 치우치는지(편향)</strong>를 감시하는 지표다. 오차가 무작위이면 CFE가 0 근처에 머물러 TS도 0 근처에 있다.</li>
+<li><strong>관리 한계</strong>: 보통 <span class="arithmatex">\( \pm 4\,MAD \)</span>(문제에 따라 <span class="arithmatex">\( \pm 3.75\,MAD \)</span> 등)를 쓴다. TS가 한계를 벗어나면 <strong>예측 모형을 재검토</strong>한다.</li>
+<li>TS가 계속 (+)이면 과소예측, 계속 (−)이면 과대예측 경향이다.</li>
+<li>관리 한계를 좁게 잡으면 모형 이상을 빨리 잡지만 잘못된 경보가 늘고, 넓게 잡으면 그 반대다. 품목 중요도(A급은 좁게)에 따라 정한다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>관점</th>
+<th>지표</th>
+<th>판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>편향(Bias)</td>
+<td>CFE, 평균오차, TS</td>
+<td>한쪽으로 치우치는가 → 모형 구조 수정(추세·계절 반영)</td>
+</tr>
+<tr>
+<td>정확도(Accuracy)</td>
+<td>MAD, MSE, MAPE</td>
+<td>오차가 얼마나 큰가 → 모수 조정, 안전재고 산정</td>
+</tr>
+</tbody>
+</table>
+<p>오차가 정규분포이면 <span class="arithmatex">\( \sigma \approx 1.25\,MAD \)</span>이므로, MAD로 리드타임 중 수요의 표준편차를 추정해 안전재고(<span class="arithmatex">\( SS = z\sigma_{LT} \)</span>)를 정할 수 있다 → <a href="../04-materials-inventory/#t24-1">2.4.1</a></p>
+<h3 id="alpha-05-115">지수평활계수 <span class="arithmatex">\( \alpha = 0.5 \)</span>의 의미 (115회)<a class="headerlink" href="#alpha-05-115" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\( F_{t+1} = 0.5A_t + 0.5F_t \)</span> — <strong>최근 실적과 직전 예측에 같은 비중</strong>을 둔다. 반응성과 평활 효과가 중간인 경우로, 비교적 큰 <span class="arithmatex">\( \alpha \)</span>여서 수요 변화에 빠르게 반응하지만 불규칙 변동도 함께 따라간다.</p>
+<h3 id="97_1">풀이: 97회<a class="headerlink" href="#97_1" title="Permanent link">&para;</a></h3>
+<p>MAD는 해당 월까지의 누적 평균으로 계산한다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">월</th>
+<th style="text-align: center;">실제</th>
+<th style="text-align: center;">예측</th>
+<th style="text-align: center;">오차</th>
+<th style="text-align: center;">CFE</th>
+<th style="text-align: center;">MAD</th>
+<th style="text-align: center;">TS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">5.00</td>
+<td style="text-align: center;">−1.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">2.50</td>
+<td style="text-align: center;">−2.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">106</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">−1</td>
+<td style="text-align: center;">3.00</td>
+<td style="text-align: center;">−0.33</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">102</td>
+<td style="text-align: center;">106</td>
+<td style="text-align: center;">−4</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">3.25</td>
+<td style="text-align: center;">−1.54</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">−2</td>
+<td style="text-align: center;">−7</td>
+<td style="text-align: center;">3.00</td>
+<td style="text-align: center;">−2.33</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">111</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4.00</td>
+<td style="text-align: center;">0.50</td>
+</tr>
+</tbody>
+</table>
+<p>→ TS가 −2.33 ~ 0.50으로 <span class="arithmatex">\( \pm 4 \)</span> 관리 한계 안에 있다. 부호도 (−)와 (+)가 섞여 있어 <strong>뚜렷한 편향이 없고 예측이 적정</strong>하다.</p>
+<h3 id="103_1">풀이: 103회<a class="headerlink" href="#103_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">월</th>
+<th style="text-align: center;">실제</th>
+<th style="text-align: center;">예측</th>
+<th style="text-align: center;">오차</th>
+<th style="text-align: center;">CFE</th>
+<th style="text-align: center;">MAD</th>
+<th style="text-align: center;">TS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">90</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">5.00</td>
+<td style="text-align: center;">−1.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5.00</td>
+<td style="text-align: center;">0.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5.00</td>
+<td style="text-align: center;">1.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5.00</td>
+<td style="text-align: center;">0.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">5.00</td>
+<td style="text-align: center;">−1.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">6.67</td>
+<td style="text-align: center;">1.50</td>
+</tr>
+</tbody>
+</table>
+<p>→ 6개월 CFE = 10, MAD = 6.67, TS = 1.50. 모든 TS가 <span class="arithmatex">\( \pm 4\,MAD \)</span> 안에 있으므로 <strong>예측 기법은 적정</strong>하다. 다만 6월에 오차가 커졌으므로 수요가 늘어나는 추세인지 계속 관찰한다.</p>
+<h3 id="115-alpha-05-f_1-300">풀이: 115회 (단순 지수평활, <span class="arithmatex">\( \alpha = 0.5,\ F_1 = 300 \)</span>)<a class="headerlink" href="#115-alpha-05-f_1-300" title="Permanent link">&para;</a></h3>
+<p>예측치: <span class="arithmatex">\( F_2 = 300 + 0.5(310 - 300) = 305 \)</span>, <span class="arithmatex">\( F_3 = 305 + 0.5(295 - 305) = 300 \)</span>, <span class="arithmatex">\( F_4 = 308 \)</span>, <span class="arithmatex">\( F_5 = 302 \)</span>, <span class="arithmatex">\( F_6 = 303 \)</span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">월</th>
+<th style="text-align: center;">실제</th>
+<th style="text-align: center;">예측</th>
+<th style="text-align: center;">오차</th>
+<th style="text-align: center;">CFE</th>
+<th style="text-align: center;">MAD</th>
+<th style="text-align: center;">TS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">310</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10.0</td>
+<td style="text-align: center;">1.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">295</td>
+<td style="text-align: center;">305</td>
+<td style="text-align: center;">−10</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">10.0</td>
+<td style="text-align: center;">0.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">316</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">12.0</td>
+<td style="text-align: center;">1.33</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">296</td>
+<td style="text-align: center;">308</td>
+<td style="text-align: center;">−12</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">12.0</td>
+<td style="text-align: center;">0.33</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">304</td>
+<td style="text-align: center;">302</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">10.0</td>
+<td style="text-align: center;">0.60</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">299</td>
+<td style="text-align: center;">303</td>
+<td style="text-align: center;">−4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">9.0</td>
+<td style="text-align: center;">0.22</td>
+</tr>
+</tbody>
+</table>
+<p>→ TS 최댓값이 1.33으로 관리 한계 <span class="arithmatex">\( \pm 3.75 \)</span> 안에 있으므로 <strong>단순 지수평활법(<span class="arithmatex">\( \alpha = 0.5 \)</span>)을 적용할 수 있다</strong>.</p>
+<h3 id="136-3-050302">풀이: 136회 (3개월 가중 이동평균, 가중치 0.5·0.3·0.2)<a class="headerlink" href="#136-3-050302" title="Permanent link">&para;</a></h3>
+<ul>
+<li>5월: <span class="arithmatex">\( 0.5(62) + 0.3(50) + 0.2(38) = 53.6 \rightarrow 54 \)</span></li>
+<li>6월: <span class="arithmatex">\( 0.5(42) + 0.3(62) + 0.2(50) = 49.6 \rightarrow 50 \)</span></li>
+<li>7월: <span class="arithmatex">\( 0.5(28) + 0.3(42) + 0.2(62) = 39.0 \rightarrow 39 \)</span></li>
+<li>8월: <span class="arithmatex">\( 0.5(48) + 0.3(28) + 0.2(42) = 40.8 \rightarrow 41 \)</span></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">월</th>
+<th style="text-align: center;">실제</th>
+<th style="text-align: center;">예측</th>
+<th style="text-align: center;">오차</th>
+<th style="text-align: center;">CFE</th>
+<th style="text-align: center;">MAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: center;">−2</td>
+<td style="text-align: center;">−2</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">42</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">62</td>
+<td style="text-align: center;">53</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">6 (6.33)</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">42</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">−12</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">8 (7.75)</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">−22</td>
+<td style="text-align: center;">−19</td>
+<td style="text-align: center;">11 (10.60)</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">48</td>
+<td style="text-align: center;">39</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">−10</td>
+<td style="text-align: center;">10 (10.33)</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">41</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">11 (10.71)</td>
+</tr>
+</tbody>
+</table>
+<p>(MAD는 2월부터의 누적 평균, 괄호 안은 반올림 전 값)</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>계산 문제는 <strong>공식 → 완성된 표 → 판정(관리 한계와 비교) → 의미 해석</strong> 순서로 쓴다.</li>
+<li>MAD를 <strong>누적 평균</strong>으로 계산하는지 문제 조건을 확인한다. 기출은 대부분 해당 월까지의 누적 평균을 쓴다.</li>
+<li>TS 판정에서는 한계 안·밖 여부와 함께 <strong>부호의 연속성(편향 방향)</strong>도 언급한다.</li>
+<li>결론 예: "TS가 관리 한계 안에 있어 현 기법을 유지하되, 최근 오차가 커진 구간은 추세 발생 여부를 관찰하고 필요하면 <span class="arithmatex">\( \alpha \)</span> 조정이나 Holt 모형으로 전환한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 5문항 (97회, 103회, 115회, 133회, 136회)</summary>
+<ul>
+<li>
+<p><strong>제97회(2012) 4교시 6번</strong> · 25점<br />
+  수요예측기법에는 여러 가지가 있다. 예측의 효과를 높이기 위해 추적지표(TS: Tracking Signal)을 사용한다. 실제수요와 예측치가 아래 표와 같을 때 누적예측오차(CFE: Cumulative sum of Forecast Errors), 절대평균오차(MAD: Mean Absolute Deviation), 추적지표를 구하고, 추적지표의 값이 나타내는 의미를 설명하시오. (단, 추적지표는 소숫점 이하 셋째자리에서 반올림하시오.)</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>수요예측기법에는 여러 가지가 있다. 예측의 효과를 높이기 위해 추적지표(TS: Tracking Signal)을 사용한다. 실제수요와 예측치가 아래 표와 같을 때 누적예측오차(CFE: Cumulative sum of Forecast Errors), 절대평균오차(MAD: Mean Absolute Deviation), 추적지표를 구하고, 추적지표의 값이 나타내는 의미를 설명하시오. (단, 추적지표는 소숫점 이하 셋째자리에서 반올림하시오.)<br />
+[표] 월 | 실제수요 | 예측치 | 누적예측오차 | 평균절대오차 | 추적지표<br />
+1 | 95 | 100 | | |<br />
+2 | 100 | 100 | | |<br />
+3 | 110 | 106 | | |<br />
+4 | 102 | 106 | | |<br />
+5 | 98 | 100 | | |<br />
+6 | 120 | 111 | | |  </p>
+</details>
+</li>
+<li>
+<p><strong>제103회(2014) 2교시 2번</strong> · 25점<br />
+  다음은 어느 회사의 판매품목에 대해 수요예측치와 실제판매량을 비교하여 나타낸 것이다.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>다음은 어느 회사의 판매품목에 대해 수요예측치와 실제판매량을 비교하여 나타낸 것이다.<br />
+[표] 월 | 1 | 2 | 3 | 4 | 5 | 6<br />
+실제판매량 | 90 | 100 | 105 | 100 | 95 | 110<br />
+수요예측치 | 95 | 95 | 100 | 105 | 100 | 95<br />
+1) 예측오차의 측정목적에 대하여 설명하시오.<br />
+2) 누적예측오차(Running sum of forecast error)와 절대평균오차(Mean absolute deviation)를 설명하고 각각의 값을 구하시오.<br />
+3) 추적지표(Tracking Signal)를 설명하고 계산한 후 그 계산 결과에 대해 ±4MAD 관리도법을 적용하여 평가하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제115회(2018) 3교시 4번</strong> · 25점<br />
+  K사는 단순지수평활법(평활계수 α=0.5)으로 수요를 예측하여 생산계획을 수립하고자 한다. 이 방법이 당사에 적합한지를 평가하기 위해 다음 상반기 생산실적을 가지고 단순지수평활법으로 수요예측을 한 후 예측오차를 평가하여 적용여부를 결정하기로 하였다. 다음 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>K사는 단순지수평활법(평활계수 α=0.5)으로 수요를 예측하여 생산계획을 수립하고자 한다. 이 방법이 당사에 적합한지를 평가하기 위해 다음 상반기 생산실적을 가지고 단순지수평활법으로 수요예측을 한 후 예측오차를 평가하여 적용여부를 결정하기로 하였다. 다음 물음에 답하시오.<br />
+[표] 월 | 1월 | 2월 | 3월 | 4월 | 5월 | 6월<br />
+수요 | 310 | 295 | 316 | 296 | 304 | 299<br />
+1) 평활계수 α=0.5라면 어떤 경우인지 설명하시오.<br />
+2) 2월부터 6월까지의 수요를 단순지수평활법으로 예측하여 다음 표를 완성하시오.<br />
+(단, 1월의 예측치는 300개이다.)<br />
+[표] 월 | 1월 | 2월 | 3월 | 4월 | 5월 | 6월<br />
+수요 | 310 | 295 | 316 | 296 | 304 | 299<br />
+예측치 | 300 | | | | |<br />
+3) 2)항의 예측치를 활용하여, 월별 누적예측오차(CFE: cumulative sum of forecasting error), 평균절대오차(MAD: mean absolute deviation), 추적지표(TS: tracking signal)를 계산하여 다음 표를 완성하시오.<br />
+[표] 월 | 실제수요 | 예측오차 | CFE | MAD | TS<br />
+1 | 310 | 10 | | |<br />
+2 | 295 | | | |<br />
+3 | 316 | | | |<br />
+4 | 296 | | | |<br />
+5 | 304 | | | |<br />
+6 | 299 | | | |<br />
+4) 월별 추적지표를 관리도법(±3.75MAD)을 적용하여, 단순지수평활법(평활계수 α=0.5)의 적용가능 여부를 결정하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제133회(2024) 4교시 1번</strong> · 25점<br />
+  수요예측에 대하여 다음을 설명하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>수요예측에 대하여 다음을 설명하시오.<br />
+1) 수요예측 방법 선정 시 고려사항<br />
+2) 시계열 변동의 4가지 유형과 유형별 수요 예측법<br />
+3) 델파이법<br />
+4) 추적 지표(Tracking Signal)  </p>
+</details>
+</li>
+<li>
+<p><strong>제136회(2025) 3교시 6번</strong> · 25점<br />
+  수요예측과 관련된 다음 질문에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>수요예측과 관련된 다음 질문에 답하시오.<br />
+[표] 월 | 실제수요 | 예측치 | 예측오차 | 누적예측오차 | 평균절대오차<br />
+2 | 38 | 40 | | |<br />
+3 | 50 | 42 | | |<br />
+4 | 62 | 53 | | |<br />
+5 | 42 | | | |<br />
+6 | 28 | | | |<br />
+7 | 48 | | | |<br />
+8 | 54 | | | |<br />
+(1) 3개월 가중 이동 평균법을 사용하여 5월부터 8월까지 예측치를 소수점 첫째 자리에서 반올림하여 구하시오.<br />
+(단, 가중치 최근: 0.5, 직전: 0.3, 그전: 0.2)<br />
+(2) 예측오차(Forecast Errors), 누적예측오차(Cumulative Sum of Forecast Errors), 평균절대오차(Mean Absolute Deviation)를 소수점 첫째 자리에서 반올림하여 구하시오.  </p>
+</details>
+</li>
+</ul>
+</details>
+<h2 id="t21-4">2.1.4 작업순서 결정과 우선순위 규칙<a class="headerlink" href="#t21-4" title="Permanent link">&para;</a></h2>
+<h3 id="_9">일정계획과 작업순서 결정의 개요<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p><strong>일정계획(Scheduling)</strong>은 주어진 작업을 언제, 어느 설비·작업자가, 어떤 순서로 처리할지 시간 축에 배정하는 것이다. 개별생산(Job Shop)의 단기 일정계획은 다음 세 단계로 이루어진다.</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>내용</th>
+<th>주요 기법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>부하할당(Loading)</td>
+<td>작업을 작업장·설비에 배정</td>
+<td>간트 부하도표, 할당법(헝가리안법)</td>
+</tr>
+<tr>
+<td>순서결정(Sequencing)</td>
+<td>한 작업장에서 대기 작업의 처리 순서 결정</td>
+<td>우선순위 규칙, 존슨 법칙</td>
+</tr>
+<tr>
+<td>상세일정(Detailed Scheduling)</td>
+<td>작업별 착수·완료 시각 확정</td>
+<td>전진·후진 일정계획, 간트 차트</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>전진 일정계획</strong>: 현재 시점부터 앞으로 배정 → 가장 빠른 완료일 파악(납기 약속용)</li>
+<li><strong>후진 일정계획</strong>: 납기에서 거꾸로 배정 → 늦은 착수로 재공 최소화(MRP 방식)</li>
+<li>우선순위 규칙은 <strong>정적 규칙</strong>(값이 시간에 따라 변하지 않음: SPT·EDD·FCFS)과 <strong>동적 규칙</strong>(현재 시각에 따라 값이 변함: 여유시간·CR·S/RO)으로 나눈다.</li>
+</ul>
+<h3 id="73">일정계획 수립에 필요한 요소 (73회)<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<p>작업(주문) 목록과 수량, 납기, 작업별 표준시간, 공정 순서(라우팅), 설비 능력과 부하, 자재 가용성, 작업자, 준비교체 시간, 우선순위 규칙</p>
+<h3 id="106">작업순서 결정의 평가 기준 (106회)<a class="headerlink" href="#106" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>기준</th>
+<th>정의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>평균 흐름시간(Mean Flow Time)</td>
+<td>작업이 도착해 완료될 때까지 걸린 시간의 평균</td>
+</tr>
+<tr>
+<td>평균 대기시간</td>
+<td>작업이 처리를 기다린 시간의 평균(= 흐름시간 − 처리시간)</td>
+</tr>
+<tr>
+<td>평균 납기지연(Mean Tardiness)</td>
+<td>납기를 넘긴 시간 <span class="arithmatex">\( \max(0, C_j - d_j) \)</span>의 평균</td>
+</tr>
+<tr>
+<td>최대 지연(Maximum Lateness)</td>
+<td>완료시각 − 납기 <span class="arithmatex">\( (C_j - d_j) \)</span>의 최댓값</td>
+</tr>
+<tr>
+<td>지연 작업 수</td>
+<td>납기를 지키지 못한 작업의 수</td>
+</tr>
+<tr>
+<td>평균 재공품 수</td>
+<td>시스템 안에 있는 평균 작업 수</td>
+</tr>
+<tr>
+<td>총 완료시간(Makespan)</td>
+<td>마지막 작업이 끝나는 시각</td>
+</tr>
+</tbody>
+</table>
+<h3 id="106136">우선순위 규칙의 종류와 특성 (106·136회)<a class="headerlink" href="#106136" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>규칙</th>
+<th>기준</th>
+<th>특성</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FCFS(선착순)</td>
+<td>먼저 도착한 작업부터</td>
+<td>공정하고 간단, 효율은 낮음</td>
+</tr>
+<tr>
+<td><strong>SPT</strong>(최단 처리시간)</td>
+<td>처리시간이 짧은 작업부터</td>
+<td>단일 기계에서 <strong>평균 흐름시간·평균 대기시간·평균 재공을 최소화</strong></td>
+</tr>
+<tr>
+<td><strong>EDD</strong>(최소 납기)</td>
+<td>납기가 빠른 작업부터</td>
+<td>단일 기계에서 <strong>최대 지연을 최소화</strong></td>
+</tr>
+<tr>
+<td>LPT(최장 처리시간)</td>
+<td>처리시간이 긴 작업부터</td>
+<td>큰 작업을 먼저 끝냄, 대체로 성과 나쁨</td>
+</tr>
+<tr>
+<td>MST·S(최소 여유시간)</td>
+<td>여유 = 납기 − 현재 − 잔여 처리시간이 작은 작업부터</td>
+<td>납기 준수 지향</td>
+</tr>
+<tr>
+<td><strong>CR</strong>(긴급률)</td>
+<td><span class="arithmatex">\( CR = \dfrac{\text{납기} - \text{현재일}}{\text{잔여 작업일수}} \)</span>가 작은 작업부터</td>
+<td>CR &lt; 1이면 이미 지연 상태, 동적으로 갱신</td>
+</tr>
+<tr>
+<td>S/RO</td>
+<td>여유시간 ÷ 잔여 공정 수가 작은 작업부터</td>
+<td>여러 공정을 거치는 작업에 적합</td>
+</tr>
+</tbody>
+</table>
+<h3 id="spt-70">SPT 규칙의 이유와 결점 (70회)<a class="headerlink" href="#spt-70" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>이유</strong>: 짧은 작업을 먼저 처리하면 뒤에서 기다리는 작업 수가 빨리 줄어든다. 그래서 단일 작업장에서 <strong>평균 흐름시간과 재공품 재고가 최소</strong>가 되고, 작업장 혼잡이 줄며, 고객이 평균적으로 가장 빨리 서비스를 받는다.</li>
+<li><strong>결점</strong>: 처리시간이 긴 작업은 계속 뒤로 밀려 <strong>크게 지연(기아 현상)</strong>될 수 있고, 납기를 고려하지 않아 중요한 주문이 늦어질 수 있다. → 대기시간 상한을 두거나 납기 규칙과 혼합해 보완한다.</li>
+</ul>
+<h3 id="63-0">풀이: 63회 (현재일 = 0)<a class="headerlink" href="#63-0" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">작업</th>
+<th style="text-align: center;">작업일수</th>
+<th style="text-align: center;">납기</th>
+<th style="text-align: center;">여유(납기 − 작업일수)</th>
+<th style="text-align: center;">CR(납기 ÷ 작업일수)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1.50</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">−11</td>
+<td style="text-align: center;">0.08</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">3.67</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">1.90</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>규칙</th>
+<th>작업순서</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SPT</td>
+<td>3 → 1 → 4 → 2</td>
+</tr>
+<tr>
+<td>EDD</td>
+<td>2 → 1 → 3 → 4</td>
+</tr>
+<tr>
+<td>MST(최소 여유)</td>
+<td>2 → 1 → 3 → 4</td>
+</tr>
+<tr>
+<td>CR</td>
+<td>2 → 1 → 4 → 3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="88_2">풀이: 88회<a class="headerlink" href="#88_2" title="Permanent link">&para;</a></h3>
+<p>처리시간 J1 3, J2 6, J3 9, J4 8, J5 5 / 납기 J1 4, J2 7, J3 6, J4 10, J5 5</p>
+<table>
+<thead>
+<tr>
+<th>스케줄</th>
+<th>순서</th>
+<th>완료시각</th>
+<th style="text-align: center;">평균 흐름시간</th>
+<th style="text-align: center;">평균 대기시간</th>
+<th style="text-align: center;">평균 납기지연</th>
+<th style="text-align: center;">최대 지연</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>스케줄 1</td>
+<td>J1→J2→J3→J4→J5</td>
+<td>3, 9, 18, 26, 31</td>
+<td style="text-align: center;">17.4</td>
+<td style="text-align: center;">11.2</td>
+<td style="text-align: center;">11.2</td>
+<td style="text-align: center;">26</td>
+</tr>
+<tr>
+<td>스케줄 2</td>
+<td>J5→J4→J3→J2→J1</td>
+<td>5, 13, 22, 28, 31</td>
+<td style="text-align: center;">19.8</td>
+<td style="text-align: center;">13.6</td>
+<td style="text-align: center;">13.4</td>
+<td style="text-align: center;">27</td>
+</tr>
+<tr>
+<td><strong>SPT</strong></td>
+<td>J1→J5→J2→J4→J3</td>
+<td>3, 8, 14, 22, 31</td>
+<td style="text-align: center;"><strong>15.6</strong></td>
+<td style="text-align: center;">9.4</td>
+<td style="text-align: center;">9.4</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr>
+<td><strong>EDD</strong></td>
+<td>J1→J5→J3→J2→J4</td>
+<td>3, 8, 17, 23, 31</td>
+<td style="text-align: center;">16.4</td>
+<td style="text-align: center;">10.2</td>
+<td style="text-align: center;">10.2</td>
+<td style="text-align: center;"><strong>21</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ 주어진 두 스케줄 중에서는 스케줄 1이 모든 기준에서 낫다. <strong>평균 흐름시간은 SPT(15.6)</strong>, <strong>최대 지연은 EDD(21)</strong>가 최소이므로 두 스케줄보다 개선된 스케줄이다.</p>
+<h3 id="94-0">풀이: 94회 (현재일 = 0)<a class="headerlink" href="#94-0" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">작업</th>
+<th style="text-align: center;">납기</th>
+<th style="text-align: center;">작업시간</th>
+<th style="text-align: center;">잔여 공정</th>
+<th style="text-align: center;">CR</th>
+<th style="text-align: center;">여유(S)</th>
+<th style="text-align: center;">S/RO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">J1</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">2.50</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">0.86</td>
+</tr>
+<tr>
+<td style="text-align: center;">J2</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">1.50</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0.75</td>
+</tr>
+<tr>
+<td style="text-align: center;">J3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1.67</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0.67</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>규칙</th>
+<th>SPT</th>
+<th>CR</th>
+<th>DD</th>
+<th>S</th>
+<th>S/RO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>작업순서</td>
+<td>J3→J1→J2</td>
+<td>J2→J3→J1</td>
+<td>J3→J2→J1</td>
+<td>J3→J2→J1</td>
+<td>J3→J2→J1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="121">풀이: 121회<a class="headerlink" href="#121" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>규칙</th>
+<th>작업순서</th>
+<th>완료시각</th>
+<th style="text-align: center;">평균 진행시간</th>
+<th style="text-align: center;">평균 납기지연</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>선착순(FCFS)</td>
+<td>A→B→C→D→E</td>
+<td>10, 25, 37, 51, 67</td>
+<td style="text-align: center;">38.0</td>
+<td style="text-align: center;"><strong>10.2</strong></td>
+</tr>
+<tr>
+<td>최소 작업시간(SPT)</td>
+<td>A→C→D→B→E</td>
+<td>10, 22, 36, 51, 67</td>
+<td style="text-align: center;"><strong>37.2</strong></td>
+<td style="text-align: center;">10.8</td>
+</tr>
+<tr>
+<td>최소 납기(EDD)</td>
+<td>A→B→C→D→E</td>
+<td>10, 25, 37, 51, 67</td>
+<td style="text-align: center;">38.0</td>
+<td style="text-align: center;"><strong>10.2</strong></td>
+</tr>
+<tr>
+<td>최소 여유시간</td>
+<td>A→B→D→C→E</td>
+<td>10, 25, 39, 51, 67</td>
+<td style="text-align: center;">38.4</td>
+<td style="text-align: center;">10.6</td>
+</tr>
+</tbody>
+</table>
+<p>(선착순의 납기지연: C 8, D 21, E 22일 → 51 ÷ 5 = 10.2일)</p>
+<p>→ <strong>평균 진행시간 최소: SPT 규칙(37.2일)</strong>, <strong>평균 납기지연 최소: 선착순·최소 납기 규칙(10.2일)</strong>. 이 문제는 도착 순서가 납기 순서와 같아 선착순과 EDD의 결과가 같다.</p>
+<h3 id="_10">현장 적용과 최근 동향<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>규칙 선택 기준</strong>: 재공·흐름 중심이면 SPT, 납기 준수 중심이면 EDD·CR, 공정성(서비스)이 중요하면 FCFS, 여러 공정을 거치면 S/RO. 실무에서는 SPT에 대기시간 상한을 두는 <strong>혼합 규칙</strong>을 많이 쓴다.</li>
+<li><strong>병목 중심 일정</strong>: 병목 공정의 순서를 먼저 정하고 나머지를 맞추는 DBR → <a href="../../07-support-technology/04-production-innovation/#t74-3">7.4.3</a></li>
+<li><strong>APS·MES 디스패칭</strong>: 설비·자재·인력 제약을 동시에 고려한 최적 일정과 실시간 재일정, AI(강화학습) 기반 디스패칭 → <a href="../../07-support-technology/01-it-smart-factory/#t71-6">7.1.6</a>, <a href="../05-mes/#t25-1">2.5.1</a></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>계산 문제는 <strong>규칙별 순서 → 완료시각 → 평가지표 표 → 판정</strong>의 틀로 쓴다. 완료시각 열을 표에 넣어 과정을 보여 준다.</li>
+<li>"SPT는 평균 흐름시간 최소, EDD는 최대 지연 최소"라는 <strong>이론적 성질</strong>을 결론에 꼭 쓴다.</li>
+<li>CR·여유시간은 현재일을 문제 조건에서 확인하고(없으면 0으로 가정한다고 밝힘) 계산한다.</li>
+<li>결론 예: "단일 규칙은 하나의 평가 기준만 최적화하므로 공장의 목표(재공·납기)에 맞는 규칙을 고르고, APS·MES로 실시간 재일정하는 체계가 필요하다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 8문항 (63회, 70회, 73회, 88회, 94회, 106회, 121회, 136회)</summary>
+<ul>
+<li>
+<p><strong>제63회(2001) 3교시 6번</strong> · 25점<br />
+  단일설비 일정계획(Scheduling)시 다음과 같은 작업배정 규칙에 의해 작업순서를 결정(Sequencing) 하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>단일설비 일정계획(Scheduling)시 다음과 같은 작업배정 규칙에 의해 작업순서를 결정(Sequencing) 하시오.<br />
+[표] 작업번호 | 작업일수 | 납기일수<br />
+1 | 6 | 9<br />
+2 | 12 | 1<br />
+3 | 3 | 11<br />
+4 | 10 | 19<br />
+1) SPT에 의한 작업순위<br />
+2) EDD에 의한 작업순위<br />
+3) MST에 의한 작업순위<br />
+4) CR에 의한 작업순위  </p>
+</details>
+</li>
+<li>
+<p><strong>제70회(2003) 2교시 5번</strong> · 25점<br />
+  한 개의 작업장을 거치는 경우, 재공품 재고와 작업정체가 최소가 되고, 작업장이 덜 혼잡해지며 고객에게 평균적으로 가장 빠른 서비스를 제고알 수 있는 작업 우선순위 규칙은 무엇이며, 그 이유와 이 규칙의 결점에 대하여 설명하시오.</p>
+</li>
+<li><strong>제73회(2004) 1교시 5번</strong> · 10점<br />
+  일정계획(Scheduling) 수립에 필요한 요소</li>
+<li>
+<p><strong>제88회(2009) 2교시 2번</strong> · 25점<br />
+  하나의 기계에서 처리해야 할 5개의 작업에 대해 아래의 스케줄1과 스케줄2가 있다. 두개 스케줄을 최대지연(maximum lateness), 평균순수지연(mean tardiness), 평균흐름시간(mean flow time), 평균대기시간(mean waiting time) 측면에서 비교 분석하시오. 그리고 평균흐름시간과 최대지연의 측면에서 주어진 스케줄보다 더 개선된 스케줄이 있으면 제시하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>하나의 기계에서 처리해야 할 5개의 작업에 대해 아래의 스케줄1과 스케줄2가 있다. 두개 스케줄을 최대지연(maximum lateness), 평균순수지연(mean tardiness), 평균흐름시간(mean flow time), 평균대기시간(mean waiting time) 측면에서 비교 분석하시오. 그리고 평균흐름시간과 최대지연의 측면에서 주어진 스케줄보다 더 개선된 스케줄이 있으면 제시하시오.<br />
+[표] (단위:시간) 구분 \ 작업명 | J1 | J2 | J3 | J4 | J5<br />
+처리시간 | 3 | 6 | 9 | 8 | 5<br />
+납기 | 4 | 7 | 6 | 10 | 5<br />
+스케줄1 : J1 → J2 → J3 → J4 → J5<br />
+스케줄2 : J5 → J4 → J3 → J2 → J1  </p>
+</details>
+</li>
+<li>
+<p><strong>제94회(2011) 2교시 2번</strong> · 25점<br />
+  표와 같이 작업의 납기와 작업시간이 주어졌을 때, 다음에 제시된 우선순위규칙을 사용하여 각각의 규칙별 작업순서를 결정하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>표와 같이 작업의 납기와 작업시간이 주어졌을 때, 다음에 제시된 우선순위규칙을 사용하여 각각의 규칙별 작업순서를 결정하시오.<br />
+[표] 작업 | 도착순서 | 납기(일) | 작업시간(일) | 잔여작업(공정) 수<br />
+J1 | 1 | 10 | 4 | 7<br />
+J2 | 2 | 9 | 6 | 4<br />
+J3 | 3 | 5 | 3 | 3<br />
+- 최단처리시간법(SPT)<br />
+- 긴급률법(CR)<br />
+- 납기순법(DD)<br />
+- 최소여유시간법(S)<br />
+- 잔여작업 최소여유시간 우선법(S/RO)  </p>
+</details>
+</li>
+<li>
+<p><strong>제106회(2015) 2교시 6번</strong> · 25점<br />
+  개별생산 공장에서 작업순서 결정과 관련한 다음 각 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>개별생산 공장에서 작업순서 결정과 관련한 다음 각 물음에 답하시오.<br />
+(1) 작업순서 결정의 평가기준에 대하여 설명하시오.<br />
+(2) 작업순서 결정규칙의 종류 및 그 특성에 대하여 설명하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제121회(2020) 3교시 6번</strong> · 25점<br />
+  다음 표와 같이 작업 5가지 주문이 순서대로 접수되었다. 선착순, 최소 작업시간, 최소 납기, 최소 여유시간 등 4가지 우선순위규칙을 활용하여 작업 순서를 정할 때 다음 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>다음 표와 같이 작업 5가지 주문이 순서대로 접수되었다. 선착순, 최소 작업시간, 최소 납기, 최소 여유시간 등 4가지 우선순위규칙을 활용하여 작업 순서를 정할 때 다음 물음에 답하시오.<br />
+[표] 작업 | 도착 순서 | 납기(일) | 작업시간(일) | 여유시간(일)<br />
+A | 1 | 10 | 10 | 0<br />
+B | 2 | 25 | 15 | 10<br />
+C | 3 | 29 | 12 | 17<br />
+D | 4 | 30 | 14 | 16<br />
+E | 5 | 45 | 16 | 29<br />
+1) 선착순 규칙의 평균 진행시간과 평균 납기 지연일수를 구하시오.<br />
+2) 최소 작업시간 규칙의 평균 진행시간과 평균 납기 지연일수를 구하시오.<br />
+3) 최소 납기 규칙의 평균 진행시간과 평균 납기 지연일수를 구하시오.<br />
+4) 최소 여유시간 규칙의 평균 진행시간과 평균 납기 지연일수를 구하시오.<br />
+5) 평균 진행시간 최소 및 평균 납기 지연 최소의 규칙을 판정하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제136회(2025) 4교시 1번</strong> · 25점<br />
+  스케쥴링(Scheduling)시 생산현장에서 사용하는 우선순위규칙(Priority Rule)인 FCFS(First Come First Served), SPT(Shortest Processing Time), EDD(Earliest Due Date)를 각각 설명하시오.</p>
+</li>
+</ul>
+</details>
+<h2 id="t21-5">2.1.5 다수 기계 일정계획(존슨·Petrov)<a class="headerlink" href="#t21-5" title="Permanent link">&para;</a></h2>
+<h3 id="johnsons-rule-97103">존슨의 법칙(Johnson's Rule) (97·103회)<a class="headerlink" href="#johnsons-rule-97103" title="Permanent link">&para;</a></h3>
+<p><strong>개념</strong>: <span class="arithmatex">\( n \)</span>개 작업이 모두 <strong>기계 1 → 기계 2의 같은 순서</strong>로 가공될 때(2단계 흐름공정), <strong>총 완료시간(makespan)을 최소화</strong>하는 작업순서를 구하는 방법이다(S. M. Johnson, 1954).</p>
+<p><strong>적용 방법</strong></p>
+<ol>
+<li>모든 작업의 기계 1, 기계 2 가공시간 중 <strong>가장 작은 값</strong>을 찾는다.</li>
+<li>그 값이 <strong>기계 1</strong>에 있으면 그 작업을 <strong>가능한 앞</strong>에, <strong>기계 2</strong>에 있으면 <strong>가능한 뒤</strong>에 배치한다.</li>
+<li>배치한 작업을 지우고, 모든 작업이 배치될 때까지 1~2를 반복한다(동점이면 임의 선택).</li>
+</ol>
+<p><strong>전제 조건</strong>: 모든 작업의 가공 순서가 같고, 한 기계는 한 번에 한 작업만 처리하며, 가공시간이 확정적이고, 작업 도중 중단이 없다.</p>
+<h3 id="97_2">풀이: 97회<a class="headerlink" href="#97_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>작업</th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;">D</th>
+<th style="text-align: center;">E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기계 1</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td>기계 2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">9</td>
+</tr>
+</tbody>
+</table>
+<p>배치 과정: A(기계 2, 2) → 맨 뒤 / B(기계 2, 4) → 뒤에서 둘째 / D(기계 1, 5) → 맨 앞 / C(기계 2, 7) → 뒤에서 셋째 / E → 남은 자리</p>
+<p><strong>최적 순서: D → E → C → B → A</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">작업</th>
+<th style="text-align: center;">기계 1 (시작–완료)</th>
+<th style="text-align: center;">기계 2 (시작–완료)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">0 – 5</td>
+<td style="text-align: center;">5 – 12</td>
+</tr>
+<tr>
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">5 – 13</td>
+<td style="text-align: center;">13 – 22</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">13 – 23</td>
+<td style="text-align: center;">23 – 30</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">23 – 34</td>
+<td style="text-align: center;">34 – 38</td>
+</tr>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">34 – 40</td>
+<td style="text-align: center;">40 – <strong>42</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>최소 총 완료시간 = 42시간</strong></p>
+<h3 id="3-petrov-100">3대 기계로의 확장과 Petrov 방법 (100회)<a class="headerlink" href="#3-petrov-100" title="Permanent link">&para;</a></h3>
+<p>기계가 A → B → C 3대이면, 다음 조건 중 하나를 만족할 때 두 대의 <strong>가상 기계</strong>로 바꿔 존슨의 법칙을 적용할 수 있다.</p>
+<div class="arithmatex">\[
+\min A_i \ge \max B_i \quad \text{또는} \quad \min C_i \ge \max B_i
+\]</div>
+<div class="arithmatex">\[
+P_{1i} = A_i + B_i, \qquad P_{2i} = B_i + C_i
+\]</div>
+<p><strong>Petrov 방법</strong>은 이를 일반화한 것으로, <span class="arithmatex">\( m \)</span>대의 기계를 앞쪽 절반의 합(<span class="arithmatex">\( P_1 \)</span>)과 뒤쪽 절반의 합(<span class="arithmatex">\( P_2 \)</span>)으로 묶는다(<span class="arithmatex">\( m \)</span>이 홀수이면 가운데 기계를 양쪽에 모두 포함).</p>
+<h3 id="100">풀이: 100회<a class="headerlink" href="#100" title="Permanent link">&para;</a></h3>
+<p>조건 확인: <span class="arithmatex">\( \min A = 3 \ge \max B = 2 \)</span> → 존슨 법칙 적용 가능</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">작업</th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;"><span class="arithmatex">\( P_1 = A+B \)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\( P_2 = B+C \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">J1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;">J2</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;">J3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">J4</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td style="text-align: center;">J5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+</tr>
+</tbody>
+</table>
+<p>배치 과정: J2(<span class="arithmatex">\( P_2 \)</span> 2) → 맨 뒤 / J4(<span class="arithmatex">\( P_1 \)</span> 3) → 맨 앞 / J1(<span class="arithmatex">\( P_2 \)</span> 3) → 뒤에서 둘째 / J5(<span class="arithmatex">\( P_2 \)</span> 4) → 뒤에서 셋째 / J3 → 남은 자리</p>
+<p><strong>최적 순서: J4 → J3 → J5 → J1 → J2</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">작업</th>
+<th style="text-align: center;">기계 A 완료</th>
+<th style="text-align: center;">기계 B 완료</th>
+<th style="text-align: center;">기계 C 완료</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">J4</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr>
+<td style="text-align: center;">J3</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">J5</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">17</td>
+</tr>
+<tr>
+<td style="text-align: center;">J1</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr>
+<td style="text-align: center;">J2</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;"><strong>24</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>최소 총 처리시간 = 24</strong></p>
+<h3 id="_11">다수 기계 흐름공정 일정계획 기법 비교<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>기법</th>
+<th>대상</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>존슨 법칙(1954)</td>
+<td>2대 흐름공정</td>
+<td>makespan 최적해 보장</td>
+</tr>
+<tr>
+<td>존슨 확장(3대)</td>
+<td>3대, 조건 충족 시</td>
+<td>가상 2기계로 변환, 조건 충족 시 최적</td>
+</tr>
+<tr>
+<td>잭슨 법칙(Jackson)</td>
+<td>2대 개별공정(가공 순서가 작업마다 다름)</td>
+<td>작업을 A→B / B→A / A만 / B만으로 나눠 존슨 법칙 응용</td>
+</tr>
+<tr>
+<td>Petrov 방법</td>
+<td><span class="arithmatex">\( m \)</span>대 흐름공정</td>
+<td>앞·뒤 절반 합으로 가상 2기계를 만들어 존슨 법칙 적용(휴리스틱)</td>
+</tr>
+<tr>
+<td>CDS(Campbell·Dudek·Smith)</td>
+<td><span class="arithmatex">\( m \)</span>대 흐름공정</td>
+<td>가상 2기계 문제를 <span class="arithmatex">\( m-1 \)</span>개 만들어 각각 풀고 가장 좋은 순서 선택</td>
+</tr>
+<tr>
+<td>NEH</td>
+<td><span class="arithmatex">\( m \)</span>대 흐름공정</td>
+<td>총 가공시간이 큰 작업부터 하나씩 최적 위치에 삽입, 성능 우수</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\( m \ge 3 \)</span>인 흐름공정의 makespan 최소화는 NP-hard 문제여서 휴리스틱과 APS(메타휴리스틱·시뮬레이션)를 함께 쓴다.</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>존슨 법칙은 <strong>개념 → 적용 절차 → 전제 조건</strong>을 쓰고, 계산 문제는 <strong>배치 과정 → 최적 순서 → 기계별 시작·완료 시각표(또는 간트 차트)</strong>로 보여 준다.</li>
+<li>3대 기계 문제는 먼저 <strong>적용 조건(<span class="arithmatex">\( \min A \ge \max B \)</span>)을 확인</strong>하는 문장을 반드시 넣는다.</li>
+<li>결론 예: "존슨 법칙은 기계 유휴시간을 줄여 makespan을 최소화하지만 확정적 가공시간을 전제하므로, 실무에서는 APS로 변동을 반영해 재일정한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 3문항 (97회, 100회, 103회)</summary>
+<ul>
+<li>
+<p><strong>제97회(2012) 1교시 12번</strong> · 10점<br />
+  A∼E 5개의 작업은 모두 기계 1과 기계 2를 순차적으로 거쳐 작업을 하게 된다. 작업순서계획의 수립에 있어 존슨의 법칙을 적용하여 가공순서를 결정하고, 최적화된 전체 작업완료시간을 구하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>A∼E 5개의 작업은 모두 기계 1과 기계 2를 순차적으로 거쳐 작업을 하게 된다. 작업순서계획의 수립에 있어 존슨의 법칙을 적용하여 가공순서를 결정하고, 최적화된 전체 작업완료시간을 구하시오.<br />
+[표] (단위 : 시간) 기계 \ 작업 | A작업 | B작업 | C작업 | D작업 | E작업<br />
+기계 1 | 6 | 11 | 10 | 5 | 8<br />
+기계 2 | 2 | 4 | 7 | 7 | 9  </p>
+</details>
+</li>
+<li>
+<p><strong>제100회(2013) 3교시 5번</strong> · 25점<br />
+  A, B, C 3대의 기계를 거쳐야 하는 5개 작업(J1∼J5)의 기계별 가공시간이 다음 표와 같을 때 Petrov 방법을 사용하여, 총 처리시간을 최소화(SPT법)하는 가공순서와 이때의 총 처리시간을 구하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>A, B, C 3대의 기계를 거쳐야 하는 5개 작업(J1∼J5)의 기계별 가공시간이 다음 표와 같을 때 Petrov 방법을 사용하여, 총 처리시간을 최소화(SPT법)하는 가공순서와 이때의 총 처리시간을 구하시오.<br />
+[표] 작업 \ 기계 | A | B | C<br />
+J1 | 4 | 2 | 1<br />
+J2 | 7 | 1 | 1<br />
+J3 | 5 | 2 | 3<br />
+J4 | 3 | 0 | 9<br />
+J5 | 3 | 2 | 2  </p>
+</details>
+</li>
+<li>
+<p><strong>제103회(2014) 1교시 11번</strong> · 10점<br />
+  Johnson's Rule(존슨법)의 개념과 적용방법을 설명하시오.</p>
+</li>
+</ul>
+</details>
+<h2 id="t21-6">2.1.6 일정계획 일반<a class="headerlink" href="#t21-6" title="Permanent link">&para;</a></h2>
+<h3 id="_12">일정계획의 체계와 방침<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>일정계획은 기간에 따라 <strong>대일정</strong>(납기 기준 제품별 착수·완성 시기, 월 단위) → <strong>중일정</strong>(공정·부품별 일정, 주 단위) → <strong>소일정</strong>(작업자·설비별 작업 일정, 일·시간 단위)으로 세분화된다.</p>
+<table>
+<thead>
+<tr>
+<th>일정계획 방침</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>작업 흐름의 신속화</td>
+<td>가공 로트를 작게, 이동 로트 분할, 공정 계열의 병렬화</td>
+</tr>
+<tr>
+<td>생산기간 단축</td>
+<td>정체(대기) 시간 최소화</td>
+</tr>
+<tr>
+<td>작업의 안정화와 가동률 향상</td>
+<td>부하 평준화, 여유를 둔 일정</td>
+</tr>
+<tr>
+<td>애로(병목) 공정의 능력 증강</td>
+<td>병목 공정 중심으로 일정 수립</td>
+</tr>
+<tr>
+<td>생산 활동의 동기화</td>
+<td>공정 간 작업 속도와 투입 시점을 맞춤</td>
+</tr>
+</tbody>
+</table>
+<h3 id="63">일정계획 관점의 생산 합리화 방안 (63회)<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>영역</th>
+<th>합리화 방안</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>계획의 정확성</td>
+<td>정확한 수요예측과 기준생산계획(MPS), 표준시간 정비</td>
+</tr>
+<tr>
+<td>능력과 부하</td>
+<td>능력소요계획(CRP)으로 부하를 미리 확인하고 <strong>부하 평준화</strong></td>
+</tr>
+<tr>
+<td>순서 결정</td>
+<td>목적(흐름시간·납기)에 맞는 우선순위 규칙 적용</td>
+</tr>
+<tr>
+<td>로트·준비교체</td>
+<td>경제적 로트 결정, 준비교체 시간 단축으로 소로트화</td>
+</tr>
+<tr>
+<td>병목 관리</td>
+<td>병목 공정 중심의 일정계획(TOC의 DBR)</td>
+</tr>
+<tr>
+<td>흐름 개선</td>
+<td>혼류·평준화 생산, 셀 생산으로 정체 감소</td>
+</tr>
+<tr>
+<td>정보화</td>
+<td>APS로 제약 기반 최적 일정, MES로 실시간 진도관리와 일정 재수립</td>
+</tr>
+<tr>
+<td>인력</td>
+<td>다기능화로 부하 변동에 맞춘 인력 재배치</td>
+</tr>
+</tbody>
+</table>
+<h3 id="67">순서 의존 준비시간 문제 (67회)<a class="headerlink" href="#67" title="Permanent link">&para;</a></h3>
+<p>색상을 바꿀 때마다 준비시간이 앞뒤 색상에 따라 달라지는 문제는 <strong>외판원 문제(TSP)</strong>와 같은 구조다. 작업 수가 적으면 모든 순서를 열거하고, 많으면 <strong>최근접 이웃법</strong>(현재 색상에서 준비시간이 가장 짧은 색상을 다음으로 선택) 같은 휴리스틱을 쓴다.</p>
+<p><strong>풀이</strong>: 5가지 색상의 모든 순서(120가지)를 비교하면 총 준비시간의 최솟값은 <strong>6</strong>이다.</p>
+<table>
+<thead>
+<tr>
+<th>순서</th>
+<th>준비시간</th>
+<th style="text-align: center;">합계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>푸른색 → 회색 → 갈색 → 하얀색 → 붉은색</strong></td>
+<td>1 + 2 + 2 + 1</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td><strong>하얀색 → 푸른색 → 회색 → 갈색 → 붉은색</strong></td>
+<td>1 + 1 + 2 + 2</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td>(문제 예시) 붉은색 → 하얀색 → 갈색 → 푸른색 → 회색</td>
+<td>4 + 1 + 2 + 1</td>
+<td style="text-align: center;">8</td>
+</tr>
+</tbody>
+</table>
+<p>→ 최적 순서는 두 가지이며, 문제 예시보다 준비시간을 2만큼 줄일 수 있다.</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>합리화 방안은 <strong>계획 → 능력 → 순서 → 실행·통제</strong>의 흐름으로 묶어 쓰면 체계적이다.</li>
+<li>준비시간 문제는 "TSP 구조"임을 밝히고, 열거법이나 최근접 이웃법으로 푼 과정을 보여 준다.</li>
+<li>연관 주제: 준비교체 단축 <a href="../../03-process-control/06-process-improvement/#t36-2">3.6.2</a>, 생산능력 계획 <a href="../../03-process-control/01-production-planning/#t31-3">3.1.3</a></li>
+<li>결론 예: "일정계획의 합리화는 계획 정확도·부하 평준화·병목 관리를 축으로 하며, APS와 MES를 연계한 <strong>실시간 계획-실행 폐쇄 루프</strong>로 완성된다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 2문항 (63회, 67회)</summary>
+<ul>
+<li><strong>제63회(2001) 4교시 1번</strong> · 25점<br />
+  일정계획 관점에서 생산의 합리화를 추구할 수 있는 방안에 대해 설명하시오.</li>
+<li>
+<p><strong>제67회(2002) 3교시 5번</strong> · 25점<br />
+  여러 가지 천을 염색하는데 있어 각 색깔에 따라 염색기계를 Cleaning 해야 하기 때문에 색깔을 바꿀때마다 표와 같은 많은 준비시간이 소요되었다. 가장 빠른 준비시간에 의거 각 색깔을 염색할 수 있도록 5개의 색깔별로 순서를 정하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>여러 가지 천을 염색하는데 있어 각 색깔에 따라 염색기계를 Cleaning 해야 하기 때문에 색깔을 바꿀때마다 표와 같은 많은 준비시간이 소요되었다. 가장 빠른 준비시간에 의거 각 색깔을 염색할 수 있도록 5개의 색깔별로 순서를 정하시오.<br />
+예) 붉은색 → 하얀색 → 갈색 → 푸른색 → 회색 총 시간<br />
+[표] FROM/To | 회색 | 갈색 | 푸른색 | 하얀색 | 붉은색<br />
+회색 | 0 | 2 | 2 | 4 | 3<br />
+갈색 | 1 | 0 | 2 | 2 | 2<br />
+푸른색 | 1 | 3 | 0 | 4 | 3<br />
+하얀색 | 1 | 1 | 1 | 0 | 1<br />
+붉은색 | 2 | 3 | 3 | 4 | 0  </p>
+</details>
+</li>
+</ul>
+</details>
+<h2 id="_13">답안 작성 예시<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">25점 예시: 제139회 4교시 1번 — 시계열변동 4유형 도식화, 델파이법 정의와 5단계 절차</p>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>수요예측은 생산·재고·능력·인력 계획의 출발점이며, 정성 / 시계열 / 인과형 기법으로 나뉜다([그림] 3분류 트리).</li>
+<li>시계열 기법은 과거 패턴을 분해해 단기 예측에, 델파이법은 자료가 없는 장기·신기술 예측에 쓴다.</li>
+</ul>
+<p><strong>2. 본론</strong></p>
+<ul>
+<li>(1) 시계열 변동 4유형: 승법 모형 <span class="arithmatex">\( Y = T \times C \times S \times I \)</span> 제시 → [그림] 4개 소그래프(직선 상승 / 긴 파동 / 1년 내 반복 / 무작위) + [표] 유형·의미·예·적합 예측법</li>
+<li>(2) 추세+계절 수요 예시 그래프([그림] 추세선과 실수요)로 분해 개념 보강, 시계열 분해 5단계 한 줄 요약</li>
+<li>(3) 델파이법 정의: RAND 연구소 개발, 익명 반복 설문으로 전문가 합의 도출 → [표] 4대 특징(익명성·반복·통제된 피드백·통계적 집계)</li>
+<li>(4) 5단계 절차: 주제·조정자 → 패널 선정 → 1차 설문 → 요약 피드백·반복 → 수렴·확정([그림] 순환 흐름도)</li>
+<li>(5) 장단점 표: 권위·동조 배제 / 시간·비용, 전문가 선정 의존</li>
+</ul>
+<p><strong>3. 결론(기술사 의견)</strong></p>
+<ul>
+<li>변동 유형별로 기법을 맞추고 추적지표로 오차를 감시하는 폐쇄 루프 구축</li>
+<li>차별화: 정성(델파이)과 정량(시계열·AI 수요 감지)을 결합하고 S&amp;OP 회의에 연결해 예측-계획을 일치시킨다는 의견 제시</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">25점 예시: 제106회 2교시 6번 — 작업순서 결정의 평가기준과 결정규칙의 종류·특성</p>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>개별생산 일정계획은 부하할당 → 순서결정 → 상세일정으로 구성되며, 순서결정은 대기 작업의 처리 순서를 정하는 단계다([표] 3단계).</li>
+</ul>
+<p><strong>2. 본론</strong></p>
+<ul>
+<li>(1) 평가기준: [표] 평균 흐름시간·평균 대기시간·평균 납기지연·최대 지연·지연 작업 수·평균 재공·makespan(정의와 식)</li>
+<li>(2) 결정규칙: [표] FCFS·SPT·EDD·LPT·최소 여유·CR·S/RO의 기준과 특성, 정적/동적 규칙 구분</li>
+<li>(3) 이론적 성질: SPT → 평균 흐름시간·재공 최소, EDD → 최대 지연 최소(88회 풀이 표를 간단한 수치 예로 인용)</li>
+<li>(4) SPT의 결점(긴 작업 기아)과 보완(대기 상한·혼합 규칙)</li>
+</ul>
+<p><strong>3. 결론(기술사 의견)</strong></p>
+<ul>
+<li>목표(재공 vs 납기)에 맞는 규칙 선택이 핵심이며, 병목 중심(DBR) 일정과 APS·MES 실시간 재일정으로 확장해야 한다.</li>
+<li>차별화: 간단한 5작업 수치 예로 규칙별 성과 차이를 직접 보여 주면 고득점</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="이전: 2. 생산운영 및 물류관리">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                2. 생산운영 및 물류관리
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02-progress-control/" class="md-footer__link md-footer__link--next" aria-label="다음: 2.2 프로세스 진도관리">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                2.2 프로세스 진도관리
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

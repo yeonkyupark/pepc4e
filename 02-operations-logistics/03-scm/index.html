@@ -1,0 +1,3810 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="출제기준(2027~2030) 주요항목·세부항목별 기출문제 정리와 학습 교재">
+      
+      
+      
+        <link rel="canonical" href="https://yeonkyupark.github.io/pepc4e/02-operations-logistics/03-scm/">
+      
+      
+        <link rel="prev" href="../02-progress-control/">
+      
+      
+        <link rel="next" href="../04-materials-inventory/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>2.3 공급망 관리(SCM) - 생산운영과 공장관리</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#23-scm" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="생산운영과 공장관리" class="md-header__button md-logo" aria-label="생산운영과 공장관리" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            생산운영과 공장관리
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.3 공급망 관리(SCM)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yeonkyupark/pepc4e" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeonkyupark/pepc4e
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01-production-strategy/" class="md-tabs__link">
+          
+  
+    
+  
+  1. 생산전략
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  2. 생산운영 및 물류관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03-process-control/" class="md-tabs__link">
+          
+  
+    
+  
+  3. 공정관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04-facility-management/" class="md-tabs__link">
+          
+  
+    
+  
+  4. 설비관리
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05-work-measurement/" class="md-tabs__link">
+          
+  
+    
+  
+  5. 작업관리와 성과측정
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../06-cost-engineering-economy/" class="md-tabs__link">
+          
+  
+    
+  
+  6. 원가관리 및 경제성공학
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../07-support-technology/" class="md-tabs__link">
+          
+  
+    
+  
+  7. 생산지원기술 및 기타
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../appendix/answer-guide/" class="md-tabs__link">
+          
+  
+    
+  
+  부록
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="생산운영과 공장관리" class="md-nav__button md-logo" aria-label="생산운영과 공장관리" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    생산운영과 공장관리
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yeonkyupark/pepc4e" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeonkyupark/pepc4e
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    홈
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01-production-strategy/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    1. 생산전략
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. 생산전략
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/01-competitive-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 경쟁우위 생산전략
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/02-production-system-layout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 생산구조와 방식(Layout)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/03-purchasing-outsourcing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 구매와 외주전략
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/04-workforce-job-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4 인력과 직무설계
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-production-strategy/05-business-environment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5 사업환경분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2. 생산운영 및 물류관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. 생산운영 및 물류관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-forecasting-scheduling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 수요예측과 일정계획
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-progress-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 프로세스 진도관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.3 공급망 관리(SCM)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2.3 공급망 관리(SCM)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      출제 경향
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      목차
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.1 SCM의 개념과 성과측정
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.1 SCM의 개념과 성과측정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scm-82127" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCM의 개념 (82·127회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scor" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCOR 모델과 성과 속성
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scm-63" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCM의 특징과 과잉재고 감소 방안 (63회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scm-127" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCM 추진 기법 (127회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      공급사슬 재고 성과측정 (103회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      최근 동향: 공급망 리스크와 지속가능성
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.2 채찍효과
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2 채찍효과">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bullwhip-effect-91112136139" class="md-nav__link">
+    <span class="md-ellipsis">
+      채찍효과(Bullwhip Effect)의 정의 (91·112·136·139회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lee-padmanabhan-whang-1997" class="md-nav__link">
+    <span class="md-ellipsis">
+      발생 원인 (Lee, Padmanabhan &amp; Whang, 1997)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      해결 방안
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#136" class="md-nav__link">
+    <span class="md-ellipsis">
+      스마트팩토리로 채찍효과를 줄이는 방안 (136회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.3 Push-Pull 공급체인
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.3 Push-Pull 공급체인">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pushpull-91124" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push·Pull 공급체인 (91·124회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-pull" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push-Pull 경계와 전략
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.4 신속대응(QR)과 애자일
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.4 신속대응(QR)과 애자일">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qr-quick-response-94" class="md-nav__link">
+    <span class="md-ellipsis">
+      신속대응(QR, Quick Response) (94회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qr-67" class="md-nav__link">
+    <span class="md-ellipsis">
+      한국 기업의 QR 도입과 문제점 (67회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요 불확실성을 줄이는 방안 (106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agile-qr-130" class="md-nav__link">
+    <span class="md-ellipsis">
+      애자일(Agile)과 QR 비교 (130회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fisher-1997" class="md-nav__link">
+    <span class="md-ellipsis">
+      제품 특성과 공급사슬 전략 (Fisher, 1997)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.5 공급자 주도 재고(VMI·CRP·COCK)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.5 공급자 주도 재고(VMI·CRP·COCK)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vmivendor-managed-inventory-65106112" class="md-nav__link">
+    <span class="md-ellipsis">
+      VMI(Vendor Managed Inventory, 공급자 재고관리) (65·106·112회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crpcontinuous-replenishment-program-106" class="md-nav__link">
+    <span class="md-ellipsis">
+      CRP(Continuous Replenishment Program, 연속 보충) (106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vmi-cock-130" class="md-nav__link">
+    <span class="md-ellipsis">
+      VMI와 코크(COCK) 시스템 비교 (130회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      협업적 보충 기법의 발전 단계
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.6 물류 아웃소싱과 유통(3PL·크로스도킹·SPA·OMS)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.6 물류 아웃소싱과 유통(3PL·크로스도킹·SPA·OMS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3plthird-party-logistics-88" class="md-nav__link">
+    <span class="md-ellipsis">
+      3PL(Third-Party Logistics) (88회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spaspeciality-retailer-of-private-label-apparel-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      SPA(Speciality retailer of Private label Apparel) (100회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115" class="md-nav__link">
+    <span class="md-ellipsis">
+      월마트의 크로스도킹 (115회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omsorder-management-system-130" class="md-nav__link">
+    <span class="md-ellipsis">
+      OMS(Order Management System)의 장점 (130회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.7 수요 불확실성과 제품가용성
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.7 수요 불확실성과 제품가용성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#product-availability-106" class="md-nav__link">
+    <span class="md-ellipsis">
+      제품가용성(Product Availability) (106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      공급사슬 협력 결여의 발생 요인과 관리 수단 (106회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      답안 작성 예시
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-materials-inventory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4 물류관리(자재 및 재고관리)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-mes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5 제조실행시스템(MES)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../03-process-control/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    3. 공정관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. 공정관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/01-production-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 생산계획수립
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/02-process-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 공정설계
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/03-work-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 작업계획수립
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/04-standard-work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4 표준작업관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/05-maintenance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.5 설비보전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-process-control/06-process-improvement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.6 공정개선
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../04-facility-management/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    4. 설비관리
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4. 설비관리
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/01-equipment-planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1 설비계획 및 관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/02-material-handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 자재취급 및 운반관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/03-environment-safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3 환경관리 및 안전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/04-facilities-utilities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.4 시설 및 유틸리티관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-facility-management/05-factory-automation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.5 공장자동화 기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../05-work-measurement/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    5. 작업관리와 성과측정
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. 작업관리와 성과측정
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/01-method-time-study/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.1 작업방법 및 시간 연구
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/02-process-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.2 프로세스 분석과 개선
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/03-productivity-safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.3 생산성 및 안전관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-work-measurement/04-quality-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.4 품질관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../06-cost-engineering-economy/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    6. 원가관리 및 경제성공학
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            6. 원가관리 및 경제성공학
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/01-feasibility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.1 사업성분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/02-cost-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.2 원가관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/03-value-engineering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.3 가치공학
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-cost-engineering-economy/04-operations-research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.4 경영과학(OR)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../07-support-technology/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7. 생산지원기술 및 기타
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            7. 생산지원기술 및 기타
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/01-it-smart-factory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 정보화활용기술(스마트팩토리 및 AI 등)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/02-product-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 제품개발기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/03-service-operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 서비스운영관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/04-production-innovation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.4 생산혁신기술
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-support-technology/05-trends/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 공장관리 신기술 및 경향에 관한 사항
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    부록
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            부록
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/answer-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    답안 작성 가이드
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/frequency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    출제 빈도 분석
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/rounds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    회차별 기출 색인
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    확인 필요 항목
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      출제 경향
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      목차
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.1 SCM의 개념과 성과측정
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.1 SCM의 개념과 성과측정">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scm-82127" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCM의 개념 (82·127회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scor" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCOR 모델과 성과 속성
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scm-63" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCM의 특징과 과잉재고 감소 방안 (63회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scm-127" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCM 추진 기법 (127회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      공급사슬 재고 성과측정 (103회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      최근 동향: 공급망 리스크와 지속가능성
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.2 채찍효과
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2 채찍효과">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bullwhip-effect-91112136139" class="md-nav__link">
+    <span class="md-ellipsis">
+      채찍효과(Bullwhip Effect)의 정의 (91·112·136·139회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lee-padmanabhan-whang-1997" class="md-nav__link">
+    <span class="md-ellipsis">
+      발생 원인 (Lee, Padmanabhan &amp; Whang, 1997)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      해결 방안
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#136" class="md-nav__link">
+    <span class="md-ellipsis">
+      스마트팩토리로 채찍효과를 줄이는 방안 (136회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.3 Push-Pull 공급체인
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.3 Push-Pull 공급체인">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pushpull-91124" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push·Pull 공급체인 (91·124회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-pull" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push-Pull 경계와 전략
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.4 신속대응(QR)과 애자일
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.4 신속대응(QR)과 애자일">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qr-quick-response-94" class="md-nav__link">
+    <span class="md-ellipsis">
+      신속대응(QR, Quick Response) (94회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qr-67" class="md-nav__link">
+    <span class="md-ellipsis">
+      한국 기업의 QR 도입과 문제점 (67회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106" class="md-nav__link">
+    <span class="md-ellipsis">
+      수요 불확실성을 줄이는 방안 (106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agile-qr-130" class="md-nav__link">
+    <span class="md-ellipsis">
+      애자일(Agile)과 QR 비교 (130회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fisher-1997" class="md-nav__link">
+    <span class="md-ellipsis">
+      제품 특성과 공급사슬 전략 (Fisher, 1997)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.5 공급자 주도 재고(VMI·CRP·COCK)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.5 공급자 주도 재고(VMI·CRP·COCK)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vmivendor-managed-inventory-65106112" class="md-nav__link">
+    <span class="md-ellipsis">
+      VMI(Vendor Managed Inventory, 공급자 재고관리) (65·106·112회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crpcontinuous-replenishment-program-106" class="md-nav__link">
+    <span class="md-ellipsis">
+      CRP(Continuous Replenishment Program, 연속 보충) (106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vmi-cock-130" class="md-nav__link">
+    <span class="md-ellipsis">
+      VMI와 코크(COCK) 시스템 비교 (130회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      협업적 보충 기법의 발전 단계
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.6 물류 아웃소싱과 유통(3PL·크로스도킹·SPA·OMS)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.6 물류 아웃소싱과 유통(3PL·크로스도킹·SPA·OMS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3plthird-party-logistics-88" class="md-nav__link">
+    <span class="md-ellipsis">
+      3PL(Third-Party Logistics) (88회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spaspeciality-retailer-of-private-label-apparel-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      SPA(Speciality retailer of Private label Apparel) (100회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115" class="md-nav__link">
+    <span class="md-ellipsis">
+      월마트의 크로스도킹 (115회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omsorder-management-system-130" class="md-nav__link">
+    <span class="md-ellipsis">
+      OMS(Order Management System)의 장점 (130회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t23-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.7 수요 불확실성과 제품가용성
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.7 수요 불확실성과 제품가용성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#product-availability-106" class="md-nav__link">
+    <span class="md-ellipsis">
+      제품가용성(Product Availability) (106회)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      공급사슬 협력 결여의 발생 요인과 관리 수단 (106회)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      답안 작성 예시
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="23-scm">2.3 공급망 관리(SCM)<a class="headerlink" href="#23-scm" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">출제기준</p>
+<p><strong>2. 생산운영 및 물류관리</strong> › <strong>3. 공급망 관리(SCM)</strong></p>
+</div>
+<h2 id="_1">출제 경향<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>총 <strong>25문항</strong> 출제 (1교시 단답형 13 · 2~4교시 논술형 12) · 최근 10개 회차(109~139회) 10문항 · 최근 출제 제139회</p>
+<table>
+<thead>
+<tr>
+<th>주제</th>
+<th style="text-align: center;">출제 수</th>
+<th>출제 회차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.3.1 SCM의 개념과 성과측정</td>
+<td style="text-align: center;">3</td>
+<td>63회, 82회, 103회</td>
+</tr>
+<tr>
+<td>2.3.2 채찍효과</td>
+<td style="text-align: center;">5</td>
+<td>91회, 112회, 127회, 136회, 139회</td>
+</tr>
+<tr>
+<td>2.3.3 Push-Pull 공급체인</td>
+<td style="text-align: center;">2</td>
+<td>91회, 124회</td>
+</tr>
+<tr>
+<td>2.3.4 신속대응(QR)과 애자일</td>
+<td style="text-align: center;">4</td>
+<td>67회, 94회, 106회, 130회</td>
+</tr>
+<tr>
+<td>2.3.5 공급자 주도 재고(VMI·CRP·COCK)</td>
+<td style="text-align: center;">5</td>
+<td>65회, 106회, 112회, 130회</td>
+</tr>
+<tr>
+<td>2.3.6 물류 아웃소싱과 유통(3PL·크로스도킹·SPA·OMS)</td>
+<td style="text-align: center;">4</td>
+<td>88회, 100회, 115회, 130회</td>
+</tr>
+<tr>
+<td>2.3.7 수요 불확실성과 제품가용성</td>
+<td style="text-align: center;">2</td>
+<td>106회</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">목차<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#t23-1">SCM의 개념과 성과측정</a></li>
+<li><a href="#t23-2">채찍효과</a></li>
+<li><a href="#t23-3">Push-Pull 공급체인</a></li>
+<li><a href="#t23-4">신속대응(QR)과 애자일</a></li>
+<li><a href="#t23-5">공급자 주도 재고(VMI·CRP·COCK)</a></li>
+<li><a href="#t23-6">물류 아웃소싱과 유통(3PL·크로스도킹·SPA·OMS)</a></li>
+<li><a href="#t23-7">수요 불확실성과 제품가용성</a></li>
+</ol>
+<h2 id="t23-1">2.3.1 SCM의 개념과 성과측정<a class="headerlink" href="#t23-1" title="Permanent link">&para;</a></h2>
+<h3 id="scm-82127">SCM의 개념 (82·127회)<a class="headerlink" href="#scm-82127" title="Permanent link">&para;</a></h3>
+<p><strong>공급사슬(Supply Chain)</strong>은 원자재 공급자에서 제조업체·유통업체를 거쳐 최종 고객에 이르는 기업들의 연결망이다. <strong>공급사슬관리(SCM)</strong>는 이 사슬 전체의 <strong>물자·정보·자금 흐름</strong>을 통합적으로 계획·관리해, 고객 가치를 높이면서 전체 비용을 최소화하는 경영 기법이다.</p>
+<pre class="mermaid"><code>flowchart LR
+    S["원자재&lt;br/&gt;공급자"] --&gt; M["제조업체"] --&gt; D["도매·&lt;br/&gt;물류센터"] --&gt; R["소매업체"] --&gt; C["고객"]
+    C -.-&gt;|"수요·주문 정보"| S</code></pre>
+<p>물자는 하류(고객)로, 정보(수요·주문)는 상류(공급자)로, 자금은 고객에서 공급자 방향으로 흐른다.</p>
+<p>SCM이라는 용어는 1982년 컨설팅사 Booz Allen의 K. Oliver가 처음 쓴 것으로 알려져 있으며, 1990년대 정보기술(EDI·ERP)과 함께 확산되었다. 개별 기업 간 경쟁이 <strong>공급사슬 간 경쟁</strong>으로 바뀌었다는 인식이 출발점이다.</p>
+<h3 id="scor">SCOR 모델과 성과 속성<a class="headerlink" href="#scor" title="Permanent link">&para;</a></h3>
+<p>공급사슬협의회(SCC, 현 ASCM)의 <strong>SCOR(Supply Chain Operations Reference) 모델</strong>은 공급사슬 프로세스를 표준화한 참조 모형이다.</p>
+<table>
+<thead>
+<tr>
+<th>프로세스</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plan(계획)</td>
+<td>수요·공급 균형, 공급사슬 계획</td>
+</tr>
+<tr>
+<td>Source(조달)</td>
+<td>구매, 입고, 공급자 관리</td>
+</tr>
+<tr>
+<td>Make(생산)</td>
+<td>제조, 시험, 포장</td>
+</tr>
+<tr>
+<td>Deliver(배송)</td>
+<td>주문 관리, 창고, 운송</td>
+</tr>
+<tr>
+<td>Return(반품)</td>
+<td>반품·회수, 역물류</td>
+</tr>
+<tr>
+<td>Enable(지원)</td>
+<td>규칙·성과·데이터·리스크 관리</td>
+</tr>
+</tbody>
+</table>
+<p>성과 속성은 <strong>신뢰성</strong>(완전주문 충족률) · <strong>대응성</strong>(주문 충족 사이클타임) · <strong>민첩성</strong>(공급사슬 유연성) · <strong>비용</strong>(총 SCM 비용) · <strong>자산 효율</strong>(현금전환주기, 재고일수)로 나눈다. (최신판 SCOR DS는 프로세스 구성이 일부 바뀌었으므로 교재 확인 필요)</p>
+<h3 id="scm-63">SCM의 특징과 과잉재고 감소 방안 (63회)<a class="headerlink" href="#scm-63" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>SCM의 특징</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>전체 최적화</td>
+<td>개별 기업의 부분 최적이 아니라 공급사슬 전체의 최적 추구</td>
+</tr>
+<tr>
+<td>정보 공유</td>
+<td>수요·재고·생산계획 정보를 실시간으로 공유</td>
+</tr>
+<tr>
+<td>협업과 파트너십</td>
+<td>공급자·유통업체와의 장기 협력 관계</td>
+</tr>
+<tr>
+<td>고객 지향</td>
+<td>최종 고객의 수요가 전체 흐름을 이끎(Pull)</td>
+</tr>
+<tr>
+<td>흐름 통합</td>
+<td>물자·정보·자금 흐름을 하나의 프로세스로 관리</td>
+</tr>
+</tbody>
+</table>
+<p><strong>과잉재고 감소 방안</strong>: ① POS·재고 정보 공유로 채찍효과 감소 ② VMI·CRP로 공급자 주도 보충 ③ 협업 예측(CPFR) ④ 리드타임 단축과 소로트 다빈도 보충 ⑤ 차별화 지연(Postponement) ⑥ 재고 거점 통합(리스크 풀링) ⑦ 품목(SKU) 합리화</p>
+<h3 id="scm-127">SCM 추진 기법 (127회)<a class="headerlink" href="#scm-127" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>기법</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QR(신속대응)</td>
+<td>의류 업계에서 시작, POS 정보 공유로 소량 다빈도 신속 보충</td>
+</tr>
+<tr>
+<td>ECR(효율적 소비자 대응)</td>
+<td>식품·잡화 업계의 QR, 제조·유통 협력으로 비효율 제거</td>
+</tr>
+<tr>
+<td>VMI / CRP</td>
+<td>공급자가 고객 재고를 관리하고 실판매 기반으로 연속 보충</td>
+</tr>
+<tr>
+<td>CPFR</td>
+<td>협업적 계획·예측·보충 — 거래 당사자가 예측과 계획을 함께 수립</td>
+</tr>
+<tr>
+<td>크로스도킹</td>
+<td>물류센터에서 보관 없이 바로 분류·출고</td>
+</tr>
+<tr>
+<td>차별화 지연</td>
+<td>제품 차별화 시점을 최대한 늦춤</td>
+</tr>
+<tr>
+<td>3PL</td>
+<td>물류 기능을 외부 전문업체에 위탁</td>
+</tr>
+<tr>
+<td>EDI·RFID·APS</td>
+<td>정보 교환, 실시간 추적, 공급사슬 계획 최적화</td>
+</tr>
+</tbody>
+</table>
+<h3 id="103">공급사슬 재고 성과측정 (103회)<a class="headerlink" href="#103" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>산출 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>평균 총재고액</td>
+<td>일정 기간 보유한 모든 재고(원자재·재공품·완제품)의 평균 금액. 기초·기말 평균 또는 기간별 평균</td>
+</tr>
+<tr>
+<td>재고회전율</td>
+<td><span class="arithmatex">\( \dfrac{\text{연간 매출원가}}{\text{평균 총재고액}} \)</span> — 재고가 1년에 몇 번 판매로 바뀌는지</td>
+</tr>
+<tr>
+<td>재고공급 주 수</td>
+<td><span class="arithmatex">\( \dfrac{\text{평균 총재고액}}{\text{주당 매출원가}} \)</span> — 현재 재고로 몇 주를 공급할 수 있는지</td>
+</tr>
+<tr>
+<td>재고공급 일수</td>
+<td><span class="arithmatex">\( \dfrac{\text{평균 총재고액}}{\text{일당 매출원가}} \)</span> — 현재 재고로 며칠을 공급할 수 있는지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>풀이 (평균 총재고액 2억 원, 연간 매출원가 10억 원)</strong></p>
+<ol>
+<li>평균 총재고액 = <strong>2억 원</strong></li>
+<li>재고회전율 = 10억 ÷ 2억 = <strong>5회/년</strong></li>
+<li>재고공급 주 수 = 2억 ÷ (10억 ÷ 50주) = 2억 ÷ 0.2억 = <strong>10주</strong></li>
+<li>재고공급 일수 = 2억 ÷ (10억 ÷ 250일) = 2억 ÷ 0.04억 = <strong>50일</strong></li>
+<li>재고회전율 10회/년이면 평균 총재고액 = 10억 ÷ 10 = <strong>1억 원</strong> (재고 1억 원 감소)</li>
+</ol>
+<h3 id="_3">최근 동향: 공급망 리스크와 지속가능성<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>이슈</th>
+<th>내용</th>
+<th>대응</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>공급망 리스크</td>
+<td>팬데믹, 지정학 갈등, 자연재해, 반도체 등 핵심 부품 부족</td>
+<td>공급처 다변화, 니어쇼어링·리쇼어링, 전략 재고, 리스크 지도</td>
+</tr>
+<tr>
+<td>회복탄력성(Resilience)</td>
+<td>효율(Lean) 중심에서 충격 흡수·복구 능력 중시</td>
+<td>Just-in-Case 병행, 공급망 디지털 트윈, 조기경보</td>
+</tr>
+<tr>
+<td>ESG·공급망 실사</td>
+<td>협력사 인권·환경 실사 의무화 추세, Scope 3 탄소 배출 관리</td>
+<td>협력사 ESG 평가, 탄소 데이터 수집, 친환경 물류</td>
+</tr>
+<tr>
+<td>디지털 SCM</td>
+<td>실시간 가시성, AI 예측, 블록체인 이력 추적</td>
+<td>컨트롤 타워, 클라우드 SCM 플랫폼</td>
+</tr>
+</tbody>
+</table>
+<p>연관 주제: ESG·통상규제 <a href="../../07-support-technology/05-trends/#t75-1">7.5.1</a>, 리스크 관리 <a href="../../01-production-strategy/05-business-environment/#t15-5">1.5.5</a>, 공급자 관계관리 <a href="../../01-production-strategy/03-purchasing-outsourcing/#t13-4">1.3.4</a></p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>SCM 개념 문제는 <strong>공급사슬 그림(물자·정보·자금 흐름)</strong>을 반드시 넣는다.</li>
+<li>재고 지표 계산은 공식과 단위(회/년, 주, 일)를 정확히 쓰고, 회전율이 오르면 재고와 운전자금이 줄어든다는 의미를 덧붙인다.</li>
+<li>결론 예: "SCM은 부분 최적에서 전체 최적으로의 전환이며, 효율과 함께 <strong>공급망 회복탄력성과 ESG 실사 대응</strong>까지 고려한 디지털 SCM으로 발전해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 3문항 (63회, 82회, 103회)</summary>
+<ul>
+<li><strong>제63회(2001) 4교시 4번</strong> · 25점<br />
+  SCM의 특징 및 과잉재고를 줄일 수 있는 방안을 설명하시오.</li>
+<li><strong>제82회(2007) 1교시 4번</strong> · 10점<br />
+  Supply Chain Management</li>
+<li>
+<p><strong>제103회(2014) 3교시 2번</strong> · 25점<br />
+  공급사슬의 성과측정은 공급사슬의 효율성을 파악하는 것이다. 재고측정의 기본 형태 4가지에 대해 주어진 회사의 재고관련 자료를 활용하여 다음 각 물음에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>공급사슬의 성과측정은 공급사슬의 효율성을 파악하는 것이다. 재고측정의 기본 형태 4가지에 대해 주어진 회사의 재고관련 자료를 활용하여 다음 각 물음에 답하시오.<br />
+※ 재고관련 자료 : 평균 총 재고액 2억원, 연간 매출원가 10억원<br />
+1) 평균총재고액(average aggregate inventory value)의 개념과 산출방법을 설명하시오.<br />
+2) 재고회전율(inventory turnover)을 설명하고, 자료를 활용하여 계산하시오.<br />
+3) 재고공급 주 수(weeks of supply)를 설명하고, 연간 50주 영업을 가정하여 자료를 활용하여 계산하시오.<br />
+4) 재고공급일수(inventory day's supply)를 설명하고, 연간 운영일수가 250일 경우 자료를 활용하여 계산하시오.<br />
+5) 만약 SCM 활동으로 재고회전율이 10회/년으로 향상되었다면 이때의 평균총재고액을 구하시오.  </p>
+</details>
+</li>
+</ul>
+</details>
+<h2 id="t23-2">2.3.2 채찍효과<a class="headerlink" href="#t23-2" title="Permanent link">&para;</a></h2>
+<h3 id="bullwhip-effect-91112136139">채찍효과(Bullwhip Effect)의 정의 (91·112·136·139회)<a class="headerlink" href="#bullwhip-effect-91112136139" title="Permanent link">&para;</a></h3>
+<p>최종 소비자의 수요 변동은 작은데, 공급사슬의 <strong>상류(소매 → 도매 → 제조 → 원자재 공급자)로 갈수록 주문량의 변동이 점점 커지는 현상</strong>이다. 채찍 손잡이를 조금 흔들어도 끝부분은 크게 요동치는 것에 비유한다. P&amp;G의 기저귀(팸퍼스) 사례로 널리 알려졌다. J. Forrester(1961)가 산업 동역학 연구에서 처음 밝혀 <strong>포레스터 효과</strong>라고도 하며, MIT의 맥주 게임(Beer Game)으로 체험할 수 있다.</p>
+<pre class="mermaid"><code>xychart-beta
+    title "공급사슬 단계별 주문량 변동 (상류로 갈수록 확대)"
+    x-axis ["1주", "2주", "3주", "4주", "5주", "6주", "7주", "8주"]
+    y-axis "주문량" 30 --&gt; 170
+    line [100, 102, 98, 101, 99, 100, 103, 97]
+    line [100, 110, 90, 105, 95, 100, 112, 88]
+    line [100, 125, 75, 115, 85, 100, 130, 70]
+    line [100, 145, 55, 130, 65, 100, 160, 45]</code></pre>
+<p>가장 평탄한 선이 소비자 수요이고, 소매업체 → 도매업체 → 제조업체 순으로 진폭이 커진다. 재고 수준도 같은 원리로 상류일수록 <strong>과잉과 품절이 번갈아 크게 나타난다</strong>.</p>
+<h3 id="lee-padmanabhan-whang-1997">발생 원인 (Lee, Padmanabhan &amp; Whang, 1997)<a class="headerlink" href="#lee-padmanabhan-whang-1997" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>원인</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 수요예측의 갱신</td>
+<td>각 단계가 실제 소비자 수요가 아닌 <strong>하류의 주문량</strong>으로 예측하고 안전재고를 더해 주문 → 변동이 단계마다 증폭</td>
+</tr>
+<tr>
+<td>② 주문 일괄처리</td>
+<td>주문비·운송비를 줄이려고 모아서 대량 주문 → 주문이 몰리고 끊기는 패턴</td>
+</tr>
+<tr>
+<td>③ 가격 변동</td>
+<td>판촉·할인 때 미리 사 두기(선행 구매) → 실제 수요와 다른 주문</td>
+</tr>
+<tr>
+<td>④ 할당 게임(품귀 게이밍)</td>
+<td>공급 부족 시 배정량을 늘리려고 부풀려 주문하고 나중에 취소</td>
+</tr>
+<tr>
+<td>(추가) 긴 리드타임</td>
+<td>리드타임이 길수록 안전재고와 주문 변동이 커짐</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">해결 방안<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>원인</th>
+<th>해결 방안</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수요예측 갱신</td>
+<td>POS 데이터 등 <strong>실수요 정보 공유</strong>, 단일 예측(CPFR), VMI</td>
+</tr>
+<tr>
+<td>주문 일괄처리</td>
+<td>EDI로 주문비 절감, 소로트 다빈도 주문, 혼재 운송·3PL</td>
+</tr>
+<tr>
+<td>가격 변동</td>
+<td>상시 저가(EDLP) 정책, 판촉 축소</td>
+</tr>
+<tr>
+<td>할당 게임</td>
+<td>과거 판매 실적 기준 배분, 공급 능력 정보 공유</td>
+</tr>
+<tr>
+<td>리드타임</td>
+<td>리드타임 단축, 크로스도킹</td>
+</tr>
+</tbody>
+</table>
+<p><strong>정량적 이해</strong>: 소매점이 최근 <span class="arithmatex">\( p \)</span>기간 이동평균으로 예측하고 리드타임이 <span class="arithmatex">\( L \)</span>일 때, 주문 변동은 수요 변동보다 최소 다음 배수만큼 커진다(Chen 등, 2000).</p>
+<div class="arithmatex">\[
+\frac{Var(q)}{Var(D)} \ge 1 + \frac{2L}{p} + \frac{2L^2}{p^2}
+\]</div>
+<p>→ 리드타임 <span class="arithmatex">\( L \)</span>을 줄이고 예측에 쓰는 자료 기간 <span class="arithmatex">\( p \)</span>를 늘릴수록(평활) 채찍효과가 줄고, 실수요 정보를 공유하면 단계별 증폭이 크게 줄어든다.</p>
+<p><strong>채찍효과의 영향</strong>: 상류의 과잉 생산능력·재고, 품절과 납기 지연, 운송비·잔업비 증가, 생산계획의 불안정, 공급사슬 전체의 수익성 저하</p>
+<h3 id="136">스마트팩토리로 채찍효과를 줄이는 방안 (136회)<a class="headerlink" href="#136" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>실시간 데이터 연계</strong>: IoT·클라우드 플랫폼으로 고객 판매·재고 정보부터 생산·협력사 정보까지 공급사슬 전체가 같은 데이터를 실시간 공유</li>
+<li><strong>AI 기반 수요예측과 디지털 트윈</strong>: 실수요 데이터로 정확도를 높인 예측, 공급사슬 시뮬레이션으로 주문·재고 정책 최적화</li>
+<li><strong>유연 생산과 자동 보충</strong>: MES-ERP-SCM 통합으로 소로트 다빈도 생산·짧은 리드타임 실현, 재고 수준에 따른 자동 발주</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>139·91회처럼 도식화를 요구하면 <strong>단계별 주문량 그래프</strong>(상류일수록 진폭 확대)와 공급사슬 그림을 함께 그린다.</li>
+<li>원인 4가지는 <strong>Lee 교수의 분류</strong>를 그대로 쓰고, 원인과 대책을 1:1로 대응시킨다.</li>
+<li>136회처럼 최신 기술과 연결하면 IoT·AI·디지털 트윈·통합 플랫폼을 키워드로 쓴다.</li>
+<li>결론 예: "채찍효과의 본질은 정보 왜곡과 지연이므로, 실수요 정보 공유·리드타임 단축·인센티브 정렬을 축으로 <strong>공급사슬 전체를 하나의 계획 단위로 통합</strong>해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 5문항 (91회, 112회, 127회, 136회, 139회)</summary>
+<ul>
+<li><strong>제91회(2010) 1교시 7번</strong> · 10점<br />
+  SCM의 채찍효과(Bullwhip Effect)에 대하여 공급체인 그림을 사용하여 그 내용을 설명하시오.</li>
+<li><strong>제112회(2017) 1교시 4번</strong> · 10점<br />
+  채찍효과(Bullwhip Effect)</li>
+<li><strong>제127회(2022) 3교시 4번</strong> · 25점<br />
+  공급사슬관리(SCM)의 개념, 채찍효과(Bullwhip Effect)의 발생원인과 해결방안, SCM 추진기법의 종류와 의미를 설명하시오.</li>
+<li>
+<p><strong>제136회(2025) 2교시 5번</strong> · 25점<br />
+  공급사슬 관리의 채찍효과에 대하여 다음 질문에 답하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>공급사슬 관리의 채찍효과에 대하여 다음 질문에 답하시오.<br />
+(1) 채찍효과가 무엇인지 설명하시오.<br />
+(2) 채찍효과의 발생요인을 4가지만 설명하시오.<br />
+(3) 스마트팩토리로 채찍효과 감소에 기여하는 방안 3가지를 설명하시오.  </p>
+</details>
+</li>
+<li>
+<p><strong>제139회(2026) 1교시 8번</strong> · 10점<br />
+  SCM에서 채찍효과(Bullwhip Effect)에 대하여 공급사슬의 주문패턴과 재고수준을 도식화하여 설명하시오.</p>
+</li>
+</ul>
+</details>
+<h2 id="t23-3">2.3.3 Push-Pull 공급체인<a class="headerlink" href="#t23-3" title="Permanent link">&para;</a></h2>
+<h3 id="pushpull-91124">Push·Pull 공급체인 (91·124회)<a class="headerlink" href="#pushpull-91124" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>Push(밀어내기)</th>
+<th>Pull(끌어당기기)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준</td>
+<td><strong>수요예측</strong></td>
+<td><strong>실제 고객 주문</strong></td>
+</tr>
+<tr>
+<td>생산·보충 시점</td>
+<td>주문 전에 미리 생산·배송</td>
+<td>주문을 받은 뒤 생산·보충</td>
+</tr>
+<tr>
+<td>재고</td>
+<td>많음, 진부화 위험</td>
+<td>적음</td>
+</tr>
+<tr>
+<td>대응성</td>
+<td>수요 변화에 늦게 대응, 채찍효과 큼</td>
+<td>수요 변화에 빠르게 대응</td>
+</tr>
+<tr>
+<td>원가</td>
+<td>규모의 경제로 생산·운송 원가 낮음</td>
+<td>규모의 경제를 살리기 어려움</td>
+</tr>
+<tr>
+<td>적합 조건</td>
+<td>수요 불확실성 낮음, 규모의 경제 중요</td>
+<td>수요 불확실성 높음, 리드타임이 짧을 수 있음</td>
+</tr>
+</tbody>
+</table>
+<h3 id="push-pull">Push-Pull 경계와 전략<a class="headerlink" href="#push-pull" title="Permanent link">&para;</a></h3>
+<p>현실의 공급사슬은 대부분 앞부분은 Push, 뒷부분은 Pull로 운영하는 <strong>Push-Pull 혼합형</strong>이다. 두 방식이 나뉘는 지점을 <strong>Push-Pull 경계</strong>라 하며, 고객주문 분리점(CODP)과 같은 개념이다.</p>
+<pre class="mermaid"><code>flowchart LR
+    A["원자재·부품 조달"] --&gt; B["모듈 생산"] --&gt; X(("Push-Pull&lt;br/&gt;경계")) --&gt; C["최종 조립"] --&gt; D["고객 인도"]
+    style X fill:#ffd54f,color:#000</code></pre>
+<p>예: 델(Dell) 컴퓨터 — 부품은 예측으로 확보(Push), 최종 조립은 주문 후(Pull)</p>
+<p><strong>공급사슬 전략 선택 (Simchi-Levi)</strong></p>
+<table>
+<thead>
+<tr>
+<th>수요 불확실성 \ 규모의 경제</th>
+<th>중요도 낮음</th>
+<th>중요도 높음</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>높음</strong></td>
+<td>Pull 전략 (예: 주문형 PC)</td>
+<td>Push-Pull 전략 (예: 가구 — 생산은 주문 후, 배송은 묶어서)</td>
+</tr>
+<tr>
+<td><strong>낮음</strong></td>
+<td>Push 또는 Pull (예: 도서·음반)</td>
+<td>Push 전략 (예: 식료품·생활용품)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li><strong>비교표 → Push-Pull 경계 그림 → 전략 선택 매트릭스 → 사례</strong> 순으로 쓴다.</li>
+<li>경계를 하류로 옮길수록 재고·원가 효율이, 상류로 옮길수록 대응성·고객화가 커진다는 상충관계를 결론으로 쓴다.</li>
+<li>경계 이동 수단: 차별화 지연·모듈 설계(<a href="../../07-support-technology/02-product-development/#t72-5">7.2.5</a>), 생산방식 MTS·ATO·MTO 선택(<a href="../../01-production-strategy/02-production-system-layout/#t12-2">1.2.2</a>)</li>
+<li>결론 예: "Push는 효율, Pull은 대응성을 주므로 제품의 수요 불확실성과 규모의 경제에 따라 <strong>Push-Pull 경계를 전략적으로 설계</strong>하고, 공통 모듈까지 Push·최종 조립은 Pull로 운영하는 것이 바람직하다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 2문항 (91회, 124회)</summary>
+<ul>
+<li><strong>제91회(2010) 3교시 4번</strong> · 25점<br />
+  SCM에서 밀기-끌기(push-pull ) 공급체인에 대하여 설명하시오.</li>
+<li><strong>제124회(2021) 1교시 1번</strong> · 10점<br />
+  Push-Pull 기반의 공급사슬 전략</li>
+</ul>
+</details>
+<h2 id="t23-4">2.3.4 신속대응(QR)과 애자일<a class="headerlink" href="#t23-4" title="Permanent link">&para;</a></h2>
+<h3 id="qr-quick-response-94">신속대응(QR, Quick Response) (94회)<a class="headerlink" href="#qr-quick-response-94" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: 1980년대 미국 섬유·의류 업계에서 수입품과의 경쟁에 대응하려고 시작한 SCM 기법이다. 소매점의 <strong>판매시점(POS) 정보를 제조·원단 업체와 공유</strong>해 소량 다빈도로 신속하게 보충함으로써, 리드타임과 재고를 줄이고 판매 기회 손실을 막는다.</p>
+<p><strong>구성 요소</strong>: 바코드·POS, EDI(전자문서교환), 자동 보충 발주, 짧은 생산 리드타임(유연 생산), 파트너십</p>
+<p><strong>효과</strong>: 재고·품절 감소, 리드타임 단축, 판매 기회 손실과 가격 인하(마크다운) 감소, 수요 변화에 대한 대응력 향상</p>
+<h3 id="qr-67">한국 기업의 QR 도입과 문제점 (67회)<a class="headerlink" href="#qr-67" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>문제점</th>
+<th>내용</th>
+<th>개선 방향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>표준화 미비</td>
+<td>상품코드·EDI 문서 표준이 기업마다 다름</td>
+<td>국가·업계 표준 코드와 EDI 표준 채택</td>
+</tr>
+<tr>
+<td>정보화 수준 격차</td>
+<td>중소 협력사의 정보시스템·투자 여력 부족</td>
+<td>공동 플랫폼, 정부·대기업 지원</td>
+</tr>
+<tr>
+<td>거래 관행</td>
+<td>반품·위탁 판매 관행, 정보 공개 기피, 상호 불신</td>
+<td>장기 파트너십, 성과 공유 계약</td>
+</tr>
+<tr>
+<td>복잡한 유통 구조</td>
+<td>다단계 유통으로 정보 전달 지연</td>
+<td>유통 단계 축소, 직거래·SPA형 구조</td>
+</tr>
+<tr>
+<td>생산 유연성 부족</td>
+<td>대량 로트 중심 생산으로 소량 다빈도 대응 곤란</td>
+<td>준비교체 단축, 셀 생산</td>
+</tr>
+</tbody>
+</table>
+<h3 id="106">수요 불확실성을 줄이는 방안 (106회)<a class="headerlink" href="#106" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>방안</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수요예측 개선</td>
+<td>POS 실수요 데이터 활용, 협업 예측(CPFR), 예측 수준의 총량화(합칠수록 예측 정확도 상승)</td>
+</tr>
+<tr>
+<td>신속대응(QR)</td>
+<td>리드타임을 줄여 판매 시즌 중에도 실수요를 보고 재주문 → 예측 기간 단축</td>
+</tr>
+<tr>
+<td>차별화 지연(Postponement)</td>
+<td>공통 공정은 미리, 제품을 구분 짓는 공정은 주문 후로 늦춤 — 공통 반제품 단계에서 수요를 합쳐 관리(예: 베네통 후염색)</td>
+</tr>
+<tr>
+<td>맞춤보충(Tailored Sourcing)</td>
+<td>공급원을 나눠 쓰는 전략 — <strong>기본(예측 가능) 수요는 저비용·장리드타임 공급원</strong>, <strong>변동 수요는 고비용·신속 공급원</strong>이 담당</td>
+</tr>
+</tbody>
+</table>
+<h3 id="agile-qr-130">애자일(Agile)과 QR 비교 (130회)<a class="headerlink" href="#agile-qr-130" title="Permanent link">&para;</a></h3>
+<p><strong>애자일 생산(Agile Manufacturing)</strong>: 1991년 미국 Iacocca 연구소 보고서에서 제시된 개념으로, <strong>예측할 수 없는 시장 변화에 빠르고 유연하게 대응</strong>하는 기업 전체의 역량이다. 고객 가치 중심, 가상기업 등 협력, 변화에 대응하는 조직, 정보·지식 활용을 핵심으로 한다.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>QR(신속대응)</th>
+<th>애자일(Agile)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>범위</td>
+<td>유통-제조 간 보충 프로세스 기법</td>
+<td>기업 전략·조직 철학(전사적 역량)</td>
+</tr>
+<tr>
+<td>초점</td>
+<td>기존 수요에 대한 신속한 보충</td>
+<td>새롭고 불확실한 요구에 대한 유연한 대응</td>
+</tr>
+<tr>
+<td>수단</td>
+<td>POS·EDI·자동 보충</td>
+<td>유연 생산, 모듈화, 가상기업·협력 네트워크, 권한 위양</td>
+</tr>
+<tr>
+<td>기원</td>
+<td>1980년대 미국 의류 업계</td>
+<td>1991년 Iacocca 연구소</td>
+</tr>
+</tbody>
+</table>
+<p><strong>공통점</strong>: 속도와 고객 대응 중시, 리드타임 단축, 정보 공유, 파트너와의 협력</p>
+<h3 id="fisher-1997">제품 특성과 공급사슬 전략 (Fisher, 1997)<a class="headerlink" href="#fisher-1997" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>기능적 제품(수요 예측 가능, 긴 수명주기, 낮은 마진)</th>
+<th>혁신적 제품(수요 불확실, 짧은 수명주기, 높은 마진)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>적합한 공급사슬</td>
+<td><strong>효율적(Efficient)</strong> 공급사슬 — 원가·재고 최소화(린)</td>
+<td><strong>대응적(Responsive)</strong> 공급사슬 — 속도·유연성(QR·애자일)</td>
+</tr>
+<tr>
+<td>예</td>
+<td>생필품, 표준 부품</td>
+<td>패션 의류, 첨단 전자제품</td>
+</tr>
+</tbody>
+</table>
+<p>린은 안정 수요에, 애자일은 변동 수요에 맞는다. 두 방식을 디커플링 포인트(Push-Pull 경계) 앞뒤로 결합한 것이 <strong>Leagile</strong> 전략이다 → <a href="../../07-support-technology/04-production-innovation/#t74-2">7.4.2</a></p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>QR은 <strong>도입 배경(미국 의류 업계) → 구성 요소 → 효과</strong>로 쓴다.</li>
+<li>106회 네 가지 방안은 각각 <strong>개념 + 불확실성을 줄이는 원리 + 사례</strong>의 세 줄로 정리한다.</li>
+<li>비교 문제는 비교표 뒤에 공통점을 따로 정리하고, 린과 애자일을 결합한 'Leagile'을 덧붙이면 좋다.</li>
+<li>결론 예: "QR은 보충 프로세스의 속도, 애자일은 기업 전체의 적응력이므로, Fisher 모형에 따라 제품별로 효율·대응 전략을 구분하고 디지털 플랫폼으로 두 역량을 결합해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 4문항 (67회, 94회, 106회, 130회)</summary>
+<ul>
+<li><strong>제67회(2002) 4교시 2번</strong> · 25점<br />
+  우리나라 기업의 QR(Quick Response) 시스템의 도입과 문제점에 대하여 기술하시오.</li>
+<li><strong>제94회(2011) 1교시 3번</strong> · 10점<br />
+  Quick Response</li>
+<li>
+<p><strong>제106회(2015) 2교시 3번</strong> · 25점<br />
+  수요의 불확실성을 줄이는 다음 방안에 대하여 각각 설명하시오.</p>
+<details class="quote">
+<summary>문제 전문</summary>
+<p>수요의 불확실성을 줄이는 다음 방안에 대하여 각각 설명하시오.<br />
+(1) 수요예측의 개선<br />
+(2) 신속대응(Quick Response)<br />
+(3) 차별화 지연(Postponement)<br />
+(4) 맞춤보충(Tailored Sourcing)  </p>
+</details>
+</li>
+<li>
+<p><strong>제130회(2023) 4교시 3번</strong> · 25점<br />
+  애자일(AGILE)과 신속 대응(QR)에 관하여 설명하고, 차이점과 공통점을 설명하시오.</p>
+</li>
+</ul>
+</details>
+<h2 id="t23-5">2.3.5 공급자 주도 재고(VMI·CRP·COCK)<a class="headerlink" href="#t23-5" title="Permanent link">&para;</a></h2>
+<h3 id="vmivendor-managed-inventory-65106112">VMI(Vendor Managed Inventory, 공급자 재고관리) (65·106·112회)<a class="headerlink" href="#vmivendor-managed-inventory-65106112" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: 공급자가 고객(유통업체·제조업체)의 재고 수준과 판매 정보를 공유받아 <strong>보충 시점과 수량을 직접 결정·관리</strong>하는 방식이다. 고객이 발주하던 일을 공급자가 맡는다.</p>
+<pre class="mermaid"><code>flowchart LR
+    C["고객&lt;br/&gt;(재고·판매 정보)"] --&gt;|EDI·포털로 공유| V["공급자&lt;br/&gt;보충량 결정"]
+    V --&gt;|자동 보충| C</code></pre>
+<p><strong>목적</strong>: 공급사슬 재고 감소, 품절 방지, 채찍효과 완화, 발주 업무 간소화</p>
+<p><strong>기대효과</strong></p>
+<table>
+<thead>
+<tr>
+<th>고객 측</th>
+<th>공급자 측</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>재고·발주 업무 감소</td>
+<td>실수요 가시성 확보 → 생산계획 안정</td>
+</tr>
+<tr>
+<td>품절 감소, 서비스 수준 향상</td>
+<td>운송·생산의 효율적 계획</td>
+</tr>
+<tr>
+<td>재고 유지비 절감</td>
+<td>고객과의 장기 관계(충성도) 강화</td>
+</tr>
+</tbody>
+</table>
+<p><strong>성공 조건</strong>: 정보 공유 시스템(EDI·포털), 상호 신뢰, 재고 수준·서비스 목표에 대한 합의, 성과 측정 체계</p>
+<h3 id="crpcontinuous-replenishment-program-106">CRP(Continuous Replenishment Program, 연속 보충) (106회)<a class="headerlink" href="#crpcontinuous-replenishment-program-106" title="Permanent link">&para;</a></h3>
+<p>고객의 <strong>실제 출고·판매 데이터</strong>를 바탕으로 공급자가 예측 대신 <strong>소량씩 지속적으로 보충</strong>하는 프로그램이다. P&amp;G와 월마트의 협력이 대표 사례다. CRP는 보충 <em>방식</em>이고 VMI는 보충 <em>책임 주체</em>에 대한 개념이어서, 실무에서는 VMI 체계 안에서 CRP 방식으로 보충하는 경우가 많다.</p>
+<h3 id="vmi-cock-130">VMI와 코크(COCK) 시스템 비교 (130회)<a class="headerlink" href="#vmi-cock-130" title="Permanent link">&para;</a></h3>
+<p><strong>코크 시스템</strong>은 국내 제조업에서 쓰는 방식으로, 공급자 소유의 자재를 <strong>고객 공장 안이나 인근 창고에 보관해 두고, 고객이 꺼내 쓰는 시점에 구매(소유권 이전)와 대금 정산</strong>을 하는 위탁재고(consignment) 방식이다.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>VMI</th>
+<th>코크 시스템</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>핵심</td>
+<td>공급자가 고객 재고의 <strong>보충 결정</strong>을 담당</td>
+<td>공급자 소유 재고를 고객 현장에 두고 <strong>사용 시점에 정산</strong></td>
+</tr>
+<tr>
+<td>재고 소유권</td>
+<td>보통 납품 시 고객에게 이전(계약에 따라 다름)</td>
+<td>고객이 사용할 때까지 공급자 소유</td>
+</tr>
+<tr>
+<td>재고 부담</td>
+<td>고객(보유 재고는 줄어듦)</td>
+<td>공급자</td>
+</tr>
+<tr>
+<td>활용 포인트</td>
+<td>수요가 안정적이고 정보 공유가 가능한 반복 품목</td>
+<td>결품 영향이 큰 생산 자재, 수요 변동이 있는 부품</td>
+</tr>
+<tr>
+<td>기대효과</td>
+<td>재고·발주 업무 감소, 품절 감소, 채찍효과 완화</td>
+<td>고객의 재고 부담·운전자금 감소, 즉시 사용 가능으로 결품 방지</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">확인 필요</p>
+<p>코크(COCK) 시스템의 영문 약어 풀이는 자료마다 다릅니다. 수험 교재나 출제 해설로 정의를 확인한 뒤 답안에 쓰세요.</p>
+</div>
+<h3 id="_5">협업적 보충 기법의 발전 단계<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>기법</th>
+<th>정보 공유 수준</th>
+<th>의사결정 주체</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기존 발주</td>
+<td>주문 정보만</td>
+<td>고객</td>
+<td>채찍효과 발생</td>
+</tr>
+<tr>
+<td>CRP</td>
+<td>출고·판매 실적</td>
+<td>공급자(보충)</td>
+<td>실수요 기반 연속 보충</td>
+</tr>
+<tr>
+<td>VMI</td>
+<td>재고·판매 정보</td>
+<td>공급자(재고 책임)</td>
+<td>발주 업무를 공급자가 수행</td>
+</tr>
+<tr>
+<td>CMI(공동 재고관리)</td>
+<td>재고·판매·판촉 정보</td>
+<td>공급자와 고객 공동</td>
+<td>VMI의 일방성 보완</td>
+</tr>
+<tr>
+<td>CPFR</td>
+<td>예측·계획까지 공유</td>
+<td>공동(계획·예측·보충)</td>
+<td>단일 협업 예측, 예외 관리</td>
+</tr>
+</tbody>
+</table>
+<p><strong>도입 시 유의점</strong>: 공급자에게 재고 책임이 넘어가 협력사 부담이 커질 수 있으므로 서비스 목표·재고 상하한·비용 분담을 계약으로 명확히 하고, 상생 관점에서 운영한다.</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>VMI는 <strong>정의 → 운영 흐름 그림 → 목적 → 고객/공급자 측 효과 → 성공 조건</strong>으로 쓴다(10점은 앞의 넷).</li>
+<li>비교 문제는 <strong>보충 결정 주체</strong>와 <strong>재고 소유권(정산 시점)</strong>이라는 두 축으로 차이를 설명하면 명확하다.</li>
+<li>결론 예: "VMI·코크는 재고 부담과 결정권을 공급자로 옮기는 방식이므로, 정보시스템 연계와 공정한 계약으로 <strong>공급자 부담 전가가 아닌 공급사슬 전체 재고 감축</strong>이 되도록 운영해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 5문항 (65회, 106회, 112회, 130회)</summary>
+<ul>
+<li><strong>제65회(2001) 3교시 3번</strong> · 25점<br />
+  VMI(Vendor Managed Inventory) 활동의 목적 및 기대효과를 설명하시오.</li>
+<li><strong>제106회(2015) 1교시 10번</strong> · 10점<br />
+  CRP(Continuous Replenishment Program)</li>
+<li><strong>제106회(2015) 1교시 11번</strong> · 10점<br />
+  VMI(Vendor Managed Inventory)</li>
+<li><strong>제112회(2017) 1교시 1번</strong> · 10점<br />
+  VMI(Vendor Managed Inventory)</li>
+<li><strong>제130회(2023) 4교시 2번</strong> · 25점<br />
+  VMI(Vendor Managed Inventory)와 코크시스템(COCK System)과의 차이, 활용포인트, 기대효과를 각각 설명하시오.</li>
+</ul>
+</details>
+<h2 id="t23-6">2.3.6 물류 아웃소싱과 유통(3PL·크로스도킹·SPA·OMS)<a class="headerlink" href="#t23-6" title="Permanent link">&para;</a></h2>
+<h3 id="3plthird-party-logistics-88">3PL(Third-Party Logistics) (88회)<a class="headerlink" href="#3plthird-party-logistics-88" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: 화주 기업이 수송·보관·하역·재고관리 등 물류 기능의 일부나 전부를 <strong>외부 전문 물류업체에 장기 계약으로 위탁</strong>하는 것이다.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1PL</td>
+<td>화주 기업이 직접 수행하는 자가 물류</td>
+</tr>
+<tr>
+<td>2PL</td>
+<td>물류 자회사가 수행</td>
+</tr>
+<tr>
+<td><strong>3PL</strong></td>
+<td>외부 전문 물류업체가 계약에 따라 수행</td>
+</tr>
+<tr>
+<td>4PL</td>
+<td>3PL에 컨설팅·IT를 결합해 공급사슬 전체를 통합 관리</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>핵심역량 집중, 물류 투자·고정비 절감</td>
+<td>물류 통제력 약화, 고객 접점 정보 단절</td>
+</tr>
+<tr>
+<td>전문성·규모의 경제로 물류비 절감</td>
+<td>업체 의존과 전환 비용</td>
+</tr>
+<tr>
+<td>물동량 변동에 탄력적 대응</td>
+<td>정보 보안·서비스 품질 위험</td>
+</tr>
+</tbody>
+</table>
+<h3 id="spaspeciality-retailer-of-private-label-apparel-100">SPA(Speciality retailer of Private label Apparel) (100회)<a class="headerlink" href="#spaspeciality-retailer-of-private-label-apparel-100" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: 의류 기업이 <strong>상품 기획 → 생산 → 유통 → 판매</strong>를 직접 수행하는 수직통합형 사업 모델이다. 1986년 미국 GAP이 처음 쓴 용어이며, 자라(ZARA)·유니클로·H&amp;M이 대표적이다.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>특징</td>
+<td>다품종 소량, 짧은 기획·생산 주기(자라는 수 주 단위), 매장 판매 정보를 곧바로 기획·생산에 반영</td>
+</tr>
+<tr>
+<td>장점</td>
+<td>유통 마진 제거로 가격 경쟁력, 재고·진부화 위험 감소, 트렌드에 빠른 대응</td>
+</tr>
+<tr>
+<td>성공 요인</td>
+<td>판매 데이터 분석, 신속한 생산·물류 체계(근거리 생산, 크로스도킹), 대규모 매장망</td>
+</tr>
+<tr>
+<td>SCM 관점</td>
+<td>전방통합 + QR의 결합 — 실수요 기반의 Pull형 공급사슬</td>
+</tr>
+</tbody>
+</table>
+<h3 id="115">월마트의 크로스도킹 (115회)<a class="headerlink" href="#115" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: 물류센터에 들어온 상품을 <strong>보관하지 않고 바로 분류해 매장행 차량에 옮겨 싣는</strong> 방식이다(보통 24시간 안에 출고).</p>
+<ul>
+<li><strong>월마트 사례</strong>: 공급자 트럭으로 들어온 상품을 물류센터에서 곧바로 매장별 트럭에 옮겨 실었다. 위성통신·EDI로 매장 판매 정보와 입고 정보를 연결해 보관 단계를 없앴다.</li>
+<li><strong>효과</strong>: 보관비·재고 감소, 리드타임 단축, 매장 단위 만차 운송으로 운송비 절감</li>
+<li><strong>조건</strong>: 정확한 사전 출하 정보(ASN·EDI), 입고·출고 일정의 동기화, 바코드·RFID, 공급자와의 긴밀한 협력</li>
+</ul>
+<h3 id="omsorder-management-system-130">OMS(Order Management System)의 장점 (130회)<a class="headerlink" href="#omsorder-management-system-130" title="Permanent link">&para;</a></h3>
+<p><strong>OMS</strong>는 여러 판매 채널의 주문을 접수부터 재고 할당·처리·출하·반품까지 <strong>한 시스템에서 통합 관리</strong>하는 시스템이다.</p>
+<ol>
+<li>모든 채널 주문의 <strong>통합 가시성</strong></li>
+<li>실시간 재고 확인과 최적 할당(어느 창고에서 보낼지)</li>
+<li>주문 처리 자동화로 <strong>리드타임 단축과 오류 감소</strong></li>
+<li>고객의 주문 상태 조회 등 <strong>고객 서비스 향상</strong></li>
+<li>주문 데이터 분석으로 수요예측·재고 계획 개선</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>모두 개념형 문제다. <strong>정의(도입 배경·사례 기업) → 특징·구조 → 장단점(효과) → 성공 조건</strong>을 쓴다.</li>
+<li>SPA와 크로스도킹은 대표 기업 사례(GAP·자라, 월마트)를 반드시 넣는다.</li>
+<li>3PL은 <strong>선정 기준</strong>(물류 전문성·IT 역량·재무 안정성·서비스 수준 계약(SLA)·비용)과 성과 관리(KPI)를 덧붙이면 차별화된다.</li>
+<li>연관 주제: 보관·오더피킹 <a href="../../04-facility-management/02-material-handling/#t42-2">4.2.2</a>, 수배송 <a href="../../04-facility-management/02-material-handling/#t42-3">4.2.3</a>, 아웃소싱 전략 <a href="../../01-production-strategy/03-purchasing-outsourcing/#t13-2">1.3.2</a></li>
+<li>결론 예(SPA 25점): "SPA는 수직통합과 QR을 결합한 Pull형 공급사슬로, 제조업도 판매 데이터 기반의 신속 기획·근거리 생산 체계를 벤치마킹할 수 있다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 4문항 (88회, 100회, 115회, 130회)</summary>
+<ul>
+<li><strong>제88회(2009) 1교시 2번</strong> · 10점<br />
+  3PL(Third-Party Logistics)에 대하여 장점과 단점을 포함하여 설명하시오.</li>
+<li><strong>제100회(2013) 3교시 3번</strong> · 25점<br />
+  SPA(Speciality retailer of Private label Apparel)에 대하여 설명하시오.</li>
+<li><strong>제115회(2018) 1교시 11번</strong> · 10점<br />
+  월마트(Wal-mart)의 크로스 도킹(cross docking)</li>
+<li><strong>제130회(2023) 1교시 5번</strong> · 10점<br />
+  SCM 형태 중 OMS(Order Management System) 시스템의 장점을 설명하시오.</li>
+</ul>
+</details>
+<h2 id="t23-7">2.3.7 수요 불확실성과 제품가용성<a class="headerlink" href="#t23-7" title="Permanent link">&para;</a></h2>
+<h3 id="product-availability-106">제품가용성(Product Availability) (106회)<a class="headerlink" href="#product-availability-106" title="Permanent link">&para;</a></h3>
+<p><strong>정의</strong>: 고객 주문을 <strong>보유 재고로 즉시 충족할 수 있는 정도</strong>다. 공급사슬의 대응성을 나타내는 핵심 지표다.</p>
+<p><strong>측정 방법</strong></p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>정의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제품 충족률(Fill Rate)</td>
+<td>전체 수요 중 재고로 바로 충족된 수요의 비율</td>
+</tr>
+<tr>
+<td>주문 충족률(Order Fill Rate)</td>
+<td>전체 주문 중 모든 품목을 재고로 충족한 주문의 비율</td>
+</tr>
+<tr>
+<td>주기 서비스 수준(CSL)</td>
+<td>한 보충 주기 동안 품절이 일어나지 않을 확률</td>
+</tr>
+</tbody>
+</table>
+<p><strong>관리 이슈</strong></p>
+<ul>
+<li>가용성을 높이면 고객 만족은 오르지만 <strong>재고 비용도 늘어나는 상충관계</strong>가 있다.</li>
+<li>최적 수준은 품절 비용과 재고 과잉 비용의 균형으로 정한다. 단일 기간 모형에서 최적 주기 서비스 수준은</li>
+</ul>
+<div class="arithmatex">\[
+CSL^{*} = \frac{C_u}{C_u + C_o}
+\]</div>
+<p>(<span class="arithmatex">\( C_u \)</span>: 품절 1단위당 손실, <span class="arithmatex">\( C_o \)</span>: 재고 1단위 과잉당 손실)</p>
+<ul>
+<li>가용성을 높이는 수단: 안전재고, 리드타임 단축, 수요 불확실성 감소(정보 공유·예측 개선), 재고 거점 통합(리스크 풀링), 차별화 지연</li>
+<li><strong>리스크 풀링 효과</strong>: 수요가 서로 독립이고 표준편차가 같은 <span class="arithmatex">\( n \)</span>개 지역 창고를 하나로 통합하면 통합 수요의 표준편차는 <span class="arithmatex">\( \sqrt{n}\,\sigma \)</span>가 되어, 같은 서비스 수준에 필요한 안전재고가 <span class="arithmatex">\( n \)</span>배가 아닌 <span class="arithmatex">\( \sqrt{n} \)</span>배로 줄어든다(제곱근 법칙).</li>
+</ul>
+<h3 id="106_1">공급사슬 협력 결여의 발생 요인과 관리 수단 (106회)<a class="headerlink" href="#106_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>발생 요인</th>
+<th>내용</th>
+<th>관리 수단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목표·인센티브 장애</td>
+<td>각 단계가 자기 이익만 최적화, 판매량 기준 보상</td>
+<td>공급사슬 전체 이익 기준의 목표·인센티브 정렬</td>
+</tr>
+<tr>
+<td>정보처리 장애</td>
+<td>하류 주문으로 예측, 정보 비공유</td>
+<td>POS·재고 정보 공유, 협업 예측(CPFR), 단일 예측</td>
+</tr>
+<tr>
+<td>운영 장애</td>
+<td>대량 로트 주문, 긴 보충 리드타임, 할당 게임</td>
+<td>리드타임 단축, 로트 축소, 과거 판매 기준 배분</td>
+</tr>
+<tr>
+<td>가격 장애</td>
+<td>로트 수량 할인, 판촉에 따른 가격 변동</td>
+<td>상시 저가(EDLP), 기간 누적 물량 기준 할인</td>
+</tr>
+<tr>
+<td>행동 장애</td>
+<td>신뢰 부족, 국지적 시각, 상대 탓하기</td>
+<td>장기 파트너십, 신뢰 구축, 성과 공유</td>
+</tr>
+</tbody>
+</table>
+<p>협력이 결여되면 채찍효과가 생겨 생산비·재고비·보충 리드타임·운송비가 늘고, 제품 가용성과 수익성이 떨어진다.</p>
+<div class="admonition tip">
+<p class="admonition-title">답안 작성 포인트</p>
+<ul>
+<li>제품가용성은 <strong>정의 → 측정 지표 3가지 → 상충관계와 최적 수준</strong>으로 쓴다.</li>
+<li>협력 결여 문제는 <strong>요인과 관리 수단을 1:1로 대응시킨 표</strong>를 쓰고, 채찍효과와 연결해 결론을 맺는다.</li>
+<li>결론 예: "협력 결여는 정보·인센티브·운영·가격·행동 장애가 겹친 결과이므로, 정보 공유 인프라와 <strong>공급사슬 전체 이익 기준의 계약(수익 공유·환매 계약 등)</strong>을 함께 설계해야 한다."</li>
+</ul>
+</div>
+<details class="example">
+<summary>관련 기출 2문항 (106회)</summary>
+<ul>
+<li><strong>제106회(2015) 1교시 12번</strong> · 10점<br />
+  제품가용성(Product Availability)의 정의, 관리 이슈, 측정방법</li>
+<li><strong>제106회(2015) 4교시 2번</strong> · 25점<br />
+  공급사슬에서 협력이 결여되면 생산비용, 재고비용, 보충리드타임, 수송비용, 선적과 하역비용 등이 증가하고 제품 가용성 수준 및 수익성이 감소한다. 공급사슬에서 협력결여 발생요인과 협력을 이루어내기 위한 관리수단에 대하여 설명하시오.</li>
+</ul>
+</details>
+<h2 id="_6">답안 작성 예시<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">25점 예시: 제136회 2교시 5번 — 채찍효과의 정의, 발생요인 4가지, 스마트팩토리로 감소시키는 방안 3가지</p>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>채찍효과는 소비자 수요의 작은 변동이 공급사슬 상류로 갈수록 주문 변동으로 증폭되는 현상이다(Forrester 1961, P&amp;G 팸퍼스 사례).</li>
+</ul>
+<p><strong>2. 본론</strong></p>
+<ul>
+<li>(1) 정의와 도식: [그림] 공급사슬(소매→도매→제조→공급자) + [그림] 단계별 주문량 그래프(상류일수록 진폭 확대), 재고의 과잉·품절 반복</li>
+<li>(2) 발생요인 4가지(Lee 등, 1997): [표] 수요예측 갱신·주문 일괄처리·가격 변동·할당 게임 + 원인별 해결 방안 1:1 대응</li>
+<li>(3) 정량 근거: 리드타임 <span class="arithmatex">\( L \)</span>과 예측 기간 <span class="arithmatex">\( p \)</span>에 따른 증폭 하한식 → 리드타임 단축의 효과</li>
+<li>(4) 스마트팩토리 방안 3가지: 실시간 데이터 연계(IoT·클라우드) / AI 예측·디지털 트윈 / MES-ERP-SCM 통합 유연 생산·자동 보충 — 각각 "개념 + 채찍효과를 줄이는 원리" 2줄</li>
+</ul>
+<p><strong>3. 결론(기술사 의견)</strong></p>
+<ul>
+<li>근본 원인은 정보 왜곡·지연이므로 기술 도입과 함께 CPFR·VMI 등 협업 체계와 인센티브 정렬이 병행되어야 한다.</li>
+<li>차별화: 공급망 리스크(부품 대란) 시 할당 게임이 실제로 발생한 최근 사례를 들고, 공급망 컨트롤 타워 구축을 제안</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">25점 예시: 제130회 4교시 2번 — VMI와 코크시스템의 차이, 활용포인트, 기대효과</p>
+<p><strong>1. 개요</strong></p>
+<ul>
+<li>VMI는 공급자가 고객 재고의 보충 결정을 맡는 방식, 코크 시스템은 공급자 소유 재고를 고객 현장에 두고 사용 시점에 정산하는 위탁재고 방식이다.</li>
+</ul>
+<p><strong>2. 본론</strong></p>
+<ul>
+<li>(1) VMI 운영 구조: [그림] 고객 재고·판매 정보 공유 → 공급자 보충 결정 흐름도</li>
+<li>(2) 코크 시스템 구조: 공급자 소유 재고 → 고객 사용 → 소유권 이전·정산 흐름</li>
+<li>(3) 차이점: [표] 핵심·재고 소유권·재고 부담·활용 포인트·기대효과 비교(보충 결정 주체 vs 정산 시점의 두 축)</li>
+<li>(4) 협업 보충 기법 발전 단계 표(CRP→VMI→CMI→CPFR)로 위치 설명</li>
+</ul>
+<p><strong>3. 결론(기술사 의견)</strong></p>
+<ul>
+<li>품목 특성(수요 안정성, 결품 영향, 금액)에 따라 VMI·코크를 구분 적용</li>
+<li>차별화: 협력사 부담 전가 우려와 상생 계약·정보시스템 연계 방안을 제시하면 고득점</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
+        
+          
+          <a href="../02-progress-control/" class="md-footer__link md-footer__link--prev" aria-label="이전: 2.2 프로세스 진도관리">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                2.2 프로세스 진도관리
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../04-materials-inventory/" class="md-footer__link md-footer__link--next" aria-label="다음: 2.4 물류관리(자재 및 재고관리)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                2.4 물류관리(자재 및 재고관리)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
