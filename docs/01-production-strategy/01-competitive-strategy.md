@@ -87,8 +87,28 @@ flowchart TB
 | 원가(C) | 최소 비용으로 생산 | 단위당 제조원가, 생산성 |
 | 납기(D) | 필요한 시기·수량을 신속·정확하게 공급 | 리드타임, 납기준수율 |
 | 유연성(F) | 제품·수량·일정 변화에 대응 | 준비교체시간, 신제품 도입기간 |
+| 서비스(S) | 판매 전후 고객 지원으로 가치 제공 | 고객 응답시간, A/S 처리기간, 고객만족도 |
 
-최근에는 **안전(S)·환경(E)**을 더해 QCDF+SE로 확장하기도 한다.
+### 생산관리 목표(경쟁우선순위)의 확장 과정: QCDF → QCDFS
+
+생산관리의 목표는 경영학 문헌에서 **경쟁우선순위(competitive priorities)**라는 이름으로 발전했다. 핵심 4요소(QCDF)가 먼저 정립되었고, 이후 연구자들이 **서비스(Service)**와 혁신성 등을 덧붙였다.
+
+| 시기 | 연구자(문헌) | 내용 |
+|---|---|---|
+| 1969 | W. Skinner, "Manufacturing — Missing Link in Corporate Strategy"(HBR) | 원가·품질·납기·유연성 같은 생산 성과 기준 사이에 **상충관계(trade-off)**가 있으므로 하나를 골라 집중해야 한다고 주장 |
+| 1984 | R. Hayes & S. Wheelwright, *Restoring Our Competitive Edge* | "경쟁우선순위" 개념을 정립하고 **원가·품질·납기(신뢰성)·유연성**의 4대 요소 제시 → **QCDF의 원형** |
+| 1990 | G.K. Leong, D.L. Snyder & P.T. Ward, *Omega* 18(2) | 문헌을 종합해 **품질·납기·원가·유연성 + 혁신성(innovativeness)**의 5요소 제시 |
+| 1992 | Foo & Friedman, *AT&T Technical Journal* | **서비스**와 제조기술을 추가하고, 시간을 출시시간과 리드타임으로 세분 |
+| 1994 | J. Miller & A. Roth, "A Taxonomy of Manufacturing Strategies"(*Management Science* 40(3)) | 미국 제조 사업부 164곳을 11개 경쟁역량(애프터서비스 포함)으로 분류 → 서비스가 경쟁역량으로 실증됨 |
+| 2001 | M. Frohlich & J. Dixon, "A Taxonomy of Manufacturing Strategies Revisited"(*JOM* 19(5)) | **원가(가격)·품질·납기·유연성 + 서비스**를 5대 경쟁우선순위로 측정 → **QCDFS** |
+
+!!! note "S의 두 계보: 서비스(Service)와 안전(Safety)"
+    - **서비스(Service)**: 위 경쟁우선순위 연구의 계보다. 제품만으로는 차별화가 어려워지자 판매 전후 서비스(납품 지원, 기술 지원, A/S)가 경쟁 요소가 되었다. "생산관리의 목표"나 "경쟁우선순위"를 묻는 문제의 S는 **서비스**로 쓴다.
+    - **안전(Safety)**: 일본 TPM·현장관리 계보의 **PQCDSM**(생산성·품질·원가·납기·안전·사기)에서 쓰는 S다. 현장 관리 지표를 묻는 문제에서 사용한다.
+    - 최근에는 지속가능성을 반영해 **환경(E)**을 더하기도 한다([1.1.7](#t11-7) ESG 지표).
+
+!!! warning "시간(D)의 세분"
+    N. Slack 등은 납기를 **속도(speed)**와 **신뢰성(dependability)**으로 나누어 품질·속도·신뢰성·유연성·원가의 **5대 성과목표**를 제시한다. Krajewski & Ritzman의 4범주 9요소([1.1.2](#t11-2))도 시간을 납기 속도·납기 준수·개발 속도로 나눈다.
 
 ### 생산 의사결정의 범주 (Hayes & Wheelwright)
 
